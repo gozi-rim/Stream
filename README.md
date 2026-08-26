@@ -1,6 +1,6 @@
 # Global FAST M3U Playlist & EPG Generator (All Regions)
 
-Automated global FAST (Free Ad-supported Streaming TV) and IPTV playlist generator with standardized EPG (Electronic Program Guide) auto-injection, dynamic category grouping (News, Sports, Movies, Kids, Nollywood, Entertainment), and automated 4-hour GitHub sync.
+Automated global FAST (Free Ad-supported Streaming TV) and IPTV playlist generator with standardized EPG (Electronic Program Guide) auto-injection, dynamic category grouping (News, Sports, Movies, Kids, Nollywood, Entertainment), deduplication, and automated GitHub sync.
 
 ---
 
@@ -10,9 +10,11 @@ Copy and paste these direct Raw URLs into your IPTV player (**TiviMate**, **Kodi
 
 | Curated Playlist | Direct Raw M3U Link | Direct Raw M3U8 Link | Channels | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| **⭐ Popular Favorites (Curated Best)** | [`popular_favorites.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/popular_favorites.m3u) | [`popular_favorites.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/popular_favorites.m3u8) | **277** | *Famous household names: BBC, CNN, Sky News, ESPN, Nickelodeon, Hallmark, Paramount, CSI, Top Gear, MTV, Vevo, Nollywood* |
-| **🎬 Nollywood & African TV** | [`nollywood.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/nollywood.m3u) | [`nollywood.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/nollywood.m3u8) | **13** | *Channels TV, Nolly Africa HD, TVC News, AIT, Silverbird, Soundcity, Africa Magic, NTA News 24, Arewa 24* |
-| **🌐 Master Combined (All Networks)** | [`all_combined.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u) | [`all_combined.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u8) | **9,056** | *Everything combined and sorted into structured category folders* |
+| **⭐ Popular Favorites (Curated Best)** | [`popular_favorites.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/popular_favorites.m3u) | [`popular_favorites.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/popular_favorites.m3u8) | **341** | *Famous household names: BBC, CNN, Sky News, ESPN, Nickelodeon, Paramount, Moviesphere, CSI, Top Gear, MTV, Vevo, Channels TV, Arise, TVC, Nolly Africa* |
+| **🎬 Nollywood & African TV** | [`nollywood.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/nollywood.m3u) | [`nollywood.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/nollywood.m3u8) | **52** | *Arise News (CloudFront Direct), TVC News (24/7 Studio Live), Channels Television, Nolly Africa HD, Africa 24, and top African broadcasts* |
+| **🌐 Global Open Live TV (Unblocked)** | [`freetv_global.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/freetv_global.m3u) | [`freetv_global.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/freetv_global.m3u8) | **1,936** | *Direct origin CDN streams without regional geo-blocking or redirect limits* |
+| **🌍 Africa Live Channels (IPTV-Org)** | [`iptv_org_africa.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/iptv_org_africa.m3u) | [`iptv_org_africa.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/iptv_org_africa.m3u8) | **494** | *Verified African live channels across Nigeria, Ghana, Kenya, South Africa, Uganda, etc.* |
+| **🌐 Master Combined (All Networks)** | [`all_combined.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u) | [`all_combined.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u8) | **5,687** | *Deduplicated master playlist containing every single unique working channel categorized cleanly* |
 
 ---
 
@@ -22,14 +24,13 @@ Every playlist is categorized by genre (**News & Weather**, **Sports & Racing**,
 
 | Network / Source | Direct Raw M3U Link | Direct Raw M3U8 Link | Injected EPG Source | Channels |
 | :--- | :--- | :--- | :--- | :--- |
-| **Samsung TV Plus (All)** | [`samsung_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u) | [`samsung_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u8) | `https://i.mjh.nz/SamsungTVPlus/all.xml.gz` | **2,603** |
-| **Pluto TV (All Regions)** | [`plutotv_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u) | [`plutotv_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u8) | `https://i.mjh.nz/PlutoTV/all.xml.gz` | **2,862** |
-| **Plex TV (All Regions)** | [`plex_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u) | [`plex_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u8) | `https://i.mjh.nz/Plex/all.xml.gz` | **2,824** |
+| **Samsung TV Plus (All)** | [`samsung_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u) | [`samsung_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u8) | `https://i.mjh.nz/SamsungTVPlus/all.xml.gz` | **1,572** |
+| **Pluto TV (All Regions)** | [`plutotv_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u) | [`plutotv_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u8) | `https://i.mjh.nz/PlutoTV/all.xml.gz` | **1,512** |
+| **Plex TV (All Regions)** | [`plex_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u) | [`plex_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u8) | `https://i.mjh.nz/Plex/all.xml.gz` | **948** |
 | **Roku TV (All Regions)** | [`roku_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/roku_all.m3u) | [`roku_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/roku_all.m3u8) | `https://i.mjh.nz/Roku/all.xml.gz` | **286** |
 | **Tubi TV (All Regions)** | [`tubi_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/tubi_all.m3u) | [`tubi_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/tubi_all.m3u8) | Auto-injected XML | **179** |
-| **Global FAST Channels** | [`mjh_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u) | [`mjh_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u8) | `https://i.mjh.nz/all/epg.xml.gz` | **282** |
+| **Global FAST Channels** | [`mjh_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u) | [`mjh_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u8) | `https://i.mjh.nz/all/epg.xml.gz` | **170** |
 | **World Channels** | [`world.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/world.m3u) | [`world.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/world.m3u8) | `https://i.mjh.nz/world/epg.xml.gz` | **4** |
-| **DStv South Africa / Africa** | [`dstv.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/dstv.m3u) | [`dstv.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/dstv.m3u8) | `https://i.mjh.nz/DStv/za.xml.gz` | **6** (Custom) |
 
 > 💡 **Auto EPG Injection**: Every playlist has `#EXTM3U url-tvg="..." x-tvg-url="..."` headers automatically injected. You do **not** need to manually copy or type separate EPG URLs in your IPTV client—it loads guide data automatically!
 
@@ -38,10 +39,9 @@ Every playlist is categorized by genre (**News & Weather**, **Sports & Racing**,
 ## ⚡ Automated Updates (GitHub Actions)
 
 The repository runs [`.github/workflows/update_playlists.yml`](.github/workflows/update_playlists.yml) on a scheduled cron:
-- **Frequency**: Runs automatically **every 4 hours** (`0 */4 * * *`).
+- **Frequency**: Runs automatically **every 2 hours** (`0 */2 * * *`).
 - **Trigger**: Also supports manual run on-demand via the **Actions** tab in GitHub.
-- **Auto-Sync**: Checks upstream providers, regenerates `.m3u` and `.m3u8` playlists with dynamic category sorting, and auto-commits any updates with `[skip ci]`.
-- Your IPTV player simply fetches your GitHub raw URL and always stays up to date!
+- **Auto-Sync**: Checks upstream providers, refreshes live stream tokens, regenerates `.m3u` and `.m3u8` playlists with dynamic category sorting and deduplication, and auto-commits any updates.
 
 ---
 
