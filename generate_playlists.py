@@ -7,7 +7,7 @@ pristine global FAST and IPTV playlists with auto-injected EPG:
 - Automatically detects and eliminates exact repetitive clones across all hosts
 - Ranks duplicates and keeps only the highest quality (4K/1080p/720p HD) working feed
 - Removes dead/broken/placeholder streams
-- Auto-extracts and refreshes live 1080p HLS streams for African channels (Channels TV, TVC News, Arise News) via yt-dlp
+- Auto-extracts and refreshes MUXED (Video + Audio) 1080p/720p HLS streams for African channels (Channels TV, TVC News, Arise News) via yt-dlp
 - Neatly sorts all channels by genre categories (News, Sports, Movies, Kids, etc.)
 - Outputs individual network playlists + Master Combined + Curated Popular Favorites
 """
@@ -18,12 +18,16 @@ import sys
 import json
 import time
 import logging
-import subprocess
 from typing import Dict, List, Optional, Tuple
 from collections import defaultdict
 import requests
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
+
+try:
+    import yt_dlp
+except ImportError:
+    yt_dlp = None
 
 # Configure logging
 logging.basicConfig(
@@ -126,7 +130,6 @@ CATEGORY_RULES = [
     ])
 ]
 
-# Order for sorting categories in playlist
 CATEGORY_ORDER = [
     "Nollywood & African TV",
     "News & Weather",
@@ -148,38 +151,29 @@ CATEGORY_ORDER = [
 
 CATEGORY_PRIORITY = {cat: i for i, cat in enumerate(CATEGORY_ORDER)}
 
-# Popular Brand Channel Filters (Famous household names only)
 POPULAR_KEYWORDS = [
-    # News
     r'\bbbc news\b', r'\bcnn\b', r'\bsky news\b', r'\bbloomberg\b', r'\beuronews\b', r'\bal jazeera\b',
     r'\babc news live\b', r'\bcbs news\b', r'\bnbc news now\b', r'\breuters\b', r'\bweather channel\b',
-    # Sports
     r'\bespn\b', r'\bbein sports\b', r'\bpga tour\b', r'\bnfl channel\b', r'\bmlb\b', r'\bnhl\b',
     r'\btennis channel\b', r'\bred bull tv\b', r'\bfight network\b', r'\bimpact wrestling\b',
     r'\bmotorvision\b', r'\bstadium\b',
-    # Kids & Animation
     r'\bnickelodeon\b', r'\bnick jr\b', r'\blego\b', r'\bpok[eé]mon\b', r'\banime all day\b',
     r'\bretrocrush\b', r'\byu-gi-oh\b', r'\bbaby einstein\b', r'\bducktv\b', r'\bpower rangers\b',
-    # Movies
     r'\bhallmark\b', r'\bparamount movie\b', r'\bmoviesphere\b', r'\bsony\b', r'\bfilmrise\b', r'\bshudder\b',
-    # Comedy, Drama & Entertainment
     r'\bcomedy central\b', r'\bdoctor who\b', r'\bbaywatch\b', r'\bcsi\b', r'\blaw & order\b',
     r'\b21 jump street\b', r'\bheartland\b', r'\bgordon ramsay\b', r'\btop gear\b', r'\btastemade\b',
     r'\bmtv\b', r'\bvevo\b', r'\bfailarmy\b', r'\bprice is right\b', r'\bdeal or no deal\b',
-    # Nollywood & Africa
     r'\bnolly\b', r'\bnollywood\b', r'\bchannels tv\b', r'\bchannels television\b', r'\btvc news\b',
     r'\barise news\b', r'\bafrica magic\b', r'\bsoundcity\b', r'\bsilverbird\b', r'\bait\b', r'\bnta\b'
 ]
 
 
 def is_popular_channel(channel_name: str) -> bool:
-    """Check if channel belongs to famous popular brand channels."""
     text = channel_name.lower()
     return any(re.search(p, text) for p in POPULAR_KEYWORDS)
 
 
 def classify_channel(channel_name: str, existing_group: str = "") -> str:
-    """Determine the channel category based on name and context."""
     text = f"{channel_name} {existing_group}".lower()
     for cat_name, patterns in CATEGORY_RULES:
         for p in patterns:
@@ -189,10 +183,6 @@ def classify_channel(channel_name: str, existing_group: str = "") -> str:
 
 
 def normalize_channel_key(channel_name: str) -> str:
-    """
-    Produce a clean normalized key for deduplication.
-    Strips resolution tags (1080p, 720p, 4K), country tags in brackets, and punctuation.
-    """
     clean = re.sub(r'[\(\[].*?[\)\]]', '', channel_name)
     clean = re.sub(r'\b(4k|uhd|fhd|hd|sd|1080p|720p|480p|360p)\b', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'[^a-zA-Z0-9\s]', '', clean).strip().lower()
@@ -201,14 +191,9 @@ def normalize_channel_key(channel_name: str) -> str:
 
 
 def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, source_id: str) -> int:
-    """
-    Calculate quality & reliability score for duplicate ranking.
-    Higher score = preferred stream kept during deduplication.
-    """
     score = 100
     text = f"{channel_name} {extinf_line}".lower()
 
-    # 1. Resolution / Quality bonuses
     if any(q in text for q in ["4k", "uhd", "2160p"]):
         score += 60
     elif any(q in text for q in ["1080p", "1080", "fhd"]):
@@ -218,7 +203,6 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
     elif any(q in text for q in ["480p", "sd", "360p"]):
         score -= 20
 
-    # 2. Host Bitrate / Stability priority
     if source_id == "nollywood_custom":
         score += 30
     elif source_id == "samsung_all":
@@ -232,11 +216,9 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
     elif source_id == "tubi_all":
         score += 8
 
-    # 3. Valid Logo bonus
     if 'tvg-logo="http' in extinf_line:
         score += 5
 
-    # 4. Valid EPG ID bonus
     if 'tvg-id="' in extinf_line and 'tvg-id=""' not in extinf_line:
         score += 5
 
@@ -246,19 +228,12 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
 def deduplicate_channel_items(
     channel_items: List[Tuple[str, str, str, str]]
 ) -> List[Tuple[str, str, str, str]]:
-    """
-    Deduplicate channel items:
-    - Group items by normalized channel key
-    - Keep only the single highest quality scored stream per group
-    - channel_items format: (category, channel_name, formatted_block_string, source_id)
-    """
     grouped = defaultdict(list)
     for cat, name, block, src_id in channel_items:
         key = normalize_channel_key(name)
         extinf_line = block.splitlines()[0]
         url = block.splitlines()[-1] if len(block.splitlines()) > 1 else ""
         
-        # Validate that URL is a playable HTTP/HTTPS stream (not dead/empty/example.com)
         if not url.startswith("http") or "example.com" in url or "localhost" in url:
             continue
 
@@ -276,28 +251,36 @@ def deduplicate_channel_items(
 
 def refresh_youtube_live_streams(custom_data: dict) -> dict:
     """
-    Auto-refresh live HLS tokens for YouTube live stream sources using yt-dlp.
+    Auto-refresh live MUXED (Video + Audio) HLS tokens for YouTube live stream sources using yt-dlp.
     """
+    if not yt_dlp:
+        logger.warning("yt-dlp not available for live stream token refresh.")
+        return custom_data
+
+    ydl_opts = {
+        'quiet': True,
+        'no_warnings': True,
+        'extractor_args': {'youtube': {'player_client': ['android', 'ios', 'web']}},
+        'format': 'best[vcodec!=none][acodec!=none]/301/300/94/93/best'
+    }
+
     updated = False
     for category, items in custom_data.items():
         for item in items:
             yt_url = item.get("yt_source")
             if yt_url:
                 name = item.get("name", "Channel")
-                logger.info("Auto-refreshing live HLS token for '%s' via yt-dlp...", name)
+                logger.info("Auto-refreshing live MUXED video+audio HLS token for '%s' via yt-dlp...", name)
                 try:
-                    cmd = ["python", "-m", "yt_dlp", "-g", "--no-warnings", "--socket-timeout", "10", yt_url]
-                    p = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
-                    if p.returncode == 0 and p.stdout.strip():
-                        new_hls = p.stdout.strip().splitlines()[-1]
-                        if new_hls.startswith("http"):
+                    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                        info = ydl.extract_info(yt_url, download=False)
+                        new_hls = info.get("url")
+                        if new_hls and new_hls.startswith("http"):
                             item["url"] = new_hls
                             updated = True
-                            logger.info("Successfully refreshed live HLS token for '%s'", name)
-                    else:
-                        logger.warning("Could not refresh token for '%s': %s", name, p.stderr.strip()[:100])
+                            logger.info("Successfully refreshed MUXED video+audio for '%s' (%s)", name, info.get("resolution"))
                 except Exception as e:
-                    logger.warning("yt-dlp refresh error for '%s': %s", name, e)
+                    logger.warning("yt-dlp refresh notice for '%s': %s", name, e)
 
     if updated:
         try:
@@ -402,7 +385,6 @@ SOURCES_CONFIG = [
 
 
 def create_session() -> requests.Session:
-    """Create a resilient requests session with fast retry handling."""
     session = requests.Session()
     retries = Retry(
         total=2,
@@ -423,7 +405,6 @@ def create_session() -> requests.Session:
 
 
 def load_custom_channels() -> Dict[str, List[dict]]:
-    """Load custom channels from custom_channels.json if present."""
     if not os.path.exists(CUSTOM_CHANNELS_FILE):
         return {}
     try:
@@ -437,7 +418,6 @@ def load_custom_channels() -> Dict[str, List[dict]]:
 
 
 def format_custom_channel(item: dict, default_group: str) -> Optional[str]:
-    """Format a custom channel dictionary into M3U8 string entry."""
     url = item.get("url", "").strip()
     if not url or not url.startswith("http") or "example.com" in url or "localhost" in url:
         return None
@@ -474,10 +454,6 @@ def format_custom_channel(item: dict, default_group: str) -> Optional[str]:
 
 
 def fetch_upstream_content(session: requests.Session, source: dict) -> Tuple[Optional[str], str]:
-    """
-    Fetch M3U playlist from primary URL or fallback URLs.
-    Returns (content, used_url).
-    """
     urls_to_try = [source["url"]] + source.get("fallback_urls", [])
     
     for url in urls_to_try:
@@ -498,12 +474,6 @@ def fetch_upstream_content(session: requests.Session, source: dict) -> Tuple[Opt
 
 
 def process_channel_block(block_lines: List[str], categorize: bool, default_group: str) -> Tuple[str, str, str]:
-    """
-    Process a single channel block:
-    - Extracts channel name
-    - Classifies category if categorize=True and updates group-title
-    - Returns (category, channel_name, formatted_block_string)
-    """
     extinf_line = block_lines[0]
     
     name_match = re.search(r',([^,]+)$', extinf_line)
@@ -533,10 +503,6 @@ def standardize_playlist(
     source_id: str,
     categorize: bool = False
 ) -> Tuple[str, int, Dict[str, int], List[Tuple[str, str, str, str]]]:
-    """
-    Standardize, categorize, deduplicate, and sort M3U8 content.
-    Returns (standardized_m3u8_string, total_channel_count, category_breakdown, channel_items_list)
-    """
     header = f'#EXTM3U url-tvg="{epg_url}" x-tvg-url="{epg_url}"'
     raw_channel_items = []
     category_counts = {}
@@ -580,11 +546,9 @@ def standardize_playlist(
     else:
         channel_items.sort(key=lambda x: (x[0].lower(), x[1].lower()))
 
-    # Count categories
     for cat, _, _, _ in channel_items:
         category_counts[cat] = category_counts.get(cat, 0) + 1
 
-    # Assemble complete playlist
     output_lines = [header, ""]
     for _, _, block_str, _ in channel_items:
         output_lines.append(block_str)
@@ -594,7 +558,6 @@ def standardize_playlist(
 
 
 def generate_all():
-    """Main execution function to process all playlists and generate master outputs."""
     os.makedirs(PLAYLISTS_DIR, exist_ok=True)
     session = create_session()
     custom_channels = load_custom_channels()
