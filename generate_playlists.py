@@ -2,15 +2,15 @@
 """
 FAST M3U Playlist and EPG Generator (All-Region Edition)
 =========================================================
-Automates fetching, standardizing, and generating global FAST
+Automates fetching, standardizing, categorizing, and generating global FAST
 (Free Ad-supported Streaming TV) and IPTV playlists with auto-injected EPG:
-- Roku All Regions
-- Pluto TV All Regions
-- Samsung TV Plus All Regions
-- Plex TV All Regions
-- Tubi TV All Regions
-- MJH Global All Channels
-- MJH World Channels
+- Roku TV (All Regions)
+- Pluto TV (All Regions)
+- Samsung TV Plus (All Regions - Categorized & Sorted)
+- Plex TV (All Regions)
+- Tubi TV (All Regions)
+- Global FAST Channels (MJH)
+- World Channels (MJH)
 - DStv South Africa / Africa (with custom channels support)
 - Master All-Region Combined Playlist
 """
@@ -38,16 +38,141 @@ logger = logging.getLogger("FASTGenerator")
 PLAYLISTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "playlists")
 CUSTOM_CHANNELS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "custom_channels.json")
 
+# Category Definitions & Regex Patterns
+CATEGORY_RULES = [
+    ("News & Weather", [
+        r'\bnews\b', r'\bweather\b', r'\bbloomberg\b', r'\bcnn\b', r'\bnbc news\b', r'\bcbs news\b',
+        r'\babc news\b', r'\beuronews\b', r'\breuters\b', r'\bjournal\b', r'\bnoticias\b', r'\bnachrichten\b',
+        r'\bpress\b', r'\bheadline\b', r'\btoday\b', r'\bactualit', r'\btg\b', r'\binform\b', r'\bal jazeera\b',
+        r'\bfinance\b', r'\bmarket\b', r'\bmeteorolog\b', r'\bmeteo\b', r'\baccuweather\b', r'\blive now\b'
+    ]),
+    ("Sports & Racing", [
+        r'\bsport\b', r'\bsports\b', r'\bespn\b', r'\bracing\b', r'\bmoto\b', r'\bf1\b', r'\bnfl\b', r'\bnba\b',
+        r'\bmlb\b', r'\bnhl\b', r'\bpga\b', r'\bgolf\b', r'\btennis\b', r'\bfight\b', r'\bmma\b', r'\bboxing\b',
+        r'\bwrestling\b', r'\bimpact\b', r'\bstadium\b', r'\bred bull\b', r'\bsoccer\b', r'\bfootball\b',
+        r'\bfifa\b', r'\buefa\b', r'\blucha\b', r'\bfis\b', r'\bsurf\b', r'\bskate\b', r'\bextreme\b',
+        r'\bworld poker\b', r'\bpoker\b', r'\bbilliard\b', r'\bdarts\b', r'\boutdoor\b', r'\bhunt\b', r'\bfish\b',
+        r'\bcricket\b', r'\brugby\b', r'\btennis channel\b', r'\bworld of freesports\b', r'\bhard knocks\b'
+    ]),
+    ("Movies & Cinema", [
+        r'\bmovie\b', r'\bmovies\b', r'\bfilm\b', r'\bfilms\b', r'\bcinema\b', r'\bcine\b', r'\bpelicula\b',
+        r'\bhallmark\b', r'\bmoviesphere\b', r'\bparamount\b', r'\bsony\b', r'\bhorror\b', r'\bthriller\b',
+        r'\bwesterns?\b', r'\baction movie\b', r'\bclassic movie\b', r'\bhollywood\b', r'\bblockbuster\b',
+        r'\bfilmtastic\b', r'\bshudder\b', r'\bfilmrise\b', r'\bmovieland\b', r'\bcinemax\b'
+    ]),
+    ("Animation & Anime", [
+        r'\banime\b', r'\banimation\b', r'\bcartoon\b', r'\bretrocrush\b', r'\byu-gi-oh\b', r'\bbeyblade\b',
+        r'\btoon\b', r'\bmanga\b', r'\banimedia\b', r'\btoku\b', r'\banime all day\b'
+    ]),
+    ("Kids & Family", [
+        r'\bkids\b', r'\bkid\b', r'\bchildren\b', r'\bnick\b', r'\bnickelodeon\b', r'\bjr\b', r'\blego\b',
+        r'\bpok[eé]mon\b', r'\bbaby\b', r'\bteletubbies\b', r'\bbarney\b', r'\bducktv\b', r'\bdisney\b',
+        r'\bfamily\b', r'\bjunior\b', r'\benfant\b', r'\bkind\b', r'\bniñ\b', r'\bcaillou\b', r'\bcare bears\b',
+        r'\byo gabba\b', r'\btransformers\b', r'\bpower rangers\b', r'\bkartoon\b', r'\btoontastic\b'
+    ]),
+    ("Comedy & Stand-up", [
+        r'\bcomedy\b', r'\bcomedies\b', r'\blaugh\b', r'\bstand-?up\b', r'\bfailarmy\b', r'\bwipeout\b',
+        r'\bjust for laughs\b', r'\bfunny\b', r'\bhumor\b', r'\bcomedia\b', r'\bhumour\b', r'\bpranks?\b',
+        r'\banger management\b', r'\bthe pet collective\b', r'\bchuckle\b'
+    ]),
+    ("Crime & Mystery", [
+        r'\bcrime\b', r'\bmystery\b', r'\bdetective\b', r'\bforensic\b', r'\bcourt\b', r'\bjudge\b',
+        r'\blaw & order\b', r'\bcsi\b', r'\bunsolved\b', r'\bcops\b', r'\bpolice\b', r'\binvestigat\b',
+        r'\btrue crime\b', r'\bhomicide\b', r'\bmurder\b', r'\bfbi\b', r'\bswat\b', r'\b48 hours\b'
+    ]),
+    ("Documentary & Nature", [
+        r'\bdoc\b', r'\bdocumentar\b', r'\bnat geo\b', r'\bdiscovery\b', r'\bhistory\b', r'\bscience\b',
+        r'\bnature\b', r'\bwild\b', r'\bwildlife\b', r'\bplanet\b', r'\banimal\b', r'\bspace\b',
+        r'\bgeo\b', r'\bterranova\b', r'\bvoyage\b', r'\bplan[eè]te\b', r'\bcuriosity\b', r'\bhistory time\b'
+    ]),
+    ("Lifestyle, Food & Travel", [
+        r'\bfood\b', r'\bcooking\b', r'\bcook\b', r'\bkitchen\b', r'\bchef\b', r'\btastemade\b',
+        r'\bbon app[eé]tit\b', r'\bhgtv\b', r'\bhome\b', r'\bhouse\b', r'\bgarden\b', r'\bdesign\b',
+        r'\bfashion\b', r'\btravel\b', r'\bluxury\b', r'\bvoyage\b', r'\bauto\b', r'\bmotor\b', r'\bgarage\b',
+        r'\bcraft\b', r'\bdiy\b', r'\bhealth\b', r'\bfitness\b', r'\byoga\b', r'\bgordon ramsay\b',
+        r'\bjames may\b', r'\btop gear\b', r'\bchasse\b', r'\bpêche\b', r'\brestaurant\b'
+    ]),
+    ("Music & Audio", [
+        r'\bmusic\b', r'\bmusica\b', r'\bmusik\b', r'\bmtv\b', r'\bvevo\b', r'\bstingray\b', r'\bqello\b',
+        r'\bconcert\b', r'\bhit\b', r'\bhits\b', r'\bpop\b', r'\brock\b', r'\bhip hop\b', r'\bjazz\b',
+        r'\bclassic[ao]\b', r'\bdance\b', r'\bradio\b', r'\bk-?pop\b', r'\br&b\b', r'\bcountry music\b'
+    ]),
+    ("Reality & Game Shows", [
+        r'\breality\b', r'\bgame show\b', r'\bprice is right\b', r'\bdeal or no deal\b', r'\bfear factor\b',
+        r'\bsurvivor\b', r'\bpawn stars\b', r'\bstorage wars\b', r'\bantiques roadshow\b', r'\bhell\'?s kitchen\b',
+        r'\bmasterchef\b', r'\bbachelor\b', r'\bbig brother\b', r'\btalent\b', r'\bidol\b'
+    ]),
+    ("Classic TV & Sitcoms", [
+        r'\bclassic\b', r'\bsitcom\b', r'\bretro\b', r'\b21 jump street\b', r'\bbaywatch\b', r'\bdegDegrassi\b',
+        r'\bmarried with children\b', r'\b3rd rock\b', r'\bcarol burnett\b', r'\bjohnny carson\b', r'\bhappy days\b'
+    ]),
+    ("Drama & Series", [
+        r'\bdrama\b', r'\bseries\b', r'\bsoap\b', r'\btelenovela\b', r'\btv series\b', r'\bk-drama\b',
+        r'\bdoctor who\b', r'\bmidsomer\b', r'\bheartland\b', r'\bholby\b', r'\bcasualty\b', r'\bcoronation\b'
+    ]),
+    ("Gaming & Tech", [
+        r'\bgaming\b', r'\bgame\b', r'\bign\b', r'\bgamespot\b', r'\besports\b', r'\btwitch\b', r'\btech\b'
+    ]),
+    ("Entertainment", [
+        r'\bshow\b', r'\bentertainment\b', r'\btv\b', r'\bvariety\b', r'\bcelebrity\b', r'\binterviews?\b'
+    ])
+]
+
+# Order for sorting categories in playlist
+CATEGORY_ORDER = [
+    "News & Weather",
+    "Sports & Racing",
+    "Movies & Cinema",
+    "Animation & Anime",
+    "Kids & Family",
+    "Comedy & Stand-up",
+    "Crime & Mystery",
+    "Documentary & Nature",
+    "Lifestyle, Food & Travel",
+    "Music & Audio",
+    "Reality & Game Shows",
+    "Classic TV & Sitcoms",
+    "Drama & Series",
+    "Gaming & Tech",
+    "Entertainment"
+]
+
+CATEGORY_PRIORITY = {cat: i for i, cat in enumerate(CATEGORY_ORDER)}
+
+
+def classify_channel(channel_name: str, existing_group: str = "") -> str:
+    """Determine the channel category based on name and context."""
+    text = f"{channel_name} {existing_group}".lower()
+    for cat_name, patterns in CATEGORY_RULES:
+        for p in patterns:
+            if re.search(p, text):
+                return cat_name
+    return "Entertainment"
+
+
 # All-Region Sources Configuration
 SOURCES_CONFIG = [
     {
+        "id": "samsung_all",
+        "name": "Samsung TV Plus (All Regions - Categorized)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_all.m3u",
+        "fallback_urls": [
+            "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_us.m3u"
+        ],
+        "epg_url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
+        "output_filename": "samsung_all.m3u8",
+        "default_group": "Entertainment",
+        "categorize": True
+    },
+    {
         "id": "roku_all",
-        "name": "Roku TV (All Regions)",
+        "name": "Roku TV (All Regions - Categorized)",
         "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
         "fallback_urls": [],
         "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
         "output_filename": "roku_all.m3u8",
-        "default_group": "Roku TV"
+        "default_group": "Entertainment",
+        "categorize": True
     },
     {
         "id": "plutotv_all",
@@ -56,18 +181,8 @@ SOURCES_CONFIG = [
         "fallback_urls": [],
         "epg_url": "https://i.mjh.nz/PlutoTV/all.xml.gz",
         "output_filename": "plutotv_all.m3u8",
-        "default_group": "Pluto TV"
-    },
-    {
-        "id": "samsung_all",
-        "name": "Samsung TV Plus (All Regions)",
-        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_all.m3u",
-        "fallback_urls": [
-            "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_us.m3u"
-        ],
-        "epg_url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
-        "output_filename": "samsung_all.m3u8",
-        "default_group": "Samsung TV Plus"
+        "default_group": "Pluto TV",
+        "categorize": False
     },
     {
         "id": "plex_all",
@@ -76,7 +191,8 @@ SOURCES_CONFIG = [
         "fallback_urls": [],
         "epg_url": "https://i.mjh.nz/Plex/all.xml.gz",
         "output_filename": "plex_all.m3u8",
-        "default_group": "Plex TV"
+        "default_group": "Plex TV",
+        "categorize": False
     },
     {
         "id": "tubi_all",
@@ -85,7 +201,8 @@ SOURCES_CONFIG = [
         "fallback_urls": [],
         "epg_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml",
         "output_filename": "tubi_all.m3u8",
-        "default_group": "Tubi TV"
+        "default_group": "Tubi TV",
+        "categorize": False
     },
     {
         "id": "mjh_all",
@@ -96,7 +213,8 @@ SOURCES_CONFIG = [
         ],
         "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
         "output_filename": "mjh_all.m3u8",
-        "default_group": "Global FAST"
+        "default_group": "Global FAST",
+        "categorize": False
     },
     {
         "id": "world",
@@ -107,7 +225,8 @@ SOURCES_CONFIG = [
         ],
         "epg_url": "https://i.mjh.nz/world/epg.xml.gz",
         "output_filename": "world.m3u8",
-        "default_group": "World TV"
+        "default_group": "World TV",
+        "categorize": False
     },
     {
         "id": "dstv",
@@ -116,7 +235,8 @@ SOURCES_CONFIG = [
         "fallback_urls": [],
         "epg_url": "https://i.mjh.nz/DStv/za.xml.gz",
         "output_filename": "dstv.m3u8",
-        "default_group": "DStv"
+        "default_group": "DStv",
+        "categorize": False
     }
 ]
 
@@ -214,55 +334,101 @@ def fetch_upstream_content(session: requests.Session, source: dict) -> Tuple[Opt
     return None, ""
 
 
+def process_channel_block(block_lines: List[str], categorize: bool, default_group: str) -> Tuple[str, str, str]:
+    """
+    Process a single channel block:
+    - Extracts channel name
+    - Classifies category if categorize=True and updates group-title
+    - Returns (category, channel_name, formatted_block_string)
+    """
+    extinf_line = block_lines[0]
+    
+    # Extract channel name (everything after the last comma on the EXTINF line)
+    name_match = re.search(r',([^,]+)$', extinf_line)
+    channel_name = name_match.group(1).strip() if name_match else "Channel"
+
+    # Extract existing group-title
+    group_match = re.search(r'group-title="([^"]+)"', extinf_line)
+    orig_group = group_match.group(1) if group_match else default_group
+
+    if categorize:
+        category = classify_channel(channel_name, orig_group)
+        # Replace or add group-title
+        if group_match:
+            new_extinf = extinf_line[:group_match.start(1)] + category + extinf_line[group_match.end(1):]
+        else:
+            new_extinf = extinf_line.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{category}"')
+        block_lines[0] = new_extinf
+    else:
+        category = orig_group
+
+    return category, channel_name, "\n".join(block_lines)
+
+
 def standardize_playlist(
     raw_content: Optional[str],
     epg_url: str,
     custom_entries: List[dict],
-    default_group: str
-) -> Tuple[str, int]:
+    default_group: str,
+    categorize: bool = False
+) -> Tuple[str, int, Dict[str, int]]:
     """
-    Standardize the M3U8 content:
+    Standardize, categorize, and sort M3U8 content:
     - Auto-injects `#EXTM3U url-tvg="<epg_url>" x-tvg-url="<epg_url>"` header
-    - Parses and cleans up stream entries
-    - Appends any custom/fallback channel entries
-    - Returns (standardized_m3u8_string, total_channel_count)
+    - Sorts channels by Category (in priority order), then alphabetically by Name
+    - Appends any custom channel entries
+    - Returns (standardized_m3u8_string, total_channel_count, category_breakdown)
     """
     header = f'#EXTM3U url-tvg="{epg_url}" x-tvg-url="{epg_url}"'
-    parsed_channels = []
-    
+    channel_items = []  # List of tuples: (category, channel_name, block_str)
+    category_counts = {}
+
     if raw_content:
         lines = [line.strip() for line in raw_content.splitlines() if line.strip()]
         
         current_entry_lines = []
         for line in lines:
             if line.startswith("#EXTM3U"):
-                continue  # Skip raw header; standardized header injected
+                continue
             
             if line.startswith("#EXTINF"):
                 if current_entry_lines:
                     if any(not l.startswith("#") for l in current_entry_lines):
-                        parsed_channels.append("\n".join(current_entry_lines))
+                        cat, name, formatted = process_channel_block(current_entry_lines, categorize, default_group)
+                        channel_items.append((cat, name, formatted))
+                        category_counts[cat] = category_counts.get(cat, 0) + 1
                     current_entry_lines = []
                 current_entry_lines.append(line)
             elif current_entry_lines:
                 current_entry_lines.append(line)
         
         if current_entry_lines and any(not l.startswith("#") for l in current_entry_lines):
-            parsed_channels.append("\n".join(current_entry_lines))
+            cat, name, formatted = process_channel_block(current_entry_lines, categorize, default_group)
+            channel_items.append((cat, name, formatted))
+            category_counts[cat] = category_counts.get(cat, 0) + 1
 
     # Append custom channels
     for custom_item in custom_entries:
         custom_block = format_custom_channel(custom_item, default_group)
         if custom_block.strip():
-            parsed_channels.append(custom_block)
+            lines = custom_block.splitlines()
+            cat, name, formatted = process_channel_block(lines, categorize, default_group)
+            channel_items.append((cat, name, formatted))
+            category_counts[cat] = category_counts.get(cat, 0) + 1
+
+    # Sort channels by Category Priority, then by Channel Name
+    if categorize:
+        channel_items.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
+    else:
+        channel_items.sort(key=lambda x: (x[0].lower(), x[1].lower()))
 
     # Assemble complete playlist
     output_lines = [header, ""]
-    for ch in parsed_channels:
-        output_lines.append(ch)
+    for _, _, block_str in channel_items:
+        output_lines.append(block_str)
         output_lines.append("")
         
-    return "\n".join(output_lines).strip() + "\n", len(parsed_channels)
+    return "\n".join(output_lines).strip() + "\n", len(channel_items), category_counts
 
 
 def generate_all():
@@ -273,7 +439,7 @@ def generate_all():
     
     manifest = {
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%SZ", time.gmtime()),
-        "edition": "All-Region Global FAST",
+        "edition": "All-Region Global FAST (Categorized Edition)",
         "playlists": []
     }
     
@@ -291,6 +457,7 @@ def generate_all():
         output_filename = source["output_filename"]
         output_path = os.path.join(PLAYLISTS_DIR, output_filename)
         default_group = source.get("default_group", source_name)
+        categorize = source.get("categorize", False)
         source_customs = custom_channels.get(source_id, [])
 
         if epg_url not in all_epg_urls:
@@ -300,11 +467,12 @@ def generate_all():
         
         raw_content, used_url = fetch_upstream_content(session, source)
         
-        final_content, channel_count = standardize_playlist(
+        final_content, channel_count, cat_counts = standardize_playlist(
             raw_content=raw_content,
             epg_url=epg_url,
             custom_entries=source_customs,
-            default_group=default_group
+            default_group=default_group,
+            categorize=categorize
         )
         
         # Write individual playlist files (.m3u8 and .m3u)
@@ -328,6 +496,7 @@ def generate_all():
             "file": output_filename,
             "file_m3u": os.path.splitext(output_filename)[0] + ".m3u",
             "channels_count": channel_count,
+            "categories": cat_counts if categorize else {},
             "epg_url": epg_url,
             "upstream_url": used_url if used_url else source["url"],
             "status": "active" if channel_count > 0 else "empty"
@@ -375,13 +544,25 @@ def generate_all():
     print("\n" + "=" * 75)
     print("  ALL-REGION GENERATION SUMMARY")
     print("=" * 75)
-    print(f"  {'Network / Playlist Name':<34} | {'Filename':<20} | {'Channels':<8}")
+    print(f"  {'Network / Playlist Name':<38} | {'Filename':<18} | {'Channels':<8}")
     print("  " + "-" * 71)
     for p in manifest["playlists"]:
-        print(f"  {p['name']:<34} | {p['file_m3u']:<20} | {p['channels_count']:<8}")
+        print(f"  {p['name']:<38} | {p['file_m3u']:<18} | {p['channels_count']:<8}")
     print("  " + "-" * 71)
-    print(f"  {'* MASTER COMBINED (ALL REGIONS) *':<34} | {'all_combined.m3u':<20} | {len(all_combined_channels):<8}")
+    print(f"  {'* MASTER COMBINED (ALL REGIONS) *':<38} | {'all_combined.m3u':<18} | {len(all_combined_channels):<8}")
     print("=" * 75)
+
+    # Print Samsung TV Plus category breakdown
+    samsung_meta = next((p for p in manifest["playlists"] if p["id"] == "samsung_all"), None)
+    if samsung_meta and samsung_meta.get("categories"):
+        print("\n  [+] Samsung TV Plus Category Breakdown:")
+        print("  " + "-" * 45)
+        for cat in CATEGORY_ORDER:
+            cnt = samsung_meta["categories"].get(cat, 0)
+            if cnt > 0:
+                print(f"   * {cat:<28}: {cnt:>4} channels")
+        print("=" * 75)
+
     print(f"Playlists successfully generated in: {PLAYLISTS_DIR}\n")
 
 
