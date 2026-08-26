@@ -1,37 +1,45 @@
 # FAST M3U Playlist & EPG Generator
 
-Automated FAST (Free Ad-supported Streaming TV) and regional IPTV M3U8 playlist generator with standardized EPG (Electronic Program Guide) auto-injection for New Zealand, Australia, Samsung TV Plus NZ, Plex AU, DStv South Africa, and custom sources.
+Automated FAST (Free Ad-supported Streaming TV) and regional IPTV M3U8/M3U playlist generator with standardized EPG (Electronic Program Guide) auto-injection for New Zealand, Australia, Samsung TV Plus NZ, Plex TV AU, DStv South Africa, and custom sources.
 
 ---
 
-## 📺 Generated Playlists & EPG Mappings
+## 📺 Direct Raw Stream URLs (For your IPTV Player)
 
-When hosted on GitHub, you can load raw playlist URLs directly into your IPTV client:
+Once pushed to your GitHub repository (e.g. `https://github.com/gozi-rim/STREAM`), you can copy and paste any of the following direct Raw URLs directly into your IPTV Player (TiviMate, Kodi, Jellyfin, VLC, OTT Navigator, IPTV Smarters, etc.):
 
-| Playlist Name | Generated M3U8 File | Primary EPG XML Source |
-| :--- | :--- | :--- |
-| **Combined Master Playlist** | [`playlists/all_combined.m3u8`](playlists/all_combined.m3u8) | Unified Multi-EPG XML.gz |
-| **NZ / AU Combined** | [`playlists/nzau.m3u8`](playlists/nzau.m3u8) | `https://i.mjh.nz/nzau/epg.xml.gz` |
-| **AU All Channels** | [`playlists/au_all.m3u8`](playlists/au_all.m3u8) | `https://i.mjh.nz/au/all/epg.xml.gz` |
-| **NZ All Channels** | [`playlists/nz_all.m3u8`](playlists/nz_all.m3u8) | `https://i.mjh.nz/nz/epg.xml.gz` |
-| **Samsung TV Plus NZ** | [`playlists/samsung_nz.m3u8`](playlists/samsung_nz.m3u8) | `https://i.mjh.nz/SamsungTVPlus/nz.xml.gz` |
-| **Plex TV AU** | [`playlists/plex_au.m3u8`](playlists/plex_au.m3u8) | `https://i.mjh.nz/Plex/au.xml.gz` |
-| **DStv South Africa** | [`playlists/dstv.m3u8`](playlists/dstv.m3u8) | `https://i.mjh.nz/DStv/za.xml.gz` |
-
-> Every generated `.m3u8` file automatically includes standardized `#EXTM3U url-tvg="..." x-tvg-url="..."` tags, allowing supported players (TiviMate, Kodi, Jellyfin, OTT Navigator, etc.) to automatically link the EPG without manual setup.
+### 🌟 Master Combined Playlist (All Regions & Channels)
+- **M3U**: `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/all_combined.m3u`
+- **M3U8**: `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/all_combined.m3u8`
 
 ---
 
-## 🚀 GitHub Actions Automation
+### 🌐 Regional Playlists
 
-The repository includes an automated workflow [`.github/workflows/update_playlists.yml`](.github/workflows/update_playlists.yml):
-- **Schedule**: Runs automatically every day at `03:00 UTC` (`0 3 * * *`).
-- **Manual Trigger**: Can be run on-demand using GitHub's `workflow_dispatch`.
-- **Auto Commit**: Fetches fresh upstream streams and pushes updated `.m3u8` files with `[skip ci]`.
+| Regional Source | Direct Raw M3U URL | Direct Raw M3U8 URL | Injected EPG Source |
+| :--- | :--- | :--- | :--- |
+| **NZ / AU Combined** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/nzau.m3u` | `.../playlists/nzau.m3u8` | `https://i.mjh.nz/nzau/epg.xml.gz` |
+| **AU All Channels** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/au_all.m3u` | `.../playlists/au_all.m3u8` | `https://i.mjh.nz/au/all/epg.xml.gz` |
+| **NZ All Channels** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/nz_all.m3u` | `.../playlists/nz_all.m3u8` | `https://i.mjh.nz/nz/epg.xml.gz` |
+| **DStv South Africa** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/dstv.m3u` | `.../playlists/dstv.m3u8` | `https://i.mjh.nz/DStv/za.xml.gz` |
+| **Samsung TV Plus NZ** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/samsung_nz.m3u` | `.../playlists/samsung_nz.m3u8` | `https://i.mjh.nz/SamsungTVPlus/nz.xml.gz` |
+| **Plex TV AU** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/plex_au.m3u` | `.../playlists/plex_au.m3u8` | `https://i.mjh.nz/Plex/au.xml.gz` |
+
+> 💡 **Auto EPG Injection**: Every playlist has `#EXTM3U url-tvg="..." x-tvg-url="..."` headers automatically injected. You do **not** need to manually copy or type separate EPG URLs in your IPTV client—it loads guide data automatically!
 
 ---
 
-## 🛠️ Adding Custom Streams
+## ⚡ Automated Updates (GitHub Actions)
+
+The repository runs [`.github/workflows/update_playlists.yml`](.github/workflows/update_playlists.yml) on a scheduled cron:
+- **Frequency**: Runs automatically **every 4 hours** (`0 */4 * * *`).
+- **Trigger**: Also supports manual run on-demand via the **Actions** tab in GitHub.
+- **Auto-Sync**: Checks upstream providers, regenerates `.m3u` and `.m3u8` playlists, and auto-commits any updates with `[skip ci]`.
+- Your IPTV player simply fetches your GitHub raw URL and always stays up to date!
+
+---
+
+## 🛠️ Adding Custom Streams & Channels
 
 You can add custom channels or fallback streams directly in [`custom_channels.json`](custom_channels.json):
 
@@ -61,26 +69,12 @@ You can add custom channels or fallback streams directly in [`custom_channels.js
 
 ---
 
-## 💻 Local Usage
+## 💻 Local Commands
 
-### Prerequisites
-- Python 3.10+
-
-### Installation & Run
 ```bash
-# 1. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 2. Run generator
+# Run generator locally
 python generate_playlists.py
 ```
-Generated `.m3u8` playlists and `index.json` metadata will be saved in the `playlists/` directory.
-
----
-
-## 📱 IPTV Player Compatibility
-- **TiviMate** (Android TV / FireStick)
-- **Kodi** (IPTV Simple Client)
-- **Jellyfin / Emby / Plex** (Live TV & DVR)
-- **OTT Navigator / IPTV Smarters**
-- **VLC Media Player / IINA**
