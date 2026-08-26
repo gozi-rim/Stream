@@ -6247,6 +6247,11 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-626c1753ffda
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-626c1753ffda6789d20a452e" tvg-id="6430aa45fc3be5947780904e-626c1753ffda6789d20a452e" tvg-chno="" tvg-name="COPS" tvg-logo="https://provider-static.plex.tv/epg/cms/production/41babb58-eb00-4a0d-8a5f-094950a5d8f2/James_Roebuck_-_COPDS-PLEX_CH_LOGO_07.png" group-title="Crime & Mystery",COPS
 https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-626c1753ffda6789d20a452e/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn
 
+#EXTINF:-1 channel-id="mjh-10-cops" tvg-id="mjh-10-cops" tvg-logo="https://10.com.au/ip/s3/2025/03/30/6fadf0873ac36ecacdc63ed8bba4cf3d-1371071.png?image-profile=logo" group-title="Crime & Mystery" , COPS
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-cops.m3u8
+
 #EXTINF:-1 channel-id="GB3700008XB-gb" tvg-id="GB3700008XB" tvg-chno="4311" tvg-name="Cops & Docs" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB3700008XB_20260804T051817SQUARE.png" group-title="Crime & Mystery",Cops & Docs
 https://jmp2.uk/stvp-GB3700008XB
 
@@ -6348,6 +6353,11 @@ https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-68c98e746058
 
 #EXTINF:-1 tvg-id="400000095" tvg-logo="https://canvas-lb.tubitv.com/opts/BdCf_2WU9Nzvbw==/12e83781-4ab1-491a-826e-8b968c78ec32/CHgQeDoFMS4xLjlAAQ==" group-title="Crime & Mystery",Crime Cults Killers
 https://live-manifest.production-public.tubi.io/live/95965f3d-67fb-47de-90ae-cb8851479963/playlist.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-crime-hunters" tvg-id="mjh-10-crime-hunters" tvg-logo="https://10.com.au/ip/s3/2024/03/06/cb69de15e7b8989a218ad25b7f6547ef-1301820.png?image-profile=logo" group-title="Crime & Mystery" , Crime Hunters
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-crime-hunters.m3u8
 
 #EXTINF:-1 channel-id="GBBD4100010H1-gb" tvg-id="GBBD4100010H1" tvg-chno="4291" tvg-name="Crime Network" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD4100010H1_20260804T051827SQUARE.png" group-title="Crime & Mystery",Crime Network
 https://jmp2.uk/stvp-GBBD4100010H1
@@ -23437,6 +23447,11 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922366b50fe
 
 #EXTINF:-1 channel-id="FR4000002JN-fr" tvg-id="FR4000002JN" tvg-chno="4993" tvg-name="Shark TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR4000002JN_20260721T035919SQUARE.png" group-title="Entertainment",Shark TV
 https://jmp2.uk/stvp-FR4000002JN
+
+#EXTINF:-1 channel-id="mjh-10-documentaryshell" tvg-id="mjh-10-documentaryshell" tvg-logo="https://10.com.au/ip/s3/2025/04/27/ef0a0364c8a70872e6d5f7a4cf5d2585-1376360.png?image-profile=logo" group-title="Entertainment" , Sharks & Other Predators
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-documentaryshell.m3u8
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-62d1a58e520656fda09e609d" tvg-id="6a1610bebdf296985fd95603-62d1a58e520656fda09e609d" tvg-chno="" tvg-name="Shemaroo Bollywood" tvg-logo="https://provider-static.plex.tv/epg/cms/production/aca5fb4a-3f31-4527-82d4-80b718821f1f/ShemarooBollywood_logo_dark_-_Shemaroo_USArdx.png" group-title="Entertainment",Shemaroo Bollywood
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-62d1a58e520656fda09e609d/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn

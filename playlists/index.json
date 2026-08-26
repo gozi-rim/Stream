@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 08:11:55Z",
+  "generated_at": "2026-08-26 08:52:22Z",
   "edition": "All-Region Global FAST (Categorized Edition)",
   "playlists": [
     {
@@ -142,13 +142,13 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 282,
+      "channels_count": 285,
       "categories": {
         "Lifestyle, Food & Travel": 11,
         "News & Weather": 13,
         "Movies & Cinema": 5,
-        "Entertainment": 201,
-        "Crime & Mystery": 8,
+        "Entertainment": 202,
+        "Crime & Mystery": 10,
         "Drama & Series": 7,
         "Comedy & Stand-up": 6,
         "Kids & Family": 8,
@@ -213,7 +213,7 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_channels": 9056,
+    "total_channels": 9059,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
