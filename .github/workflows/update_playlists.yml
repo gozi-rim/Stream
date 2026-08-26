@@ -2,8 +2,8 @@ name: Update FAST Playlists and EPG
 
 on:
   schedule:
-    # Runs every 4 hours to keep playlists updated in sync with upstream
-    - cron: '0 */4 * * *'
+    # Runs every 2 hours to keep live HLS stream tokens fresh well before expiration
+    - cron: '0 */2 * * *'
   workflow_dispatch:
   push:
     branches:
@@ -48,10 +48,10 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add playlists/
+          git add playlists/ custom_channels.json
           if git diff --staged --quiet; then
-            echo "No changes in playlists detected. Nothing to commit."
+            echo "No changes detected. Nothing to commit."
           else
-            git commit -m "Auto-update FAST playlists and EPG headers [skip ci]"
+            git commit -m "Auto-refresh live streams, FAST playlists, and EPG headers [skip ci]"
             git push
           fi
