@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-26 13:04:42Z",
+=======
+  "generated_at": "2026-08-26 13:09:33Z",
+>>>>>>> 99c8c48 (Remove dead placeholder channels and ensure only verified playable streams are included)
   "edition": "All-Region Global FAST (Categorized Edition)",
   "playlists": [
     {
@@ -181,22 +185,18 @@
       "name": "DStv South Africa / Africa",
       "file": "dstv.m3u8",
       "file_m3u": "dstv.m3u",
-      "channels_count": 6,
-      "categories": {
-        "Sports & Racing": 2,
-        "Nollywood & African TV": 3,
-        "Entertainment": 1
-      },
+      "channels_count": 0,
+      "categories": {},
       "epg_url": "https://i.mjh.nz/DStv/za.xml.gz",
       "upstream_url": "https://i.mjh.nz/DStv/raw-tv.m3u8",
-      "status": "active"
+      "status": "empty"
     },
     {
       "id": "nollywood",
       "name": "Nollywood & African TV",
       "file": "nollywood.m3u8",
       "file_m3u": "nollywood.m3u",
-      "channels_count": 13,
+      "channels_count": 1,
       "epg_url": "https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz",
       "status": "active"
     },
@@ -205,7 +205,7 @@
       "name": "Popular Favorites (Curated Best)",
       "file": "popular_favorites.m3u8",
       "file_m3u": "popular_favorites.m3u",
-      "channels_count": 277,
+      "channels_count": 265,
       "epg_url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz",
       "status": "active"
     }
@@ -213,7 +213,11 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
+<<<<<<< HEAD
     "total_channels": 9059,
+=======
+    "total_channels": 9043,
+>>>>>>> 99c8c48 (Remove dead placeholder channels and ensure only verified playable streams are included)
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",

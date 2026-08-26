@@ -1,29 +1,5 @@
 #EXTM3U url-tvg="https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz" x-tvg-url="https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz"
 
-#EXTINF:-1 tvg-id="africa-magic-epic" tvg-name="Africa Magic Epic" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicEpic.png" group-title="Nollywood & African TV",Africa Magic Epic
-https://example.com/streams/dstv/africamagic_epic.m3u8
-
-#EXTINF:-1 tvg-id="africa-magic-showcase" tvg-name="Africa Magic Showcase" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicShowcase.png" group-title="Nollywood & African TV",Africa Magic Showcase
-https://example.com/streams/dstv/africamagic_showcase.m3u8
-
-#EXTINF:-1 tvg-id="africa-magic-urban" tvg-name="Africa Magic Urban" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicUrban.png" group-title="Nollywood & African TV",Africa Magic Urban
-https://example.com/streams/dstv/africamagic_urban.m3u8
-
-#EXTINF:-1 tvg-id="AIT.ng" tvg-name="AIT" tvg-logo="https://i.imgur.com/YwN9qR5.png" group-title="Nollywood & African TV",AIT (Africa Independent Television)
-https://live.ait.live/hls/live.m3u8
-
-#EXTINF:-1 tvg-id="AMusicChannel.ng" tvg-name="AMusic Channel" tvg-logo="https://i.imgur.com/2s4Jb7z.png" group-title="Nollywood & African TV",AMusic Channel Nigeria
-https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_021/Stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Arewa24.ng" tvg-name="Arewa 24" tvg-logo="https://i.imgur.com/K9p5N8g.png" group-title="Nollywood & African TV",Arewa 24
-https://arewa24.ercdn.net/arewa24/arewa24.m3u8
-
-#EXTINF:-1 tvg-id="Channels24.ng@SD" tvg-name="Channels 24" tvg-logo="https://i.imgur.com/3pPj5Qf.png" group-title="Nollywood & African TV",Channels 24 Africa
-https://live20.bozztv.com/dvrfl06/astv/astv-channel24africa/index.m3u8
-
-#EXTINF:-1 tvg-id="ChannelsTV.ng@SD" tvg-name="Channels TV" tvg-logo="https://i.imgur.com/3pPj5Qf.png" group-title="Nollywood & African TV",Channels TV
-https://cs2.push2stream.com/CHANNELSTV-DVR/playlist.m3u8
-
 #EXTINF:-1 channel-id="GB5300001G9-gb" tvg-id="GB5300001G9" tvg-chno="4208" tvg-name="Nolly Africa HD" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB5300001G9_20260224T025324SQUARE.png" group-title="Nollywood & African TV",Nolly Africa HD
 https://jmp2.uk/stvp-GB5300001G9
 
@@ -44,21 +20,6 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-64b1e1217d40
 
 #EXTINF:-1 channel-id="6430aa45fc3be5947780904e-64b1e1217d4037206787f384" tvg-id="6430aa45fc3be5947780904e-64b1e1217d4037206787f384" tvg-chno="" tvg-name="Nolly Africa HD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/a50425a8-5b58-47b5-96c9-43c842f77806/1500X1000_PNG_w__transparent_background__Logo_suitable_for_light_backgrounds__-_Herliane_Pedro.png" group-title="Nollywood & African TV",Nolly Africa HD
 https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-64b1e1217d4037206787f384/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn
-
-#EXTINF:-1 tvg-id="NollyAfrica.ng" tvg-name="Nolly Africa HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB3000008F6_20260421T133748SQUARE.png" group-title="Nollywood & African TV",Nolly Africa HD
-https://jmp2.uk/stvp-USBB3000008F6
-
-#EXTINF:-1 tvg-id="NTANews24.ng" tvg-name="NTA News 24" tvg-logo="https://i.imgur.com/J3yJq5q.png" group-title="Nollywood & African TV",NTA News 24
-https://stream.nta.ng/live/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="SilverbirdTV.ng" tvg-name="Silverbird TV" tvg-logo="https://i.imgur.com/7v7wE6O.png" group-title="Nollywood & African TV",Silverbird Television
-https://live.silverbirdtv.com/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="SoundcityTV.ng" tvg-name="Soundcity TV" tvg-logo="https://i.imgur.com/5A5r7qH.png" group-title="Nollywood & African TV",Soundcity TV
-https://live.soundcity.tv/hls/stream.m3u8
-
-#EXTINF:-1 tvg-id="TVCNews.ng" tvg-name="TVC News" tvg-logo="https://i.imgur.com/1GvK0Z4.png" group-title="Nollywood & African TV",TVC News Nigeria
-https://tvcnews.ercdn.net/tvcnews/tvcnews.m3u8
 
 #EXTINF:-1 channel-id="mjh-abc-news" tvg-id="mjh-abc-news" tvg-logo="https://i.mjh.nz/.images/abc-news.png" tvg-chno="24" group-title="News & Weather" , ABC NEWS
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
@@ -2578,12 +2539,6 @@ https://jmp2.uk/rok-11c7c3660c6b6f18a21838fd404a7a1d.m3u8
 
 #EXTINF:-1 channel-id="17059eafd4718bca691ba93aacb3fa8d" tvg-id="17059eafd4718bca691ba93aacb3fa8d" tvg-chno="5306" tvg-name="Stingray Hooked" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/17059eafd4718bca691ba93aacb3fa8d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1775671015363_StingrayHooked_HUDlogo_centered_260x147.png" group-title="Sports & Racing",Stingray Hooked
 https://jmp2.uk/rok-17059eafd4718bca691ba93aacb3fa8d.m3u8
-
-#EXTINF:-1 tvg-id="supersport-grandstand" tvg-name="SuperSport Grandstand" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportGrandstand.png" group-title="Sports & Racing",SuperSport Grandstand
-https://example.com/streams/dstv/ss_grandstand.m3u8
-
-#EXTINF:-1 tvg-id="supersport-premier-league" tvg-name="SuperSport Premier League" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportPremierLeague.png" group-title="Sports & Racing",SuperSport Premier League
-https://example.com/streams/dstv/ss_pl.m3u8
 
 #EXTINF:-1 channel-id="ES3400002PY-es" tvg-id="ES3400002PY" tvg-chno="4671" tvg-name="Surf Channel" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3400002PY_20250121T012834SQUARE.png" group-title="Sports & Racing",Surf Channel
 https://jmp2.uk/stvp-ES3400002PY
@@ -18708,9 +18663,6 @@ https://jmp2.uk/plu-67f7d328efc5473b6b4ac5f4.m3u8
 
 #EXTINF:-1 channel-id="6964d2179ba4ac18051a18ce-es" tvg-id="6964d2179ba4ac18051a18ce" tvg-chno="48" tvg-name="Léo Mattéï: Brigada de protección" tvg-logo="https://images.pluto.tv/channels/6964d2179ba4ac18051a18ce/colorLogoPNG_1777976845815.png" group-title="Entertainment",Léo Mattéï: Brigada de protección
 https://jmp2.uk/plu-6964d2179ba4ac18051a18ce.m3u8
-
-#EXTINF:-1 tvg-id="m-net" tvg-name="M-Net 101" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/MNet.png" group-title="Entertainment",M-Net 101
-https://example.com/streams/dstv/mnet.m3u8
 
 #EXTINF:-1 channel-id="KRBC3200023BG-kr" tvg-id="KRBC3200023BG" tvg-chno="723" tvg-name="M2" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBC3200023BG_20260422T013652SQUARE.png" group-title="Entertainment",M2
 https://jmp2.uk/stvp-KRBC3200023BG
