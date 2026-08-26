@@ -10560,6 +10560,11 @@ https://jmp2.uk/stvp-USBC1000002NP
 #EXTINF:-1 channel-id="5f8ecfb9db6c180007a6d1b0-fr" tvg-id="5f8ecfb9db6c180007a6d1b0" tvg-chno="1225" tvg-name="WPT" tvg-logo="https://images.pluto.tv/channels/5f8ecfb9db6c180007a6d1b0/colorLogoPNG.png" group-title="Entertainment",WPT
 https://jmp2.uk/plu-5f8ecfb9db6c180007a6d1b0.m3u8
 
+#EXTINF:-1 channel-id="mjh-misc515-fast" tvg-id="mjh-misc515-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc515-fast-35f6c5.png" group-title="Entertainment" , WSL Championship Tour
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc515-fast.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-61f9a6aec68d91e31d4cc86e" tvg-id="6a1610bebdf296985fd95603-61f9a6aec68d91e31d4cc86e" tvg-chno="" tvg-name="WSOC Channel 9" tvg-logo="https://provider-static.plex.tv/epg/cms/production/4bca5094-21a4-4a04-9616-427bcb2f06f7/WSOC_-_Channel_Logo_-_Dark_-_Matthew_Dominguez.png" group-title="Entertainment",WSOC Channel 9
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-61f9a6aec68d91e31d4cc86e/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn
 
@@ -10634,6 +10639,11 @@ https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-63ae3c6c6d11
 
 #EXTINF:-1 channel-id="GB340000289-gb" tvg-id="GB340000289" tvg-chno="4795" tvg-name="YAAAS!" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB340000289_20250107T031304SQUARE.png" group-title="Entertainment",YAAAS!
 https://jmp2.uk/stvp-GB340000289
+
+#EXTINF:-1 channel-id="mjh-10-youtv" tvg-id="mjh-10-youtv" tvg-logo="https://10.com.au/ip/s3/2024/07/10/33f7c16e8ba1628d52844cb45b8eac4f-1326074.png?image-profile=logo" tvg-chno="16" group-title="Entertainment" , YouTV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-youtv.m3u8
 
 #EXTINF:-1 channel-id="KRBD2400001XD-kr" tvg-id="KRBD2400001XD" tvg-chno="501" tvg-name="YTN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBD2400001XD_20260422T013918SQUARE.png" group-title="Entertainment",YTN
 https://jmp2.uk/stvp-KRBD2400001XD
