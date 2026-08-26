@@ -204,8 +204,8 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
     elif any(q in text for q in ["480p", "sd", "360p"]):
         score -= 20
 
-    if source_id == "nollywood_custom":
-        score += 35
+    if source_id in ("nollywood_custom", "global_custom"):
+        score += 50
     elif source_id == "samsung_all":
         score += 20
     elif source_id == "plutotv_all":

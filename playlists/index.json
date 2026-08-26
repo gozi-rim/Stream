@@ -1,59 +1,7 @@
 {
-  "generated_at": "2026-08-26 15:19:19Z",
+  "generated_at": "2026-08-26 16:03:41Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
-    {
-      "id": "freetv_global",
-      "name": "Global Open Live TV (Free-TV Unblocked)",
-      "file": "freetv_global.m3u8",
-      "file_m3u": "freetv_global.m3u",
-      "channels_count": 1936,
-      "categories": {
-        "Nollywood & African TV": 18,
-        "News & Weather": 127,
-        "Sports & Racing": 35,
-        "Movies & Cinema": 54,
-        "Animation & Anime": 4,
-        "Kids & Family": 16,
-        "Comedy & Stand-up": 6,
-        "Crime & Mystery": 6,
-        "Documentary & Nature": 2,
-        "Lifestyle, Food & Travel": 11,
-        "Music & Audio": 79,
-        "Reality & Game Shows": 1,
-        "Classic TV & Sitcoms": 2,
-        "Drama & Series": 8,
-        "Gaming & Tech": 1,
-        "Entertainment": 1566
-      },
-      "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
-      "upstream_url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
-      "status": "active"
-    },
-    {
-      "id": "iptv_org_africa",
-      "name": "Africa & Nollywood (IPTV-Org Verified)",
-      "file": "iptv_org_africa.m3u8",
-      "file_m3u": "iptv_org_africa.m3u",
-      "channels_count": 494,
-      "categories": {
-        "Nollywood & African TV": 36,
-        "News & Weather": 88,
-        "Sports & Racing": 14,
-        "Movies & Cinema": 10,
-        "Animation & Anime": 1,
-        "Kids & Family": 12,
-        "Crime & Mystery": 1,
-        "Documentary & Nature": 7,
-        "Lifestyle, Food & Travel": 4,
-        "Music & Audio": 28,
-        "Drama & Series": 6,
-        "Entertainment": 287
-      },
-      "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
-      "upstream_url": "https://iptv-org.github.io/iptv/regions/afr.m3u",
-      "status": "active"
-    },
     {
       "id": "samsung_all",
       "name": "Samsung TV Plus (All Regions - Categorized)",
@@ -253,23 +201,23 @@
       "name": "Popular Favorites (Curated Best)",
       "file": "popular_favorites.m3u8",
       "file_m3u": "popular_favorites.m3u",
-      "channels_count": 77,
-      "epg_url": "https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz",
+      "channels_count": 248,
+      "epg_url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz",
       "status": "active"
     }
   ],
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 5707,
-    "total_raw_scanned": 7146,
+    "total_unique_channels": 3510,
+    "total_raw_scanned": 4717,
     "epg_urls": [
-      "https://i.mjh.nz/all/epg.xml.gz",
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
       "https://i.mjh.nz/Plex/all.xml.gz",
       "https://i.mjh.nz/Roku/all.xml.gz",
       "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml",
+      "https://i.mjh.nz/all/epg.xml.gz",
       "https://i.mjh.nz/world/epg.xml.gz",
       "https://i.mjh.nz/DStv/za.xml.gz"
     ]
