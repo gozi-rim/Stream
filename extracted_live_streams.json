@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Channels Television",
+    "tvg_id": "ChannelsTV.ng@SD",
+    "tvg_name": "Channels Television",
+    "tvg_logo": "https://i.imgur.com/3pPj5Qf.png",
+    "group": "Nollywood & African TV",
+    "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1787772838/ei/RuuOapHTMvKip-oPv7SE-QY/ip/105.116.11.89/id/d4zDorDl5UE.7/itag/234/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/133/sgoap/gir%3Dyes%3Bitag%3D140/rqh/1/hls_chunk_host/rr1---sn-5pguxaob-copl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/3600/manifest_duration/3600/bui/AR3QkAn3hwT23hczSSk1EVXXn7ZA3ZnLPwZP0wFVySGqRXblrpm8JtUo8tQ7taP3YzuAKiLHtV05igqm/spc/KBGBckUjjKL3rSBF8zDSXRu2JxD-V7TDBO28E004ZWecY1l8nbUa5yVtdg/vprv/1/reg/0/playlist_type/DVR/initcwndbps/273750/met/1787751239,/mh/39/mm/44/mn/sn-5pguxaob-copl/ms/lva/mv/m/mvi/1/pl/16/rms/lva,lva/dover/13/pacing/0/short_key/1/keepalive/yes/fexp/51565115,52135441/mt/1787750459/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRgIhAIwq7OfOMyzeEgM7xjHUghqA1HcT5jfjqY8bXAREApB_AiEAj19delVrP6PcearsZt2JWNN1Ts6-vVrcJw7UG3RPE6c%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAIRN1HvRtT1jC945epUq_vXb7reivBBZNol6jUNQBAEKAiEAvT2GFod390aMeAg_RzlnUFASTr6RUu-tqF-2_CrM1Cc%3D/playlist/index.m3u8"
+  },
+  {
+    "name": "TVC News Nigeria",
+    "tvg_id": "TVCNews.ng",
+    "tvg_name": "TVC News Nigeria",
+    "tvg_logo": "https://i.imgur.com/1GvK0Z4.png",
+    "group": "Nollywood & African TV",
+    "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1787772844/ei/TOuOap-5Jei26dsPmsjzmQg/ip/105.116.11.89/id/uRHgk7-wzKs.1/itag/234/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/133/sgoap/gir%3Dyes%3Bitag%3D140/rqh/1/hls_chunk_host/rr1---sn-5pguxaob-cops.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/3600/manifest_duration/3600/bui/AR3QkAkOLfDiMvVMdGJfN3NP3zJXMIAFJ_u2ReUjc0_z1q4WSMLXBRQHuyhH2EuZcv9UF3wXgK8LfB4a/spc/KBGBcqo6Ca28rwm8_BxU_jSUp3LcCPw4A16oImZQlW2qOYcm6i1p8rLoaw/vprv/1/reg/0/playlist_type/DVR/initcwndbps/270000/met/1787751245,/mh/oz/mm/44/mn/sn-5pguxaob-cops/ms/lva/mv/m/mvi/1/pl/16/rms/lva,lva/dover/13/pacing/0/short_key/1/keepalive/yes/fexp/51565115,52135441/mt/1787750944/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRQIgOZrrx89nLkhj4go79btSqtN2osmxiIJlYwfEA4iPn3kCIQCvz_QbKEd23yY5qvWN23OhMPG8Y8E9R0O-cjyTqbM6Ug%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhAOsBA356j-4WelTSO8uMUvhOVCYKDyk1QhAdqjdFRqy1AiBCpX9Cyt1hVlWyYdesk6PgP_HTRx_56cA8U6Vz1b49NA%3D%3D/playlist/index.m3u8"
+  },
+  {
+    "name": "Arise News",
+    "tvg_id": "AriseNews.ng",
+    "tvg_name": "Arise News",
+    "tvg_logo": "https://i.imgur.com/lZ2y8s2.png",
+    "group": "Nollywood & African TV",
+    "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1787772854/ei/VuuOapv9B47GmLAP08OH4Q8/ip/105.116.11.89/id/Fy_03Aorpq8.37/itag/234/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/133/sgoap/gir%3Dyes%3Bitag%3D140/rqh/1/hls_chunk_host/rr1---sn-5pguxaob-cops.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/900/manifest_duration/900/bui/AR3QkAlwCj8Cfuo0DzLDNtqA161uB7dA91Qwq2U_iWGFaiAiWUKK1fjpMyoRQFr7ehtH385XFAn4uSxE/spc/KBGBciaaJk-kaIxUtV4KlAqyTyUvLfU0gYefyPE6XGNrSCzGbd1FyHsL1Q/vprv/1/reg/0/playlist_type/DVR/hcs/sd/initcwndbps/270000/met/1787751255,/mh/fK/mm/44/mn/sn-5pguxaob-cops/ms/lva/mv/m/mvi/1/pl/16/rmhost/rr2---sn-5pguxaob-cops.googlevideo.com/rms/lva,lva/dover/13/pacing/0/short_key/1/keepalive/yes/fexp/51565116,52135441/mt/1787750944/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRAIgcLPj2fn8xhre5llGafhpreX8qahKU9mK_MvyMYEJuGQCIDGMAxXxsGWz0KpHNFo5R200MScsz8hUJb1PvDsJgfL-/lsparams/hls_chunk_host,hcs,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rmhost,rms/lsig/APaTxxMwRQIhALjB9Zv9pb5oe0MTDMytjL9XNZ7IjVSUE3er77JEw1R0AiAuEHW_7hsI6VcLQtqoaiWLiY7ZH6SdxUmzaUwyJGpNTQ%3D%3D/playlist/index.m3u8"
+  }
+]

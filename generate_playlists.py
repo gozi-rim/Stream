@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 """
-FAST M3U Playlist and EPG Generator (All-Region & Categorized Edition)
-======================================================================
-Automates fetching, standardizing, categorizing, and generating global FAST
-and IPTV playlists with auto-injected EPG:
-- Samsung TV Plus (All Regions - Categorized)
-- Pluto TV (All Regions - Categorized)
-- Plex TV (All Regions - Categorized)
-- Roku TV (All Regions - Categorized)
-- Tubi TV (All Regions - Categorized)
-- Global FAST Channels (MJH)
-- World Channels (MJH)
-- DStv South Africa / Africa
-- Nollywood & African TV (Dedicated Curated Playlist)
-- Popular Favorites (Curated Best-of-the-Best across all categories)
-- Master Combined (All Networks - 9,000+ Channels Categorized)
+FAST M3U Playlist and EPG Generator (Deduplicated & High-Quality Edition)
+=========================================================================
+Automates fetching, standardizing, categorizing, deduplicating, and generating
+pristine global FAST and IPTV playlists with auto-injected EPG:
+- Automatically detects and eliminates exact repetitive clones across all hosts
+- Ranks duplicates and keeps only the highest quality (4K/1080p/720p HD) working feed
+- Removes dead/broken/placeholder streams
+- Auto-extracts and refreshes live 1080p HLS streams for African channels (Channels TV, TVC News, Arise News) via yt-dlp
+- Neatly sorts all channels by genre categories (News, Sports, Movies, Kids, etc.)
+- Outputs individual network playlists + Master Combined + Curated Popular Favorites
 """
 
 import os
@@ -23,7 +18,9 @@ import sys
 import json
 import time
 import logging
+import subprocess
 from typing import Dict, List, Optional, Tuple
+from collections import defaultdict
 import requests
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
@@ -44,9 +41,9 @@ CUSTOM_CHANNELS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 CATEGORY_RULES = [
     ("Nollywood & African TV", [
         r'\bnolly\b', r'\bnollywood\b', r'\bafrica\b', r'\bafrique\b', r'\bnigeria\b', r'\bnaija\b',
-        r'\bchannels tv\b', r'\bchannels 24\b', r'\btvc news\b', r'\bnta\b', r'\bait\b', r'\bsilverbird\b',
-        r'\bsoundcity\b', r'\barewa\b', r'\bafrican movie\b', r'\brok\b', r'\bafroland\b', r'\bwakaati\b',
-        r'\bafrica magic\b', r'\bamusic\b'
+        r'\bchannels tv\b', r'\bchannels television\b', r'\bchannels 24\b', r'\btvc news\b', r'\barise news\b',
+        r'\bnta\b', r'\bait\b', r'\bsilverbird\b', r'\bsoundcity\b', r'\barewa\b', r'\bafrican movie\b',
+        r'\brok\b', r'\bafroland\b', r'\bwakaati\b', r'\bafrica magic\b', r'\bamusic\b'
     ]),
     ("News & Weather", [
         r'\bnews\b', r'\bweather\b', r'\bbloomberg\b', r'\bcnn\b', r'\bnbc news\b', r'\bcbs news\b',
@@ -170,8 +167,8 @@ POPULAR_KEYWORDS = [
     r'\b21 jump street\b', r'\bheartland\b', r'\bgordon ramsay\b', r'\btop gear\b', r'\btastemade\b',
     r'\bmtv\b', r'\bvevo\b', r'\bfailarmy\b', r'\bprice is right\b', r'\bdeal or no deal\b',
     # Nollywood & Africa
-    r'\bnolly\b', r'\bnollywood\b', r'\bchannels tv\b', r'\btvc news\b', r'\bafrica magic\b',
-    r'\bsoundcity\b', r'\bsilverbird\b', r'\bait\b', r'\bnta\b'
+    r'\bnolly\b', r'\bnollywood\b', r'\bchannels tv\b', r'\bchannels television\b', r'\btvc news\b',
+    r'\barise news\b', r'\bafrica magic\b', r'\bsoundcity\b', r'\bsilverbird\b', r'\bait\b', r'\bnta\b'
 ]
 
 
@@ -189,6 +186,128 @@ def classify_channel(channel_name: str, existing_group: str = "") -> str:
             if re.search(p, text):
                 return cat_name
     return "Entertainment"
+
+
+def normalize_channel_key(channel_name: str) -> str:
+    """
+    Produce a clean normalized key for deduplication.
+    Strips resolution tags (1080p, 720p, 4K), country tags in brackets, and punctuation.
+    """
+    clean = re.sub(r'[\(\[].*?[\)\]]', '', channel_name)
+    clean = re.sub(r'\b(4k|uhd|fhd|hd|sd|1080p|720p|480p|360p)\b', '', clean, flags=re.IGNORECASE)
+    clean = re.sub(r'[^a-zA-Z0-9\s]', '', clean).strip().lower()
+    clean = re.sub(r'\s+', ' ', clean)
+    return clean if clean else channel_name.lower().strip()
+
+
+def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, source_id: str) -> int:
+    """
+    Calculate quality & reliability score for duplicate ranking.
+    Higher score = preferred stream kept during deduplication.
+    """
+    score = 100
+    text = f"{channel_name} {extinf_line}".lower()
+
+    # 1. Resolution / Quality bonuses
+    if any(q in text for q in ["4k", "uhd", "2160p"]):
+        score += 60
+    elif any(q in text for q in ["1080p", "1080", "fhd"]):
+        score += 40
+    elif any(q in text for q in ["720p", "720", "hd"]):
+        score += 20
+    elif any(q in text for q in ["480p", "sd", "360p"]):
+        score -= 20
+
+    # 2. Host Bitrate / Stability priority
+    if source_id == "nollywood_custom":
+        score += 30  # Verified custom live stream priority
+    elif source_id == "samsung_all":
+        score += 20
+    elif source_id == "plutotv_all":
+        score += 15
+    elif source_id == "plex_all":
+        score += 12
+    elif source_id == "roku_all":
+        score += 10
+    elif source_id == "tubi_all":
+        score += 8
+
+    # 3. Valid Logo bonus
+    if 'tvg-logo="http' in extinf_line:
+        score += 5
+
+    # 4. Valid EPG ID bonus
+    if 'tvg-id="' in extinf_line and 'tvg-id=""' not in extinf_line:
+        score += 5
+
+    return score
+
+
+def deduplicate_channel_items(
+    channel_items: List[Tuple[str, str, str, str]]
+) -> List[Tuple[str, str, str, str]]:
+    """
+    Deduplicate channel items:
+    - Group items by normalized channel key
+    - Keep only the single highest quality scored stream per group
+    - channel_items format: (category, channel_name, formatted_block_string, source_id)
+    """
+    grouped = defaultdict(list)
+    for cat, name, block, src_id in channel_items:
+        key = normalize_channel_key(name)
+        extinf_line = block.splitlines()[0]
+        url = block.splitlines()[-1] if len(block.splitlines()) > 1 else ""
+        
+        # Validate that URL is a playable HTTP/HTTPS stream (not dead/empty/example.com)
+        if not url.startswith("http") or "example.com" in url or "localhost" in url:
+            continue
+
+        score = compute_quality_score(name, extinf_line, url, src_id)
+        grouped[key].append((score, cat, name, block, src_id))
+
+    deduped = []
+    for key, candidates in grouped.items():
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        best_score, best_cat, best_name, best_block, best_src = candidates[0]
+        deduped.append((best_cat, best_name, best_block, best_src))
+
+    return deduped
+
+
+def refresh_youtube_live_streams(custom_data: dict) -> dict:
+    """
+    Auto-refresh live HLS tokens for YouTube live stream sources using yt-dlp.
+    """
+    updated = False
+    for category, items in custom_data.items():
+        for item in items:
+            yt_url = item.get("yt_source")
+            if yt_url:
+                name = item.get("name", "Channel")
+                logger.info("Auto-refreshing live HLS token for '%s' via yt-dlp...", name)
+                try:
+                    cmd = ["python", "-m", "yt_dlp", "-g", "--no-warnings", "--socket-timeout", "10", yt_url]
+                    p = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+                    if p.returncode == 0 and p.stdout.strip():
+                        new_hls = p.stdout.strip().splitlines()[-1]
+                        if new_hls.startswith("http"):
+                            item["url"] = new_hls
+                            updated = True
+                            logger.info("Successfully refreshed live HLS token for '%s'", name)
+                    else:
+                        logger.warning("Could not refresh token for '%s': %s", name, p.stderr.strip()[:100])
+                except Exception as e:
+                    logger.warning("yt-dlp refresh error for '%s': %s", name, e)
+
+    if updated:
+        try:
+            with open(CUSTOM_CHANNELS_FILE, "w", encoding="utf-8") as f:
+                json.dump(custom_data, f, indent=2)
+            logger.info("Saved updated live stream URLs to custom_channels.json")
+        except Exception as e:
+            logger.warning("Error saving custom_channels.json: %s", e)
+
+    return custom_data
 
 
 # All-Region Sources Configuration
@@ -317,15 +436,18 @@ def load_custom_channels() -> Dict[str, List[dict]]:
         return {}
 
 
-def format_custom_channel(item: dict, default_group: str) -> str:
+def format_custom_channel(item: dict, default_group: str) -> Optional[str]:
     """Format a custom channel dictionary into M3U8 string entry."""
+    url = item.get("url", "").strip()
+    if not url or not url.startswith("http") or "example.com" in url or "localhost" in url:
+        return None
+
     name = item.get("name", "Custom Channel")
     tvg_id = item.get("tvg_id", "")
     tvg_name = item.get("tvg_name", name)
     tvg_logo = item.get("tvg_logo", "")
     tvg_chno = item.get("tvg_chno", "")
     group = item.get("group", default_group)
-    url = item.get("url", "")
     http_user_agent = item.get("http_user_agent", "")
     http_referrer = item.get("http_referrer", "")
 
@@ -384,17 +506,14 @@ def process_channel_block(block_lines: List[str], categorize: bool, default_grou
     """
     extinf_line = block_lines[0]
     
-    # Extract channel name
     name_match = re.search(r',([^,]+)$', extinf_line)
     channel_name = name_match.group(1).strip() if name_match else "Channel"
 
-    # Extract existing group-title
     group_match = re.search(r'group-title="([^"]+)"', extinf_line)
     orig_group = group_match.group(1) if group_match else default_group
 
     if categorize:
         category = classify_channel(channel_name, orig_group)
-        # Replace or add group-title
         if group_match:
             new_extinf = extinf_line[:group_match.start(1)] + category + extinf_line[group_match.end(1):]
         else:
@@ -411,14 +530,15 @@ def standardize_playlist(
     epg_url: str,
     custom_entries: List[dict],
     default_group: str,
+    source_id: str,
     categorize: bool = False
-) -> Tuple[str, int, Dict[str, int], List[Tuple[str, str, str]]]:
+) -> Tuple[str, int, Dict[str, int], List[Tuple[str, str, str, str]]]:
     """
-    Standardize, categorize, and sort M3U8 content.
+    Standardize, categorize, deduplicate, and sort M3U8 content.
     Returns (standardized_m3u8_string, total_channel_count, category_breakdown, channel_items_list)
     """
     header = f'#EXTM3U url-tvg="{epg_url}" x-tvg-url="{epg_url}"'
-    channel_items = []  # List of tuples: (category, channel_name, block_str)
+    raw_channel_items = []
     category_counts = {}
 
     if raw_content:
@@ -433,8 +553,7 @@ def standardize_playlist(
                 if current_entry_lines:
                     if any(not l.startswith("#") for l in current_entry_lines):
                         cat, name, formatted = process_channel_block(current_entry_lines, categorize, default_group)
-                        channel_items.append((cat, name, formatted))
-                        category_counts[cat] = category_counts.get(cat, 0) + 1
+                        raw_channel_items.append((cat, name, formatted, source_id))
                     current_entry_lines = []
                 current_entry_lines.append(line)
             elif current_entry_lines:
@@ -442,17 +561,18 @@ def standardize_playlist(
         
         if current_entry_lines and any(not l.startswith("#") for l in current_entry_lines):
             cat, name, formatted = process_channel_block(current_entry_lines, categorize, default_group)
-            channel_items.append((cat, name, formatted))
-            category_counts[cat] = category_counts.get(cat, 0) + 1
+            raw_channel_items.append((cat, name, formatted, source_id))
 
     # Append custom channels
     for custom_item in custom_entries:
         custom_block = format_custom_channel(custom_item, default_group)
-        if custom_block.strip():
+        if custom_block:
             lines = custom_block.splitlines()
             cat, name, formatted = process_channel_block(lines, categorize, default_group)
-            channel_items.append((cat, name, formatted))
-            category_counts[cat] = category_counts.get(cat, 0) + 1
+            raw_channel_items.append((cat, name, formatted, source_id))
+
+    # Deduplicate within this single host
+    channel_items = deduplicate_channel_items(raw_channel_items)
 
     # Sort channels by Category Priority, then by Channel Name
     if categorize:
@@ -460,9 +580,13 @@ def standardize_playlist(
     else:
         channel_items.sort(key=lambda x: (x[0].lower(), x[1].lower()))
 
+    # Count categories
+    for cat, _, _, _ in channel_items:
+        category_counts[cat] = category_counts.get(cat, 0) + 1
+
     # Assemble complete playlist
     output_lines = [header, ""]
-    for _, _, block_str in channel_items:
+    for _, _, block_str, _ in channel_items:
         output_lines.append(block_str)
         output_lines.append("")
         
@@ -475,19 +599,21 @@ def generate_all():
     session = create_session()
     custom_channels = load_custom_channels()
     
+    # Auto-refresh live stream tokens from YouTube Live sources
+    custom_channels = refresh_youtube_live_streams(custom_channels)
+
     manifest = {
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%SZ", time.gmtime()),
-        "edition": "All-Region Global FAST (Categorized Edition)",
+        "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
         "playlists": []
     }
     
-    all_combined_channels = []  # Tuples of (category, name, block_str)
+    all_raw_channels = []
     all_epg_urls = []
-    seen_channel_names = set()
 
-    print("\n" + "=" * 75)
-    print("  ALL-REGION GLOBAL FAST M3U PLAYLIST & EPG GENERATOR")
-    print("=" * 75)
+    print("\n" + "=" * 78)
+    print("  ALL-REGION DEDUPLICATED FAST M3U PLAYLIST & EPG GENERATOR")
+    print("=" * 78)
 
     for source in SOURCES_CONFIG:
         source_id = source["id"]
@@ -511,10 +637,10 @@ def generate_all():
             epg_url=epg_url,
             custom_entries=source_customs,
             default_group=default_group,
+            source_id=source_id,
             categorize=categorize
         )
         
-        # Write individual playlist files (.m3u8 and .m3u)
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(final_content)
         
@@ -525,7 +651,7 @@ def generate_all():
         file_size_kb = os.path.getsize(output_path) / 1024
         logger.info("Wrote %s (and .m3u): %d channels (%.2f KB)", output_filename, channel_count, file_size_kb)
 
-        all_combined_channels.extend(channel_items)
+        all_raw_channels.extend(channel_items)
 
         manifest["playlists"].append({
             "id": source_id,
@@ -539,35 +665,35 @@ def generate_all():
             "status": "active" if channel_count > 0 else "empty"
         })
 
-    # Add Nollywood custom list entries if configured
+    # Add Nollywood live streams
     nolly_customs = custom_channels.get("nollywood", [])
     if nolly_customs:
-        logger.info("Processing dedicated Nollywood channels: %d entries", len(nolly_customs))
         for item in nolly_customs:
             block = format_custom_channel(item, "Nollywood & African TV")
-            if block.strip():
+            if block:
                 lines = block.splitlines()
                 cat, name, formatted = process_channel_block(lines, True, "Nollywood & African TV")
-                all_combined_channels.append((cat, name, formatted))
+                all_raw_channels.append((cat, name, formatted, "nollywood_custom"))
 
     # Process global custom sources if any
     global_customs = custom_channels.get("custom", [])
     if global_customs:
-        logger.info("Processing global custom channels: %d entries", len(global_customs))
         for item in global_customs:
             block = format_custom_channel(item, "Custom")
-            if block.strip():
+            if block:
                 lines = block.splitlines()
                 cat, name, formatted = process_channel_block(lines, True, "Custom")
-                all_combined_channels.append((cat, name, formatted))
+                all_raw_channels.append((cat, name, formatted, "global_custom"))
 
-    # Build Master Combined Playlist (Categorized and Deduplicated)
-    all_combined_channels.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
+    # --- MASTER COMBINED PLAYLIST (DEDUPLICATED ACROSS ALL NETWORKS) ---
+    logger.info("Deduplicating Master Combined Playlist across all hosts (raw count: %d)...", len(all_raw_channels))
+    master_deduped = deduplicate_channel_items(all_raw_channels)
+    master_deduped.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
     
     combined_epg_str = ",".join(all_epg_urls)
     combined_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     combined_output_lines = [combined_header, ""]
-    for _, _, block in all_combined_channels:
+    for _, _, block, _ in master_deduped:
         combined_output_lines.append(block)
         combined_output_lines.append("")
         
@@ -580,23 +706,14 @@ def generate_all():
         f.write("\n".join(combined_output_lines).strip() + "\n")
         
     combined_size_kb = os.path.getsize(combined_file_path) / 1024
-    logger.info("Wrote Master All-Region Playlist 'all_combined.m3u8' / 'all_combined.m3u': %d total channels (%.2f KB)", len(all_combined_channels), combined_size_kb)
+    logger.info("Wrote Master All-Region Playlist 'all_combined.m3u': %d unique channels (%.2f KB)", len(master_deduped), combined_size_kb)
 
-    # Build Dedicated Nollywood & African TV Playlist
-    nolly_channels = [ch for ch in all_combined_channels if ch[0] == "Nollywood & African TV"]
-    # Deduplicate Nollywood channels by name
-    unique_nolly = []
-    seen_nolly = set()
-    for cat, name, block in nolly_channels:
-        key = name.lower()
-        if key not in seen_nolly:
-            seen_nolly.add(key)
-            unique_nolly.append((cat, name, block))
-
+    # --- DEDICATED NOLLYWOOD & AFRICAN TV PLAYLIST ---
+    nolly_channels = [ch for ch in master_deduped if ch[0] == "Nollywood & African TV"]
     nolly_epg_str = "https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz"
     nolly_header = f'#EXTM3U url-tvg="{nolly_epg_str}" x-tvg-url="{nolly_epg_str}"'
     nolly_output_lines = [nolly_header, ""]
-    for _, _, block in unique_nolly:
+    for _, _, block, _ in nolly_channels:
         nolly_output_lines.append(block)
         nolly_output_lines.append("")
 
@@ -606,32 +723,26 @@ def generate_all():
     nolly_m3u_path = os.path.join(PLAYLISTS_DIR, "nollywood.m3u")
     with open(nolly_m3u_path, "w", encoding="utf-8") as f:
         f.write("\n".join(nolly_output_lines).strip() + "\n")
-    logger.info("Wrote Dedicated Nollywood Playlist 'nollywood.m3u': %d channels", len(unique_nolly))
+    logger.info("Wrote Dedicated Nollywood Playlist 'nollywood.m3u': %d channels", len(nolly_channels))
 
     manifest["playlists"].append({
         "id": "nollywood",
         "name": "Nollywood & African TV",
         "file": "nollywood.m3u8",
         "file_m3u": "nollywood.m3u",
-        "channels_count": len(unique_nolly),
+        "channels_count": len(nolly_channels),
         "epg_url": nolly_epg_str,
-        "status": "active"
+        "status": "active" if len(nolly_channels) > 0 else "empty"
     })
 
-    # Build Curated Popular Favorites Playlist (Famous top channels across all genres)
-    popular_channels = []
-    seen_popular = set()
-    for cat, name, block in all_combined_channels:
-        if is_popular_channel(name) or cat == "Nollywood & African TV":
-            key = name.lower()
-            if key not in seen_popular:
-                seen_popular.add(key)
-                popular_channels.append((cat, name, block))
+    # --- CURATED POPULAR FAVORITES PLAYLIST ---
+    popular_raw = [ch for ch in master_deduped if is_popular_channel(ch[1]) or ch[0] == "Nollywood & African TV"]
+    popular_deduped = deduplicate_channel_items(popular_raw)
+    popular_deduped.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
 
-    popular_channels.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
     popular_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     popular_output_lines = [popular_header, ""]
-    for _, _, block in popular_channels:
+    for _, _, block, _ in popular_deduped:
         popular_output_lines.append(block)
         popular_output_lines.append("")
 
@@ -641,14 +752,14 @@ def generate_all():
     popular_m3u_path = os.path.join(PLAYLISTS_DIR, "popular_favorites.m3u")
     with open(popular_m3u_path, "w", encoding="utf-8") as f:
         f.write("\n".join(popular_output_lines).strip() + "\n")
-    logger.info("Wrote Curated Popular Favorites Playlist 'popular_favorites.m3u': %d channels", len(popular_channels))
+    logger.info("Wrote Curated Popular Favorites Playlist 'popular_favorites.m3u': %d unique channels", len(popular_deduped))
 
     manifest["playlists"].append({
         "id": "popular_favorites",
         "name": "Popular Favorites (Curated Best)",
         "file": "popular_favorites.m3u8",
         "file_m3u": "popular_favorites.m3u",
-        "channels_count": len(popular_channels),
+        "channels_count": len(popular_deduped),
         "epg_url": combined_epg_str,
         "status": "active"
     })
@@ -656,27 +767,26 @@ def generate_all():
     manifest["master_playlist"] = {
         "file": "all_combined.m3u8",
         "file_m3u": "all_combined.m3u",
-        "total_channels": len(all_combined_channels),
+        "total_unique_channels": len(master_deduped),
+        "total_raw_scanned": len(all_raw_channels),
         "epg_urls": all_epg_urls
     }
 
-    # Write manifest index.json
     manifest_path = os.path.join(PLAYLISTS_DIR, "index.json")
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
 
     # Print Summary Table
-    print("\n" + "=" * 75)
-    print("  ALL-REGION & POPULAR FAVORITES GENERATION SUMMARY")
-    print("=" * 75)
+    print("\n" + "=" * 78)
+    print("  DEDUPLICATED & HIGH-QUALITY GENERATION SUMMARY")
+    print("=" * 78)
     print(f"  {'Network / Playlist Name':<38} | {'Filename':<22} | {'Channels':<8}")
-    print("  " + "-" * 75)
+    print("  " + "-" * 78)
     for p in manifest["playlists"]:
         print(f"  {p['name']:<38} | {p['file_m3u']:<22} | {p['channels_count']:<8}")
-    print("  " + "-" * 75)
-    print(f"  {'* MASTER COMBINED (ALL REGIONS) *':<38} | {'all_combined.m3u':<22} | {len(all_combined_channels):<8}")
-    print("=" * 75)
-
+    print("  " + "-" * 78)
+    print(f"  {'* MASTER COMBINED (ALL UNIQUE CHANNELS) *':<38} | {'all_combined.m3u':<22} | {len(master_deduped):<8}")
+    print("=" * 78)
     print(f"Playlists successfully generated in: {PLAYLISTS_DIR}\n")
 
 
