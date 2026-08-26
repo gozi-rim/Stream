@@ -80,3 +80,17 @@ pip install -r requirements.txt
 # Run generator locally
 python generate_playlists.py
 ```
+
+---
+
+## ⚖️ Legal Disclaimer
+
+This repository does **not** host, broadcast, archive, or re-transmit any media, video, or audio streams. It is an open-source educational aggregation and indexing tool that standardizes playlist metadata and links to publicly available, free-to-air third-party streams and FAST providers. All channel names, marks, and logos belong to their respective copyright holders.
+
+For full legal terms and DMCA notice procedures, please refer to [**`DISCLAIMER.md`**](DISCLAIMER.md).
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. See [**`LICENSE`**](LICENSE) for more information.
