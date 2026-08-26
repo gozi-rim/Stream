@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 """
-FAST M3U Playlist and EPG Generator
-====================================
-Automates fetching, standardizing, and generating FAST (Free Ad-supported Streaming TV)
-M3U8 playlists and EPG mapping for regional and custom streams (NZ/AU, AU All, NZ All,
-Samsung TV Plus NZ, Plex TV AU, DStv, and custom sources).
+FAST M3U Playlist and EPG Generator (All-Region Edition)
+=========================================================
+Automates fetching, standardizing, and generating global FAST
+(Free Ad-supported Streaming TV) and IPTV playlists with auto-injected EPG:
+- Roku All Regions
+- Pluto TV All Regions
+- Samsung TV Plus All Regions
+- Plex TV All Regions
+- Tubi TV All Regions
+- MJH Global All Channels
+- MJH World Channels
+- DStv South Africa / Africa (with custom channels support)
+- Master All-Region Combined Playlist
 """
 
 import os
@@ -30,62 +38,80 @@ logger = logging.getLogger("FASTGenerator")
 PLAYLISTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "playlists")
 CUSTOM_CHANNELS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "custom_channels.json")
 
-# Sources configuration
+# All-Region Sources Configuration
 SOURCES_CONFIG = [
     {
-        "id": "nzau",
-        "name": "NZ/AU Combined TV",
-        "url": "https://i.mjh.nz/nzau/raw-tv.m3u8",
-        "fallback_urls": [
-            "https://i.mjh.nz/nzau/kodi-tv.m3u8"
-        ],
-        "epg_url": "https://i.mjh.nz/nzau/epg.xml.gz",
-        "output_filename": "nzau.m3u8",
-        "default_group": "NZ/AU Combined"
-    },
-    {
-        "id": "au_all",
-        "name": "AU All Channels",
-        "url": "https://i.mjh.nz/au/all/kodi-tv.m3u8",
-        "fallback_urls": [
-            "https://i.mjh.nz/au/all/raw-tv.m3u8"
-        ],
-        "epg_url": "https://i.mjh.nz/au/all/epg.xml.gz",
-        "output_filename": "au_all.m3u8",
-        "default_group": "Australia"
-    },
-    {
-        "id": "nz_all",
-        "name": "NZ All Channels",
-        "url": "https://i.mjh.nz/nz/kodi-tv.m3u8",
-        "fallback_urls": [
-            "https://i.mjh.nz/nz/raw-tv.m3u8"
-        ],
-        "epg_url": "https://i.mjh.nz/nz/epg.xml.gz",
-        "output_filename": "nz_all.m3u8",
-        "default_group": "New Zealand"
-    },
-    {
-        "id": "samsung_nz",
-        "name": "Samsung TV Plus NZ",
-        "url": "https://i.mjh.nz/SamsungTVPlus/nz.m3u8",
+        "id": "roku_all",
+        "name": "Roku TV (All Regions)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
         "fallback_urls": [],
-        "epg_url": "https://i.mjh.nz/SamsungTVPlus/nz.xml.gz",
-        "output_filename": "samsung_nz.m3u8",
-        "default_group": "Samsung TV Plus NZ"
+        "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
+        "output_filename": "roku_all.m3u8",
+        "default_group": "Roku TV"
     },
     {
-        "id": "plex_au",
-        "name": "Plex TV AU",
-        "url": "https://i.mjh.nz/Plex/au.m3u8",
+        "id": "plutotv_all",
+        "name": "Pluto TV (All Regions)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_all.m3u",
         "fallback_urls": [],
-        "epg_url": "https://i.mjh.nz/Plex/au.xml.gz",
-        "output_filename": "plex_au.m3u8",
-        "default_group": "Plex AU"
+        "epg_url": "https://i.mjh.nz/PlutoTV/all.xml.gz",
+        "output_filename": "plutotv_all.m3u8",
+        "default_group": "Pluto TV"
+    },
+    {
+        "id": "samsung_all",
+        "name": "Samsung TV Plus (All Regions)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_all.m3u",
+        "fallback_urls": [
+            "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_us.m3u"
+        ],
+        "epg_url": "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
+        "output_filename": "samsung_all.m3u8",
+        "default_group": "Samsung TV Plus"
+    },
+    {
+        "id": "plex_all",
+        "name": "Plex TV (All Regions)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plex_all.m3u",
+        "fallback_urls": [],
+        "epg_url": "https://i.mjh.nz/Plex/all.xml.gz",
+        "output_filename": "plex_all.m3u8",
+        "default_group": "Plex TV"
+    },
+    {
+        "id": "tubi_all",
+        "name": "Tubi TV (All Regions)",
+        "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_all.m3u",
+        "fallback_urls": [],
+        "epg_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml",
+        "output_filename": "tubi_all.m3u8",
+        "default_group": "Tubi TV"
+    },
+    {
+        "id": "mjh_all",
+        "name": "Global / All Channels (MJH)",
+        "url": "https://i.mjh.nz/all/raw-tv.m3u8",
+        "fallback_urls": [
+            "https://i.mjh.nz/all/kodi-tv.m3u8"
+        ],
+        "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
+        "output_filename": "mjh_all.m3u8",
+        "default_group": "Global FAST"
+    },
+    {
+        "id": "world",
+        "name": "World Channels (MJH)",
+        "url": "https://i.mjh.nz/world/raw-tv.m3u8",
+        "fallback_urls": [
+            "https://i.mjh.nz/world/kodi-tv.m3u8"
+        ],
+        "epg_url": "https://i.mjh.nz/world/epg.xml.gz",
+        "output_filename": "world.m3u8",
+        "default_group": "World TV"
     },
     {
         "id": "dstv",
-        "name": "DStv South Africa",
+        "name": "DStv South Africa / Africa",
         "url": "https://i.mjh.nz/DStv/raw-tv.m3u8",
         "fallback_urls": [],
         "epg_url": "https://i.mjh.nz/DStv/za.xml.gz",
@@ -247,15 +273,16 @@ def generate_all():
     
     manifest = {
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%SZ", time.gmtime()),
+        "edition": "All-Region Global FAST",
         "playlists": []
     }
     
     all_combined_channels = []
     all_epg_urls = []
 
-    print("\n" + "=" * 70)
-    print("  FAST M3U PLAYLIST & EPG GENERATOR")
-    print("=" * 70)
+    print("\n" + "=" * 75)
+    print("  ALL-REGION GLOBAL FAST M3U PLAYLIST & EPG GENERATOR")
+    print("=" * 75)
 
     for source in SOURCES_CONFIG:
         source_id = source["id"]
@@ -280,11 +307,10 @@ def generate_all():
             default_group=default_group
         )
         
-        # Write individual playlist file (.m3u8 and .m3u)
+        # Write individual playlist files (.m3u8 and .m3u)
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(final_content)
         
-        # Also save .m3u version for clients that expect .m3u extension
         m3u_output_path = os.path.splitext(output_path)[0] + ".m3u"
         with open(m3u_output_path, "w", encoding="utf-8") as f:
             f.write(final_content)
@@ -314,7 +340,7 @@ def generate_all():
         custom_blocks = [format_custom_channel(item, "Custom") for item in global_customs]
         all_combined_channels.extend([b for b in custom_blocks if b.strip()])
 
-    # Generate Combined / Master Playlist
+    # Generate Combined / Master Playlist (.m3u8 and .m3u)
     combined_epg_str = ",".join(all_epg_urls)
     combined_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     combined_output_lines = [combined_header, ""]
@@ -331,7 +357,7 @@ def generate_all():
         f.write("\n".join(combined_output_lines).strip() + "\n")
         
     combined_size_kb = os.path.getsize(combined_file_path) / 1024
-    logger.info("Wrote Master Combined Playlist 'all_combined.m3u8' / 'all_combined.m3u': %d total channels (%.2f KB)", len(all_combined_channels), combined_size_kb)
+    logger.info("Wrote Master All-Region Playlist 'all_combined.m3u8' / 'all_combined.m3u': %d total channels (%.2f KB)", len(all_combined_channels), combined_size_kb)
 
     manifest["master_playlist"] = {
         "file": "all_combined.m3u8",
@@ -346,15 +372,16 @@ def generate_all():
         json.dump(manifest, f, indent=2)
 
     # Print Summary Table
-    print("\n" + "=" * 70)
-    print("  GENERATION SUMMARY")
-    print("=" * 70)
-    print(f"  {'Playlist Name':<28} | {'Filename':<20} | {'Channels':<8}")
-    print("  " + "-" * 66)
+    print("\n" + "=" * 75)
+    print("  ALL-REGION GENERATION SUMMARY")
+    print("=" * 75)
+    print(f"  {'Network / Playlist Name':<34} | {'Filename':<20} | {'Channels':<8}")
+    print("  " + "-" * 71)
     for p in manifest["playlists"]:
-        print(f"  {p['name']:<28} | {p['file']:<20} | {p['channels_count']:<8}")
-    print(f"  {'* Master Combined Playlist *':<28} | {'all_combined.m3u8':<20} | {len(all_combined_channels):<8}")
-    print("=" * 70)
+        print(f"  {p['name']:<34} | {p['file_m3u']:<20} | {p['channels_count']:<8}")
+    print("  " + "-" * 71)
+    print(f"  {'* MASTER COMBINED (ALL REGIONS) *':<34} | {'all_combined.m3u':<20} | {len(all_combined_channels):<8}")
+    print("=" * 75)
     print(f"Playlists successfully generated in: {PLAYLISTS_DIR}\n")
 
 

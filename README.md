@@ -1,29 +1,31 @@
-# FAST M3U Playlist & EPG Generator
+# Global FAST M3U Playlist & EPG Generator (All Regions)
 
-Automated FAST (Free Ad-supported Streaming TV) and regional IPTV M3U8/M3U playlist generator with standardized EPG (Electronic Program Guide) auto-injection for New Zealand, Australia, Samsung TV Plus NZ, Plex TV AU, DStv South Africa, and custom sources.
+Automated global FAST (Free Ad-supported Streaming TV) and IPTV playlist generator with standardized EPG (Electronic Program Guide) auto-injection across all worldwide regions (Roku, Pluto TV, Samsung TV Plus, Plex TV, Tubi TV, Global FAST, and DStv).
 
 ---
 
 ## 📺 Direct Raw Stream URLs (For your IPTV Player)
 
-Once pushed to your GitHub repository (e.g. `https://github.com/gozi-rim/STREAM`), you can copy and paste any of the following direct Raw URLs directly into your IPTV Player (TiviMate, Kodi, Jellyfin, VLC, OTT Navigator, IPTV Smarters, etc.):
+Copy and paste any of these direct Raw URLs into your IPTV player (**TiviMate**, **Kodi**, **Jellyfin**, **VLC**, **OTT Navigator**, **IPTV Smarters**, etc.):
 
-### 🌟 Master Combined Playlist (All Regions & Channels)
-- **M3U**: `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/all_combined.m3u`
-- **M3U8**: `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/all_combined.m3u8`
+### 🌟 Master Combined Playlist (9,000+ Channels Across All Networks)
+- **M3U**: `https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u`
+- **M3U8**: `https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/all_combined.m3u8`
 
 ---
 
-### 🌐 Regional Playlists
+### 🌐 Individual Network Playlists (All Regions)
 
-| Regional Source | Direct Raw M3U URL | Direct Raw M3U8 URL | Injected EPG Source |
-| :--- | :--- | :--- | :--- |
-| **NZ / AU Combined** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/nzau.m3u` | `.../playlists/nzau.m3u8` | `https://i.mjh.nz/nzau/epg.xml.gz` |
-| **AU All Channels** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/au_all.m3u` | `.../playlists/au_all.m3u8` | `https://i.mjh.nz/au/all/epg.xml.gz` |
-| **NZ All Channels** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/nz_all.m3u` | `.../playlists/nz_all.m3u8` | `https://i.mjh.nz/nz/epg.xml.gz` |
-| **DStv South Africa** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/dstv.m3u` | `.../playlists/dstv.m3u8` | `https://i.mjh.nz/DStv/za.xml.gz` |
-| **Samsung TV Plus NZ** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/samsung_nz.m3u` | `.../playlists/samsung_nz.m3u8` | `https://i.mjh.nz/SamsungTVPlus/nz.xml.gz` |
-| **Plex TV AU** | `https://raw.githubusercontent.com/gozi-rim/STREAM/main/playlists/plex_au.m3u` | `.../playlists/plex_au.m3u8` | `https://i.mjh.nz/Plex/au.xml.gz` |
+| Network / Source | Direct Raw M3U Link | Direct Raw M3U8 Link | Injected EPG Source | Channels |
+| :--- | :--- | :--- | :--- | :--- |
+| **Roku TV (All Regions)** | [`roku_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/roku_all.m3u) | [`roku_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/roku_all.m3u8) | `https://i.mjh.nz/Roku/all.xml.gz` | **286** |
+| **Pluto TV (All Regions)** | [`plutotv_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u) | [`plutotv_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plutotv_all.m3u8) | `https://i.mjh.nz/PlutoTV/all.xml.gz` | **2,862** |
+| **Samsung TV Plus (All)** | [`samsung_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u) | [`samsung_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/samsung_all.m3u8) | `https://i.mjh.nz/SamsungTVPlus/all.xml.gz` | **2,603** |
+| **Plex TV (All Regions)** | [`plex_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u) | [`plex_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/plex_all.m3u8) | `https://i.mjh.nz/Plex/all.xml.gz` | **2,824** |
+| **Tubi TV (All Regions)** | [`tubi_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/tubi_all.m3u) | [`tubi_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/tubi_all.m3u8) | Auto-injected XML | **179** |
+| **Global All Channels** | [`mjh_all.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u) | [`mjh_all.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/mjh_all.m3u8) | `https://i.mjh.nz/all/epg.xml.gz` | **282** |
+| **World Channels** | [`world.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/world.m3u) | [`world.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/world.m3u8) | `https://i.mjh.nz/world/epg.xml.gz` | **4** |
+| **DStv South Africa / Africa** | [`dstv.m3u`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/dstv.m3u) | [`dstv.m3u8`](https://raw.githubusercontent.com/gozi-rim/Stream/main/playlists/dstv.m3u8) | `https://i.mjh.nz/DStv/za.xml.gz` | **3** (Custom) |
 
 > 💡 **Auto EPG Injection**: Every playlist has `#EXTM3U url-tvg="..." x-tvg-url="..."` headers automatically injected. You do **not** need to manually copy or type separate EPG URLs in your IPTV client—it loads guide data automatically!
 
