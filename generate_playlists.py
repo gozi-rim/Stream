@@ -6,11 +6,9 @@ Automates fetching, standardizing, categorizing, deduplicating, and generating
 pristine global FAST and IPTV playlists with auto-injected EPG:
 - Automatically detects and eliminates exact repetitive clones across all hosts
 - Ranks duplicates and keeps only the highest quality (4K/1080p/720p HD) working feed
-- Injects universal IPTV player headers (#EXTVLCOPT user-agent / referrer) to stop 403 / infinite loading
-- Integrates unblocked global CDN channels (Free-TV Global, IPTV-Org Africa, Samsung, Pluto, Plex, Roku, Tubi)
-- 24/7 Studio Newsroom live stream for TVC News Nigeria (steady 720p 30fps)
-- Direct enterprise AWS CloudFront stream for Arise News (zero buffering, permanent uptime)
-- Rock-solid 720p 30fps stream for Channels Television
+- Removes dead/broken/placeholder streams
+- Auto-extracts and refreshes stable 720p/1080p 30fps HLS streams for African channels (Channels TV, TVC News) via yt-dlp
+- Connects directly to official high-availability CloudFront CDN stream for Arise News
 - Neatly sorts all channels by genre categories (News, Sports, Movies, Kids, etc.)
 - Outputs individual network playlists + Master Combined + Curated Popular Favorites
 """
@@ -44,18 +42,13 @@ logger = logging.getLogger("FASTGenerator")
 PLAYLISTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "playlists")
 CUSTOM_CHANNELS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "custom_channels.json")
 
-# Standard Universal User-Agent & Referrer for IPTV Players
-DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-DEFAULT_REFERRER = "https://www.google.com/"
-
 # Category Definitions & Regex Patterns
 CATEGORY_RULES = [
     ("Nollywood & African TV", [
         r'\bnolly\b', r'\bnollywood\b', r'\bafrica\b', r'\bafrique\b', r'\bnigeria\b', r'\bnaija\b',
         r'\bchannels tv\b', r'\bchannels television\b', r'\bchannels 24\b', r'\btvc news\b', r'\barise news\b',
         r'\bnta\b', r'\bait\b', r'\bsilverbird\b', r'\bsoundcity\b', r'\barewa\b', r'\bafrican movie\b',
-        r'\brok\b', r'\bafroland\b', r'\bwakaati\b', r'\bafrica magic\b', r'\bamusic\b', r'\bghana\b',
-        r'\bkenya\b', r'\buganda\b', r'\btanzania\b', r'\bsouth africa\b', r'\bzim\b', r'\bcameroon\b'
+        r'\brok\b', r'\bafroland\b', r'\bwakaati\b', r'\bafrica magic\b', r'\bamusic\b'
     ]),
     ("News & Weather", [
         r'\bnews\b', r'\bweather\b', r'\bbloomberg\b', r'\bcnn\b', r'\bnbc news\b', r'\bcbs news\b',
@@ -176,167 +169,6 @@ POPULAR_KEYWORDS = [
 ]
 
 
-def is_foreign_or_local_clone(name: str) -> bool:
-    n = name.lower()
-    # Foreign language indicators
-    if re.search(r'\b(en espa[nñ]ol|noticias|italiano|portugu[eê]s|deutschland|en direct|en directo|divertenti|d.azione|imperdibili|da ridere|acci[oó]n|comedia|com[eé]die|concursos|cr[ií]menes|pel[ií]culas|serien|populaire|verguenza|verg[uü]enza|jovens|m[aã]es|brasil|m[eé]xico|favoris|faves|[eé]xitos|hogar|casa|viagem|viajes|cl[aá]sico|cl[aá]ssico|autopista|reggae|schlager|iconos|r[eé]tro|ex|latin[oa]|embarazada|con mi ex|com o ex)\b', n):
-        return True
-    # Local city affiliates
-    if re.search(r'\bcbs news (baltimore|bay area|boston|canada|chicago|colorado|detroit|los angeles|miami|minnesota|new york|philadelphia|pittsburgh|sacramento|texas|united kingdom)\b', n):
-        return True
-    if re.search(r'\b(cnn news18|cnn noticias|cnn en espa[nñ]ol)\b', n):
-        return True
-    return False
-
-
-def get_canonical_popular_name(name: str) -> str:
-    n = name.lower()
-    if re.search(r'\b(the lego channel|lego channel|lego kids tv)\b', n):
-        return 'LEGO Channel'
-    if re.search(r'\b(deal or no deal.*?)\b', n):
-        return 'Deal or No Deal'
-    if re.search(r'\b(classic doctor who|doctor who classic)\b', n):
-        return 'Doctor Who Classic'
-    if re.search(r'\b(mlb channel|mlb)\b', n):
-        return 'MLB Channel'
-    if re.search(r'\b(moviesphere by lionsgate|moviesphere)\b', n):
-        return 'MOVIESPHERE'
-    if re.search(r'\b(the price is right.*?|price is right)\b', n):
-        return 'The Price is Right'
-    if re.search(r'\b(euronews live|euronews world|euronews)\b', n):
-        return 'Euronews'
-    if re.search(r'\b(cnn headlines.*?|cnn originals)\b', n):
-        return 'CNN Headlines'
-    if re.search(r'\b(top gear challenge|top gear)\b', n):
-        return 'Top Gear'
-    if re.search(r'\b(tennis channel 2|tennis channel)\b', n):
-        return 'Tennis Channel'
-    if re.search(r'\b(motorvision classic|motorvision tv)\b', n):
-        return 'Motorvision TV'
-    if re.search(r'\b(gordon ramsay.*?)\b', n):
-        return "Gordon Ramsay's Hell's Kitchen"
-    if n == 'csi' or n == 'csi: crime scene investigation':
-        return 'CSI: Crime Scene Investigation'
-    if n == 'comedy central' or n == 'comedy central pluto tv':
-        return 'Comedy Central Pluto TV'
-    if 'south park' in n:
-        return 'Comedy Central South Park'
-    if re.search(r'\b(nick jr.*?)\b', n):
-        return 'Nick Jr. Pluto TV'
-    if re.search(r'\b(nickelodeon pluto tv|nickelodeon classics|nickelodeon toons|nickelodeon teen)\b', n):
-        return 'Nickelodeon Pluto TV'
-    if re.search(r'sony one.*?(blacklist)', n):
-        return 'Sony One The Blacklist'
-    if re.search(r'sony one.*?(shark tank)', n):
-        return 'Sony One Shark Tank'
-    if re.search(r'sony one.*?(action hits|hits action)', n):
-        return 'Sony One Action Hits'
-    if re.search(r'sony one.*?(comedy hits|comedy tv)', n):
-        return 'Sony One Comedy Hits'
-    if re.search(r'sony one.*?(thriller)', n):
-        return 'Sony One Thriller'
-    if re.search(r'sony one.*?(dragons den)', n):
-        return 'Sony One Dragons Den'
-    if re.search(r'vevo.*?(hip.?hop|r&b)', n):
-        return 'Vevo Hip-Hop & R&B'
-    if re.search(r'vevo.*?(country)', n):
-        return 'Vevo Country'
-    if re.search(r'vevo.*?(rock)', n):
-        return 'Vevo Rock'
-    if re.search(r'vevo.*?(pop)', n):
-        return 'Vevo Pop'
-    if re.search(r'vevo.*?(70s|80s)', n):
-        return "Vevo '80s"
-    if re.search(r'vevo.*?(90s|00s)', n):
-        return "Vevo '90s"
-    if re.search(r'vevo.*?(2k|2010s)', n):
-        return 'Vevo 2K'
-    if re.search(r'mtv.*?(catfish)', n):
-        return 'MTV Catfish'
-    if re.search(r'mtv.*?(classic|classics)', n):
-        return 'MTV Classic'
-    if re.search(r'mtv.*?(jersey shore|jerseys)', n):
-        return 'MTV Jersey Shore'
-    if re.search(r'mtv.*?(teen mom)', n):
-        return 'MTV Teen Mom'
-    if re.search(r'mtv.*?(cribs)', n):
-        return 'MTV Cribs'
-    if re.search(r'mtv.*?(reality|dating|are you the one)', n):
-        return 'MTV Reality'
-    if re.search(r'mtv.*?(rocks)', n):
-        return 'MTV Rocks'
-    if re.search(r'(best of mtv|mtv pluto tv|mtv originals|mtv spankin)', n):
-        return 'Best of MTV'
-    if re.search(r'filmrise.*?(free movies|movies)', n):
-        return 'FilmRise Free Movies'
-    if re.search(r'filmrise.*?(action)', n):
-        return 'FilmRise Action'
-    if re.search(r'filmrise.*?(comedy)', n):
-        return 'FilmRise Comedy'
-    if re.search(r'filmrise.*?(horror)', n):
-        return 'FilmRise Horror'
-    if re.search(r'filmrise.*?(true crime|crimes|forensic)', n):
-        return 'FilmRise True Crime'
-    if re.search(r'filmrise.*?(western)', n):
-        return 'FilmRise Western'
-    if re.search(r'filmrise.*?(classic tv|british tv|black tv|canadien)', n):
-        return 'FilmRise Classic TV'
-    if re.search(r'filmrise.*?(anime)', n):
-        return 'FilmRise Anime'
-    if re.search(r'filmrise.*?(kids)', n):
-        return 'FilmRise Kids'
-    if re.search(r'filmrise.*?(food)', n):
-        return 'FilmRise Food'
-    if re.search(r'tastemade.*?(travel)', n):
-        return 'Tastemade Travel'
-    if re.search(r'tastemade.*?(home|smokehouse)', n):
-        return 'Tastemade Home'
-    if re.search(r'tastemade', n):
-        return 'Tastemade'
-    return name
-
-
-POPULAR_ALLOWED_PATTERNS = [
-    r'21 jump street', r'anime all day', r'arise news', r'baby einstein', r'baywatch',
-    r'bein sports xtra', r'best of mtv', r'bloomberg', r'cbs news 24/7', r'channels television',
-    r'cnn headlines', r'comedy central pluto tv', r'comedy central south park',
-    r'csi: crime scene investigation', r'csi: miami', r'csi: ny', r'deal or no deal',
-    r'doctor who classic', r'euronews', r'fight network', r'filmrise action', r'filmrise anime',
-    r'filmrise classic tv', r'filmrise comedy', r'filmrise free movies', r'filmrise horror',
-    r'filmrise kids', r'filmrise true crime', r'filmrise western', r"gordon ramsay's hell's kitchen",
-    r'hallmark movies & more', r'law & order', r'lego channel', r'mlb channel', r'motorvision tv',
-    r'moviesphere', r'mtv catfish', r'mtv classic', r'mtv cribs', r'mtv jersey shore', r'mtv reality',
-    r'mtv rocks', r'mtv teen mom', r'nfl channel', r'nhl', r'nick jr. pluto tv', r'nickelodeon icarly',
-    r'nickelodeon pluto tv', r'nolly africa hd', r'pga tour', r'pok[eé]mon', r'power rangers',
-    r'red bull tv motorsport', r'retrocrush', r'scares by shudder', r'sky news international',
-    r'sony one action hits', r'sony one comedy hits', r'sony one dragons den', r'sony one shark tank',
-    r'sony one the blacklist', r'sony one thriller', r'tastemade', r'tastemade home', r'tastemade travel',
-    r'tennis channel', r'the price is right', r'the reuters 60', r'top gear', r'tvc news nigeria',
-    r"vevo '80s", r"vevo '90s", r'vevo 2k', r'vevo country', r'vevo hip-hop & r&b', r'vevo pop', r'vevo rock',
-    r'yu-gi-oh!'
-]
-
-
-def curate_popular_favorites(channel_items: List[Tuple[str, str, str, str]]) -> List[Tuple[str, str, str, str]]:
-    cleaned_items = []
-    seen = set()
-    deduped = deduplicate_channel_items(channel_items)
-    
-    for cat, name, block, src_id in deduped:
-        if is_foreign_or_local_clone(name):
-            continue
-        canon_name = get_canonical_popular_name(name)
-        key = canon_name.lower().strip()
-        
-        if any(re.search(p, key) for p in POPULAR_ALLOWED_PATTERNS):
-            if key not in seen:
-                seen.add(key)
-                cleaned_items.append((cat, canon_name, block, src_id))
-                
-    cleaned_items.sort(key=lambda x: x[1].lower())
-    return cleaned_items
-
-
 def is_popular_channel(channel_name: str) -> bool:
     text = channel_name.lower()
     return any(re.search(p, text) for p in POPULAR_KEYWORDS)
@@ -362,33 +194,20 @@ def normalize_channel_key(channel_name: str) -> str:
 def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, source_id: str) -> int:
     score = 100
     text = f"{channel_name} {extinf_line}".lower()
-    url_lower = stream_url.lower()
 
-    # 1. Preferred direct CDN protocols over brittle redirectors
-    if "cloudfront.net" in url_lower or "googlevideo.com" in url_lower or "fastly.net" in url_lower or "akamaihd.net" in url_lower:
-        score += 40
-    elif "jmp2.uk" in url_lower:
-        score -= 10
-
-    # 2. Resolution / Quality bonuses
     if any(q in text for q in ["4k", "uhd", "2160p"]):
-        score += 50
+        score += 60
     elif any(q in text for q in ["1080p", "1080", "fhd"]):
-        score += 35
+        score += 40
     elif any(q in text for q in ["720p", "720", "hd"]):
-        score += 25
+        score += 20
     elif any(q in text for q in ["480p", "sd", "360p"]):
-        score -= 15
+        score -= 20
 
-    # 3. Network Priority
     if source_id == "nollywood_custom":
-        score += 50
-    elif source_id == "freetv_global":
-        score += 25
-    elif source_id == "iptv_org_africa":
-        score += 25
+        score += 35
     elif source_id == "samsung_all":
-        score += 15
+        score += 20
     elif source_id == "plutotv_all":
         score += 15
     elif source_id == "plex_all":
@@ -398,9 +217,9 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
     elif source_id == "tubi_all":
         score += 8
 
-    # 4. Metadata bonuses
     if 'tvg-logo="http' in extinf_line:
         score += 5
+
     if 'tvg-id="' in extinf_line and 'tvg-id=""' not in extinf_line:
         score += 5
 
@@ -413,9 +232,8 @@ def deduplicate_channel_items(
     grouped = defaultdict(list)
     for cat, name, block, src_id in channel_items:
         key = normalize_channel_key(name)
-        lines = block.splitlines()
-        extinf_line = lines[0]
-        url = [l for l in lines if l.startswith("http")][-1] if any(l.startswith("http") for l in lines) else ""
+        extinf_line = block.splitlines()[0]
+        url = block.splitlines()[-1] if len(block.splitlines()) > 1 else ""
         
         if not url.startswith("http") or "example.com" in url or "localhost" in url:
             continue
@@ -445,7 +263,7 @@ def refresh_youtube_live_streams(custom_data: dict) -> dict:
         'quiet': True,
         'no_warnings': True,
         'extractor_args': {'youtube': {'player_client': ['android', 'ios', 'web']}},
-        'format': '95/300/301/94/93/best[vcodec!=none][acodec!=none]'
+        'format': '95/300/94/best[vcodec!=none][acodec!=none]'
     }
 
     updated = False
@@ -477,28 +295,8 @@ def refresh_youtube_live_streams(custom_data: dict) -> dict:
     return custom_data
 
 
-# All-Region & Direct Open Sources Configuration
+# All-Region Sources Configuration
 SOURCES_CONFIG = [
-    {
-        "id": "freetv_global",
-        "name": "Global Open Live TV (Free-TV Unblocked)",
-        "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
-        "fallback_urls": [],
-        "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
-        "output_filename": "freetv_global.m3u8",
-        "default_group": "Global Live TV",
-        "categorize": True
-    },
-    {
-        "id": "iptv_org_africa",
-        "name": "Africa & Nollywood (IPTV-Org Verified)",
-        "url": "https://iptv-org.github.io/iptv/regions/afr.m3u",
-        "fallback_urls": [],
-        "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
-        "output_filename": "iptv_org_africa.m3u8",
-        "default_group": "Nollywood & African TV",
-        "categorize": True
-    },
     {
         "id": "samsung_all",
         "name": "Samsung TV Plus (All Regions - Categorized)",
@@ -600,7 +398,7 @@ def create_session() -> requests.Session:
     session.mount("https://", adapter)
     session.mount("http://", adapter)
     session.headers.update({
-        "User-Agent": DEFAULT_USER_AGENT,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate",
         "Connection": "close"
@@ -632,8 +430,8 @@ def format_custom_channel(item: dict, default_group: str) -> Optional[str]:
     tvg_logo = item.get("tvg_logo", "")
     tvg_chno = item.get("tvg_chno", "")
     group = item.get("group", default_group)
-    http_user_agent = item.get("http_user_agent", DEFAULT_USER_AGENT)
-    http_referrer = item.get("http_referrer", DEFAULT_REFERRER)
+    http_user_agent = item.get("http_user_agent", "")
+    http_referrer = item.get("http_referrer", "")
 
     attrs = []
     if tvg_id:
@@ -646,15 +444,14 @@ def format_custom_channel(item: dict, default_group: str) -> Optional[str]:
         attrs.append(f'tvg-chno="{tvg_chno}"')
     if group:
         attrs.append(f'group-title="{group}"')
-    attrs.append(f'user-agent="{http_user_agent}"')
 
     attr_str = " ".join(attrs)
-    lines = [
-        f"#EXTINF:-1 {attr_str},{name}".strip(),
-        f"#EXTVLCOPT:http-user-agent={http_user_agent}",
-        f"#EXTVLCOPT:http-referrer={http_referrer}",
-        url
-    ]
+    lines = [f"#EXTINF:-1 {attr_str},{name}".strip()]
+    if http_user_agent:
+        lines.append(f"#EXTVLCOPT:http-user-agent={http_user_agent}")
+    if http_referrer:
+        lines.append(f"#EXTVLCOPT:http-referrer={http_referrer}")
+    lines.append(url)
     return "\n".join(lines)
 
 
@@ -664,7 +461,7 @@ def fetch_upstream_content(session: requests.Session, source: dict) -> Tuple[Opt
     for url in urls_to_try:
         try:
             logger.info("Fetching '%s' from %s...", source["name"], url)
-            response = session.get(url, timeout=14)
+            response = session.get(url, timeout=12)
             if response.status_code == 200 and response.text.strip():
                 logger.info("Successfully fetched %d bytes from %s", len(response.text), url)
                 return response.text, url
@@ -697,21 +494,7 @@ def process_channel_block(block_lines: List[str], categorize: bool, default_grou
     else:
         category = orig_group
 
-    # Inject IPTV player user-agent and referrer options if missing
-    has_vlc_ua = any("http-user-agent" in l for l in block_lines)
-    has_vlc_ref = any("http-referrer" in l for l in block_lines)
-    
-    formatted = [block_lines[0]]
-    if not has_vlc_ua:
-        formatted.append(f"#EXTVLCOPT:http-user-agent={DEFAULT_USER_AGENT}")
-    if not has_vlc_ref:
-        formatted.append(f"#EXTVLCOPT:http-referrer={DEFAULT_REFERRER}")
-        
-    for l in block_lines[1:]:
-        if not l.startswith("#EXTVLCOPT"):
-            formatted.append(l)
-
-    return category, channel_name, "\n".join(formatted)
+    return category, channel_name, "\n".join(block_lines)
 
 
 def standardize_playlist(
@@ -890,15 +673,8 @@ def generate_all():
     combined_size_kb = os.path.getsize(combined_file_path) / 1024
     logger.info("Wrote Master All-Region Playlist 'all_combined.m3u': %d unique channels (%.2f KB)", len(master_deduped), combined_size_kb)
 
-    # Major FAST host source IDs
-    FAST_HOST_IDS = {"samsung_all", "plutotv_all", "plex_all", "roku_all", "tubi_all", "nollywood_custom"}
-
     # --- DEDICATED NOLLYWOOD & AFRICAN TV PLAYLIST ---
-    nolly_channels = [
-        ch for ch in master_deduped 
-        if (ch[3] == "nollywood_custom" or (ch[0] == "Nollywood & African TV" and ch[3] in FAST_HOST_IDS))
-    ]
-    nolly_channels.sort(key=lambda x: x[1].lower())
+    nolly_channels = [ch for ch in master_deduped if ch[0] == "Nollywood & African TV"]
     nolly_epg_str = "https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz"
     nolly_header = f'#EXTM3U url-tvg="{nolly_epg_str}" x-tvg-url="{nolly_epg_str}"'
     nolly_output_lines = [nolly_header, ""]
@@ -924,12 +700,10 @@ def generate_all():
         "status": "active" if len(nolly_channels) > 0 else "empty"
     })
 
-    # --- CURATED POPULAR FAVORITES PLAYLIST (Alphabetical A-Z, Pristine Curated Household Names) ---
-    popular_raw = [
-        ch for ch in master_deduped 
-        if ch[3] in FAST_HOST_IDS and (is_popular_channel(ch[1]) or ch[3] == "nollywood_custom")
-    ]
-    popular_deduped = curate_popular_favorites(popular_raw)
+    # --- CURATED POPULAR FAVORITES PLAYLIST ---
+    popular_raw = [ch for ch in master_deduped if is_popular_channel(ch[1]) or ch[0] == "Nollywood & African TV"]
+    popular_deduped = deduplicate_channel_items(popular_raw)
+    popular_deduped.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
 
     popular_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     popular_output_lines = [popular_header, ""]
