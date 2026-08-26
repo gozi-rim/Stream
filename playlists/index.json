@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-08-26 07:03:16Z",
+  "playlists": [
+    {
+      "id": "nzau",
+      "name": "NZ/AU Combined TV",
+      "file": "nzau.m3u8",
+      "file_m3u": "nzau.m3u",
+      "channels_count": 208,
+      "epg_url": "https://i.mjh.nz/nzau/epg.xml.gz",
+      "upstream_url": "https://i.mjh.nz/nzau/raw-tv.m3u8",
+      "status": "active"
+    },
+    {
+      "id": "au_all",
+      "name": "AU All Channels",
+      "file": "au_all.m3u8",
+      "file_m3u": "au_all.m3u",
+      "channels_count": 248,
+      "epg_url": "https://i.mjh.nz/au/all/epg.xml.gz",
+      "upstream_url": "https://i.mjh.nz/au/all/kodi-tv.m3u8",
+      "status": "active"
+    },
+    {
+      "id": "nz_all",
+      "name": "NZ All Channels",
+      "file": "nz_all.m3u8",
+      "file_m3u": "nz_all.m3u",
+      "channels_count": 41,
+      "epg_url": "https://i.mjh.nz/nz/epg.xml.gz",
+      "upstream_url": "https://i.mjh.nz/nz/kodi-tv.m3u8",
+      "status": "active"
+    },
+    {
+      "id": "samsung_nz",
+      "name": "Samsung TV Plus NZ",
+      "file": "samsung_nz.m3u8",
+      "file_m3u": "samsung_nz.m3u",
+      "channels_count": 0,
+      "epg_url": "https://i.mjh.nz/SamsungTVPlus/nz.xml.gz",
+      "upstream_url": "https://i.mjh.nz/SamsungTVPlus/nz.m3u8",
+      "status": "empty"
+    },
+    {
+      "id": "plex_au",
+      "name": "Plex TV AU",
+      "file": "plex_au.m3u8",
+      "file_m3u": "plex_au.m3u",
+      "channels_count": 0,
+      "epg_url": "https://i.mjh.nz/Plex/au.xml.gz",
+      "upstream_url": "https://i.mjh.nz/Plex/au.m3u8",
+      "status": "empty"
+    },
+    {
+      "id": "dstv",
+      "name": "DStv South Africa",
+      "file": "dstv.m3u8",
+      "file_m3u": "dstv.m3u",
+      "channels_count": 3,
+      "epg_url": "https://i.mjh.nz/DStv/za.xml.gz",
+      "upstream_url": "https://i.mjh.nz/DStv/raw-tv.m3u8",
+      "status": "active"
+    }
+  ],
+  "master_playlist": {
+    "file": "all_combined.m3u8",
+    "file_m3u": "all_combined.m3u",
+    "total_channels": 500,
+    "epg_urls": [
+      "https://i.mjh.nz/nzau/epg.xml.gz",
+      "https://i.mjh.nz/au/all/epg.xml.gz",
+      "https://i.mjh.nz/nz/epg.xml.gz",
+      "https://i.mjh.nz/SamsungTVPlus/nz.xml.gz",
+      "https://i.mjh.nz/Plex/au.xml.gz",
+      "https://i.mjh.nz/DStv/za.xml.gz"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+#EXTM3U url-tvg="https://i.mjh.nz/DStv/za.xml.gz" x-tvg-url="https://i.mjh.nz/DStv/za.xml.gz"
+
+#EXTINF:-1 tvg-id="supersport-premier-league" tvg-name="SuperSport Premier League" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportPremierLeague.png" group-title="DStv Sports",SuperSport Premier League [Sample/Template]
+https://example.com/streams/dstv/ss_pl.m3u8
+
+#EXTINF:-1 tvg-id="supersport-grandstand" tvg-name="SuperSport Grandstand" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportGrandstand.png" group-title="DStv Sports",SuperSport Grandstand [Sample/Template]
+https://example.com/streams/dstv/ss_grandstand.m3u8
+
+#EXTINF:-1 tvg-id="m-net" tvg-name="M-Net 101" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/MNet.png" group-title="DStv Entertainment",M-Net 101 [Sample/Template]
+https://example.com/streams/dstv/mnet.m3u8
