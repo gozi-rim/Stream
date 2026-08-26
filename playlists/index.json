@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 15:06:02Z",
+  "generated_at": "2026-08-26 15:19:19Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -194,20 +194,21 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 170,
+      "channels_count": 212,
       "categories": {
         "News & Weather": 12,
         "Sports & Racing": 9,
-        "Movies & Cinema": 3,
-        "Kids & Family": 3,
+        "Movies & Cinema": 4,
+        "Animation & Anime": 1,
+        "Kids & Family": 4,
         "Comedy & Stand-up": 2,
-        "Crime & Mystery": 4,
-        "Documentary & Nature": 1,
+        "Crime & Mystery": 9,
+        "Documentary & Nature": 2,
         "Lifestyle, Food & Travel": 11,
-        "Music & Audio": 5,
-        "Reality & Game Shows": 1,
-        "Drama & Series": 1,
-        "Entertainment": 118
+        "Music & Audio": 7,
+        "Reality & Game Shows": 3,
+        "Drama & Series": 3,
+        "Entertainment": 145
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -252,7 +253,7 @@
       "name": "Popular Favorites (Curated Best)",
       "file": "popular_favorites.m3u8",
       "file_m3u": "popular_favorites.m3u",
-      "channels_count": 222,
+      "channels_count": 77,
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz",
       "status": "active"
     }
@@ -260,8 +261,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 5687,
-    "total_raw_scanned": 7104,
+    "total_unique_channels": 5707,
+    "total_raw_scanned": 7146,
     "epg_urls": [
       "https://i.mjh.nz/all/epg.xml.gz",
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",

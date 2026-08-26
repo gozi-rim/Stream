@@ -176,6 +176,167 @@ POPULAR_KEYWORDS = [
 ]
 
 
+def is_foreign_or_local_clone(name: str) -> bool:
+    n = name.lower()
+    # Foreign language indicators
+    if re.search(r'\b(en espa[nñ]ol|noticias|italiano|portugu[eê]s|deutschland|en direct|en directo|divertenti|d.azione|imperdibili|da ridere|acci[oó]n|comedia|com[eé]die|concursos|cr[ií]menes|pel[ií]culas|serien|populaire|verguenza|verg[uü]enza|jovens|m[aã]es|brasil|m[eé]xico|favoris|faves|[eé]xitos|hogar|casa|viagem|viajes|cl[aá]sico|cl[aá]ssico|autopista|reggae|schlager|iconos|r[eé]tro|ex|latin[oa]|embarazada|con mi ex|com o ex)\b', n):
+        return True
+    # Local city affiliates
+    if re.search(r'\bcbs news (baltimore|bay area|boston|canada|chicago|colorado|detroit|los angeles|miami|minnesota|new york|philadelphia|pittsburgh|sacramento|texas|united kingdom)\b', n):
+        return True
+    if re.search(r'\b(cnn news18|cnn noticias|cnn en espa[nñ]ol)\b', n):
+        return True
+    return False
+
+
+def get_canonical_popular_name(name: str) -> str:
+    n = name.lower()
+    if re.search(r'\b(the lego channel|lego channel|lego kids tv)\b', n):
+        return 'LEGO Channel'
+    if re.search(r'\b(deal or no deal.*?)\b', n):
+        return 'Deal or No Deal'
+    if re.search(r'\b(classic doctor who|doctor who classic)\b', n):
+        return 'Doctor Who Classic'
+    if re.search(r'\b(mlb channel|mlb)\b', n):
+        return 'MLB Channel'
+    if re.search(r'\b(moviesphere by lionsgate|moviesphere)\b', n):
+        return 'MOVIESPHERE'
+    if re.search(r'\b(the price is right.*?|price is right)\b', n):
+        return 'The Price is Right'
+    if re.search(r'\b(euronews live|euronews world|euronews)\b', n):
+        return 'Euronews'
+    if re.search(r'\b(cnn headlines.*?|cnn originals)\b', n):
+        return 'CNN Headlines'
+    if re.search(r'\b(top gear challenge|top gear)\b', n):
+        return 'Top Gear'
+    if re.search(r'\b(tennis channel 2|tennis channel)\b', n):
+        return 'Tennis Channel'
+    if re.search(r'\b(motorvision classic|motorvision tv)\b', n):
+        return 'Motorvision TV'
+    if re.search(r'\b(gordon ramsay.*?)\b', n):
+        return "Gordon Ramsay's Hell's Kitchen"
+    if n == 'csi' or n == 'csi: crime scene investigation':
+        return 'CSI: Crime Scene Investigation'
+    if n == 'comedy central' or n == 'comedy central pluto tv':
+        return 'Comedy Central Pluto TV'
+    if 'south park' in n:
+        return 'Comedy Central South Park'
+    if re.search(r'\b(nick jr.*?)\b', n):
+        return 'Nick Jr. Pluto TV'
+    if re.search(r'\b(nickelodeon pluto tv|nickelodeon classics|nickelodeon toons|nickelodeon teen)\b', n):
+        return 'Nickelodeon Pluto TV'
+    if re.search(r'sony one.*?(blacklist)', n):
+        return 'Sony One The Blacklist'
+    if re.search(r'sony one.*?(shark tank)', n):
+        return 'Sony One Shark Tank'
+    if re.search(r'sony one.*?(action hits|hits action)', n):
+        return 'Sony One Action Hits'
+    if re.search(r'sony one.*?(comedy hits|comedy tv)', n):
+        return 'Sony One Comedy Hits'
+    if re.search(r'sony one.*?(thriller)', n):
+        return 'Sony One Thriller'
+    if re.search(r'sony one.*?(dragons den)', n):
+        return 'Sony One Dragons Den'
+    if re.search(r'vevo.*?(hip.?hop|r&b)', n):
+        return 'Vevo Hip-Hop & R&B'
+    if re.search(r'vevo.*?(country)', n):
+        return 'Vevo Country'
+    if re.search(r'vevo.*?(rock)', n):
+        return 'Vevo Rock'
+    if re.search(r'vevo.*?(pop)', n):
+        return 'Vevo Pop'
+    if re.search(r'vevo.*?(70s|80s)', n):
+        return "Vevo '80s"
+    if re.search(r'vevo.*?(90s|00s)', n):
+        return "Vevo '90s"
+    if re.search(r'vevo.*?(2k|2010s)', n):
+        return 'Vevo 2K'
+    if re.search(r'mtv.*?(catfish)', n):
+        return 'MTV Catfish'
+    if re.search(r'mtv.*?(classic|classics)', n):
+        return 'MTV Classic'
+    if re.search(r'mtv.*?(jersey shore|jerseys)', n):
+        return 'MTV Jersey Shore'
+    if re.search(r'mtv.*?(teen mom)', n):
+        return 'MTV Teen Mom'
+    if re.search(r'mtv.*?(cribs)', n):
+        return 'MTV Cribs'
+    if re.search(r'mtv.*?(reality|dating|are you the one)', n):
+        return 'MTV Reality'
+    if re.search(r'mtv.*?(rocks)', n):
+        return 'MTV Rocks'
+    if re.search(r'(best of mtv|mtv pluto tv|mtv originals|mtv spankin)', n):
+        return 'Best of MTV'
+    if re.search(r'filmrise.*?(free movies|movies)', n):
+        return 'FilmRise Free Movies'
+    if re.search(r'filmrise.*?(action)', n):
+        return 'FilmRise Action'
+    if re.search(r'filmrise.*?(comedy)', n):
+        return 'FilmRise Comedy'
+    if re.search(r'filmrise.*?(horror)', n):
+        return 'FilmRise Horror'
+    if re.search(r'filmrise.*?(true crime|crimes|forensic)', n):
+        return 'FilmRise True Crime'
+    if re.search(r'filmrise.*?(western)', n):
+        return 'FilmRise Western'
+    if re.search(r'filmrise.*?(classic tv|british tv|black tv|canadien)', n):
+        return 'FilmRise Classic TV'
+    if re.search(r'filmrise.*?(anime)', n):
+        return 'FilmRise Anime'
+    if re.search(r'filmrise.*?(kids)', n):
+        return 'FilmRise Kids'
+    if re.search(r'filmrise.*?(food)', n):
+        return 'FilmRise Food'
+    if re.search(r'tastemade.*?(travel)', n):
+        return 'Tastemade Travel'
+    if re.search(r'tastemade.*?(home|smokehouse)', n):
+        return 'Tastemade Home'
+    if re.search(r'tastemade', n):
+        return 'Tastemade'
+    return name
+
+
+POPULAR_ALLOWED_PATTERNS = [
+    r'21 jump street', r'anime all day', r'arise news', r'baby einstein', r'baywatch',
+    r'bein sports xtra', r'best of mtv', r'bloomberg', r'cbs news 24/7', r'channels television',
+    r'cnn headlines', r'comedy central pluto tv', r'comedy central south park',
+    r'csi: crime scene investigation', r'csi: miami', r'csi: ny', r'deal or no deal',
+    r'doctor who classic', r'euronews', r'fight network', r'filmrise action', r'filmrise anime',
+    r'filmrise classic tv', r'filmrise comedy', r'filmrise free movies', r'filmrise horror',
+    r'filmrise kids', r'filmrise true crime', r'filmrise western', r"gordon ramsay's hell's kitchen",
+    r'hallmark movies & more', r'law & order', r'lego channel', r'mlb channel', r'motorvision tv',
+    r'moviesphere', r'mtv catfish', r'mtv classic', r'mtv cribs', r'mtv jersey shore', r'mtv reality',
+    r'mtv rocks', r'mtv teen mom', r'nfl channel', r'nhl', r'nick jr. pluto tv', r'nickelodeon icarly',
+    r'nickelodeon pluto tv', r'nolly africa hd', r'pga tour', r'pok[eé]mon', r'power rangers',
+    r'red bull tv motorsport', r'retrocrush', r'scares by shudder', r'sky news international',
+    r'sony one action hits', r'sony one comedy hits', r'sony one dragons den', r'sony one shark tank',
+    r'sony one the blacklist', r'sony one thriller', r'tastemade', r'tastemade home', r'tastemade travel',
+    r'tennis channel', r'the price is right', r'the reuters 60', r'top gear', r'tvc news nigeria',
+    r"vevo '80s", r"vevo '90s", r'vevo 2k', r'vevo country', r'vevo hip-hop & r&b', r'vevo pop', r'vevo rock',
+    r'yu-gi-oh!'
+]
+
+
+def curate_popular_favorites(channel_items: List[Tuple[str, str, str, str]]) -> List[Tuple[str, str, str, str]]:
+    cleaned_items = []
+    seen = set()
+    deduped = deduplicate_channel_items(channel_items)
+    
+    for cat, name, block, src_id in deduped:
+        if is_foreign_or_local_clone(name):
+            continue
+        canon_name = get_canonical_popular_name(name)
+        key = canon_name.lower().strip()
+        
+        if any(re.search(p, key) for p in POPULAR_ALLOWED_PATTERNS):
+            if key not in seen:
+                seen.add(key)
+                cleaned_items.append((cat, canon_name, block, src_id))
+                
+    cleaned_items.sort(key=lambda x: x[1].lower())
+    return cleaned_items
+
+
 def is_popular_channel(channel_name: str) -> bool:
     text = channel_name.lower()
     return any(re.search(p, text) for p in POPULAR_KEYWORDS)
@@ -763,13 +924,12 @@ def generate_all():
         "status": "active" if len(nolly_channels) > 0 else "empty"
     })
 
-    # --- CURATED POPULAR FAVORITES PLAYLIST (Alphabetical A-Z, Curated Household Names) ---
+    # --- CURATED POPULAR FAVORITES PLAYLIST (Alphabetical A-Z, Pristine Curated Household Names) ---
     popular_raw = [
         ch for ch in master_deduped 
         if ch[3] in FAST_HOST_IDS and (is_popular_channel(ch[1]) or ch[3] == "nollywood_custom")
     ]
-    popular_deduped = deduplicate_channel_items(popular_raw)
-    popular_deduped.sort(key=lambda x: x[1].lower())
+    popular_deduped = curate_popular_favorites(popular_raw)
 
     popular_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     popular_output_lines = [popular_header, ""]
