@@ -220,7 +220,7 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
 
     # 2. Host Bitrate / Stability priority
     if source_id == "nollywood_custom":
-        score += 30  # Verified custom live stream priority
+        score += 30
     elif source_id == "samsung_all":
         score += 20
     elif source_id == "plutotv_all":
