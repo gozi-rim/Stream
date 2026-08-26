@@ -7,7 +7,8 @@ pristine global FAST and IPTV playlists with auto-injected EPG:
 - Automatically detects and eliminates exact repetitive clones across all hosts
 - Ranks duplicates and keeps only the highest quality (4K/1080p/720p HD) working feed
 - Removes dead/broken/placeholder streams
-- Auto-extracts and refreshes MUXED (Video + Audio) 1080p/720p HLS streams for African channels (Channels TV, TVC News, Arise News) via yt-dlp
+- Auto-extracts and refreshes stable 720p/1080p 30fps HLS streams for African channels (Channels TV, TVC News) via yt-dlp
+- Connects directly to official high-availability CloudFront CDN stream for Arise News
 - Neatly sorts all channels by genre categories (News, Sports, Movies, Kids, etc.)
 - Outputs individual network playlists + Master Combined + Curated Popular Favorites
 """
@@ -204,7 +205,7 @@ def compute_quality_score(channel_name: str, extinf_line: str, stream_url: str, 
         score -= 20
 
     if source_id == "nollywood_custom":
-        score += 30
+        score += 35
     elif source_id == "samsung_all":
         score += 20
     elif source_id == "plutotv_all":
@@ -251,7 +252,8 @@ def deduplicate_channel_items(
 
 def refresh_youtube_live_streams(custom_data: dict) -> dict:
     """
-    Auto-refresh live MUXED (Video + Audio) HLS tokens for YouTube live stream sources using yt-dlp.
+    Auto-refresh live steady (Video + Audio) HLS tokens for YouTube live stream sources using yt-dlp.
+    Selects rock-solid 720p/1080p 30fps muxed streams (format 95/300/94).
     """
     if not yt_dlp:
         logger.warning("yt-dlp not available for live stream token refresh.")
@@ -261,7 +263,7 @@ def refresh_youtube_live_streams(custom_data: dict) -> dict:
         'quiet': True,
         'no_warnings': True,
         'extractor_args': {'youtube': {'player_client': ['android', 'ios', 'web']}},
-        'format': 'best[vcodec!=none][acodec!=none]/301/300/94/93/best'
+        'format': '95/300/94/best[vcodec!=none][acodec!=none]'
     }
 
     updated = False
@@ -270,7 +272,7 @@ def refresh_youtube_live_streams(custom_data: dict) -> dict:
             yt_url = item.get("yt_source")
             if yt_url:
                 name = item.get("name", "Channel")
-                logger.info("Auto-refreshing live MUXED video+audio HLS token for '%s' via yt-dlp...", name)
+                logger.info("Auto-refreshing live stable HLS token for '%s' via yt-dlp...", name)
                 try:
                     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         info = ydl.extract_info(yt_url, download=False)
@@ -278,7 +280,7 @@ def refresh_youtube_live_streams(custom_data: dict) -> dict:
                         if new_hls and new_hls.startswith("http"):
                             item["url"] = new_hls
                             updated = True
-                            logger.info("Successfully refreshed MUXED video+audio for '%s' (%s)", name, info.get("resolution"))
+                            logger.info("Successfully refreshed stable HLS for '%s' (%s, Format: %s)", name, info.get("resolution"), info.get("format_id"))
                 except Exception as e:
                     logger.warning("yt-dlp refresh notice for '%s': %s", name, e)
 
