@@ -729,8 +729,15 @@ def generate_all():
     combined_size_kb = os.path.getsize(combined_file_path) / 1024
     logger.info("Wrote Master All-Region Playlist 'all_combined.m3u': %d unique channels (%.2f KB)", len(master_deduped), combined_size_kb)
 
+    # Major FAST host source IDs
+    FAST_HOST_IDS = {"samsung_all", "plutotv_all", "plex_all", "roku_all", "tubi_all", "nollywood_custom"}
+
     # --- DEDICATED NOLLYWOOD & AFRICAN TV PLAYLIST ---
-    nolly_channels = [ch for ch in master_deduped if ch[0] == "Nollywood & African TV"]
+    nolly_channels = [
+        ch for ch in master_deduped 
+        if (ch[3] == "nollywood_custom" or (ch[0] == "Nollywood & African TV" and ch[3] in FAST_HOST_IDS))
+    ]
+    nolly_channels.sort(key=lambda x: x[1].lower())
     nolly_epg_str = "https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz"
     nolly_header = f'#EXTM3U url-tvg="{nolly_epg_str}" x-tvg-url="{nolly_epg_str}"'
     nolly_output_lines = [nolly_header, ""]
@@ -756,8 +763,11 @@ def generate_all():
         "status": "active" if len(nolly_channels) > 0 else "empty"
     })
 
-    # --- CURATED POPULAR FAVORITES PLAYLIST ---
-    popular_raw = [ch for ch in master_deduped if is_popular_channel(ch[1]) or ch[0] == "Nollywood & African TV"]
+    # --- CURATED POPULAR FAVORITES PLAYLIST (Alphabetical A-Z, Curated Household Names) ---
+    popular_raw = [
+        ch for ch in master_deduped 
+        if ch[3] in FAST_HOST_IDS and (is_popular_channel(ch[1]) or ch[3] == "nollywood_custom")
+    ]
     popular_deduped = deduplicate_channel_items(popular_raw)
     popular_deduped.sort(key=lambda x: x[1].lower())
 

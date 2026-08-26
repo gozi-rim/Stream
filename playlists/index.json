@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26 15:00:50Z",
+  "generated_at": "2026-08-26 15:06:02Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -243,7 +243,7 @@
       "name": "Nollywood & African TV",
       "file": "nollywood.m3u8",
       "file_m3u": "nollywood.m3u",
-      "channels_count": 52,
+      "channels_count": 4,
       "epg_url": "https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz",
       "status": "active"
     },
@@ -252,7 +252,7 @@
       "name": "Popular Favorites (Curated Best)",
       "file": "popular_favorites.m3u8",
       "file_m3u": "popular_favorites.m3u",
-      "channels_count": 341,
+      "channels_count": 222,
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/PlutoTV/all.xml.gz,https://i.mjh.nz/Plex/all.xml.gz,https://i.mjh.nz/Roku/all.xml.gz,https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml,https://i.mjh.nz/world/epg.xml.gz,https://i.mjh.nz/DStv/za.xml.gz",
       "status": "active"
     }
