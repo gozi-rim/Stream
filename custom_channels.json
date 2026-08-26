@@ -1,31 +1,135 @@
 {
   "dstv": [
     {
-      "name": "SuperSport Premier League [Sample/Template]",
+      "name": "SuperSport Premier League",
       "tvg_id": "supersport-premier-league",
       "tvg_name": "SuperSport Premier League",
       "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportPremierLeague.png",
-      "group": "DStv Sports",
+      "group": "Sports & Racing",
       "url": "https://example.com/streams/dstv/ss_pl.m3u8"
     },
     {
-      "name": "SuperSport Grandstand [Sample/Template]",
+      "name": "SuperSport Grandstand",
       "tvg_id": "supersport-grandstand",
       "tvg_name": "SuperSport Grandstand",
       "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportGrandstand.png",
-      "group": "DStv Sports",
+      "group": "Sports & Racing",
       "url": "https://example.com/streams/dstv/ss_grandstand.m3u8"
     },
     {
-      "name": "M-Net 101 [Sample/Template]",
+      "name": "Africa Magic Showcase",
+      "tvg_id": "africa-magic-showcase",
+      "tvg_name": "Africa Magic Showcase",
+      "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicShowcase.png",
+      "group": "Nollywood & African TV",
+      "url": "https://example.com/streams/dstv/africamagic_showcase.m3u8"
+    },
+    {
+      "name": "Africa Magic Epic",
+      "tvg_id": "africa-magic-epic",
+      "tvg_name": "Africa Magic Epic",
+      "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicEpic.png",
+      "group": "Nollywood & African TV",
+      "url": "https://example.com/streams/dstv/africamagic_epic.m3u8"
+    },
+    {
+      "name": "Africa Magic Urban",
+      "tvg_id": "africa-magic-urban",
+      "tvg_name": "Africa Magic Urban",
+      "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicUrban.png",
+      "group": "Nollywood & African TV",
+      "url": "https://example.com/streams/dstv/africamagic_urban.m3u8"
+    },
+    {
+      "name": "M-Net 101",
       "tvg_id": "m-net",
       "tvg_name": "M-Net 101",
       "tvg_logo": "https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/MNet.png",
-      "group": "DStv Entertainment",
+      "group": "Entertainment",
       "url": "https://example.com/streams/dstv/mnet.m3u8"
     }
   ],
-  "samsung_nz": [],
-  "plex_au": [],
+  "nollywood": [
+    {
+      "name": "Channels TV",
+      "tvg_id": "ChannelsTV.ng@SD",
+      "tvg_name": "Channels TV",
+      "tvg_logo": "https://i.imgur.com/3pPj5Qf.png",
+      "group": "Nollywood & African TV",
+      "url": "https://cs2.push2stream.com/CHANNELSTV-DVR/playlist.m3u8"
+    },
+    {
+      "name": "Channels 24 Africa",
+      "tvg_id": "Channels24.ng@SD",
+      "tvg_name": "Channels 24",
+      "tvg_logo": "https://i.imgur.com/3pPj5Qf.png",
+      "group": "Nollywood & African TV",
+      "url": "https://live20.bozztv.com/dvrfl06/astv/astv-channel24africa/index.m3u8"
+    },
+    {
+      "name": "TVC News Nigeria",
+      "tvg_id": "TVCNews.ng",
+      "tvg_name": "TVC News",
+      "tvg_logo": "https://i.imgur.com/1GvK0Z4.png",
+      "group": "Nollywood & African TV",
+      "url": "https://tvcnews.ercdn.net/tvcnews/tvcnews.m3u8"
+    },
+    {
+      "name": "Nolly Africa HD",
+      "tvg_id": "NollyAfrica.ng",
+      "tvg_name": "Nolly Africa HD",
+      "tvg_logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB3000008F6_20260421T133748SQUARE.png",
+      "group": "Nollywood & African TV",
+      "url": "https://jmp2.uk/stvp-USBB3000008F6"
+    },
+    {
+      "name": "AIT (Africa Independent Television)",
+      "tvg_id": "AIT.ng",
+      "tvg_name": "AIT",
+      "tvg_logo": "https://i.imgur.com/YwN9qR5.png",
+      "group": "Nollywood & African TV",
+      "url": "https://live.ait.live/hls/live.m3u8"
+    },
+    {
+      "name": "Silverbird Television",
+      "tvg_id": "SilverbirdTV.ng",
+      "tvg_name": "Silverbird TV",
+      "tvg_logo": "https://i.imgur.com/7v7wE6O.png",
+      "group": "Nollywood & African TV",
+      "url": "https://live.silverbirdtv.com/hls/stream.m3u8"
+    },
+    {
+      "name": "Soundcity TV",
+      "tvg_id": "SoundcityTV.ng",
+      "tvg_name": "Soundcity TV",
+      "tvg_logo": "https://i.imgur.com/5A5r7qH.png",
+      "group": "Nollywood & African TV",
+      "url": "https://live.soundcity.tv/hls/stream.m3u8"
+    },
+    {
+      "name": "NTA News 24",
+      "tvg_id": "NTANews24.ng",
+      "tvg_name": "NTA News 24",
+      "tvg_logo": "https://i.imgur.com/J3yJq5q.png",
+      "group": "Nollywood & African TV",
+      "url": "https://stream.nta.ng/live/live/playlist.m3u8"
+    },
+    {
+      "name": "Arewa 24",
+      "tvg_id": "Arewa24.ng",
+      "tvg_name": "Arewa 24",
+      "tvg_logo": "https://i.imgur.com/K9p5N8g.png",
+      "group": "Nollywood & African TV",
+      "url": "https://arewa24.ercdn.net/arewa24/arewa24.m3u8"
+    },
+    {
+      "name": "AMusic Channel Nigeria",
+      "tvg_id": "AMusicChannel.ng",
+      "tvg_name": "AMusic Channel",
+      "tvg_logo": "https://i.imgur.com/2s4Jb7z.png",
+      "group": "Music & Audio",
+      "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_021/Stream/playlist.m3u8"
+    }
+  ],
   "custom": []
 }

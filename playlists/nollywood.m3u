@@ -1,0 +1,40 @@
+#EXTM3U url-tvg="https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz" x-tvg-url="https://i.mjh.nz/DStv/za.xml.gz,https://i.mjh.nz/SamsungTVPlus/all.xml.gz,https://i.mjh.nz/all/epg.xml.gz"
+
+#EXTINF:-1 tvg-id="africa-magic-epic" tvg-name="Africa Magic Epic" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicEpic.png" group-title="Nollywood & African TV",Africa Magic Epic
+https://example.com/streams/dstv/africamagic_epic.m3u8
+
+#EXTINF:-1 tvg-id="africa-magic-showcase" tvg-name="Africa Magic Showcase" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicShowcase.png" group-title="Nollywood & African TV",Africa Magic Showcase
+https://example.com/streams/dstv/africamagic_showcase.m3u8
+
+#EXTINF:-1 tvg-id="africa-magic-urban" tvg-name="Africa Magic Urban" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicUrban.png" group-title="Nollywood & African TV",Africa Magic Urban
+https://example.com/streams/dstv/africamagic_urban.m3u8
+
+#EXTINF:-1 tvg-id="AIT.ng" tvg-name="AIT" tvg-logo="https://i.imgur.com/YwN9qR5.png" group-title="Nollywood & African TV",AIT (Africa Independent Television)
+https://live.ait.live/hls/live.m3u8
+
+#EXTINF:-1 tvg-id="AMusicChannel.ng" tvg-name="AMusic Channel" tvg-logo="https://i.imgur.com/2s4Jb7z.png" group-title="Nollywood & African TV",AMusic Channel Nigeria
+https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_021/Stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Arewa24.ng" tvg-name="Arewa 24" tvg-logo="https://i.imgur.com/K9p5N8g.png" group-title="Nollywood & African TV",Arewa 24
+https://arewa24.ercdn.net/arewa24/arewa24.m3u8
+
+#EXTINF:-1 tvg-id="Channels24.ng@SD" tvg-name="Channels 24" tvg-logo="https://i.imgur.com/3pPj5Qf.png" group-title="Nollywood & African TV",Channels 24 Africa
+https://live20.bozztv.com/dvrfl06/astv/astv-channel24africa/index.m3u8
+
+#EXTINF:-1 tvg-id="ChannelsTV.ng@SD" tvg-name="Channels TV" tvg-logo="https://i.imgur.com/3pPj5Qf.png" group-title="Nollywood & African TV",Channels TV
+https://cs2.push2stream.com/CHANNELSTV-DVR/playlist.m3u8
+
+#EXTINF:-1 channel-id="GB5300001G9-gb" tvg-id="GB5300001G9" tvg-chno="4208" tvg-name="Nolly Africa HD" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB5300001G9_20260224T025324SQUARE.png" group-title="Nollywood & African TV",Nolly Africa HD
+https://jmp2.uk/stvp-GB5300001G9
+
+#EXTINF:-1 tvg-id="NTANews24.ng" tvg-name="NTA News 24" tvg-logo="https://i.imgur.com/J3yJq5q.png" group-title="Nollywood & African TV",NTA News 24
+https://stream.nta.ng/live/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SilverbirdTV.ng" tvg-name="Silverbird TV" tvg-logo="https://i.imgur.com/7v7wE6O.png" group-title="Nollywood & African TV",Silverbird Television
+https://live.silverbirdtv.com/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="SoundcityTV.ng" tvg-name="Soundcity TV" tvg-logo="https://i.imgur.com/5A5r7qH.png" group-title="Nollywood & African TV",Soundcity TV
+https://live.soundcity.tv/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="TVCNews.ng" tvg-name="TVC News" tvg-logo="https://i.imgur.com/1GvK0Z4.png" group-title="Nollywood & African TV",TVC News Nigeria
+https://tvcnews.ercdn.net/tvcnews/tvcnews.m3u8

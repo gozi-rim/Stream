@@ -1,10 +1,19 @@
 #EXTM3U url-tvg="https://i.mjh.nz/DStv/za.xml.gz" x-tvg-url="https://i.mjh.nz/DStv/za.xml.gz"
 
-#EXTINF:-1 tvg-id="m-net" tvg-name="M-Net 101" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/MNet.png" group-title="DStv Entertainment",M-Net 101 [Sample/Template]
-https://example.com/streams/dstv/mnet.m3u8
+#EXTINF:-1 tvg-id="africa-magic-epic" tvg-name="Africa Magic Epic" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicEpic.png" group-title="Nollywood & African TV",Africa Magic Epic
+https://example.com/streams/dstv/africamagic_epic.m3u8
 
-#EXTINF:-1 tvg-id="supersport-grandstand" tvg-name="SuperSport Grandstand" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportGrandstand.png" group-title="DStv Sports",SuperSport Grandstand [Sample/Template]
+#EXTINF:-1 tvg-id="africa-magic-showcase" tvg-name="Africa Magic Showcase" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicShowcase.png" group-title="Nollywood & African TV",Africa Magic Showcase
+https://example.com/streams/dstv/africamagic_showcase.m3u8
+
+#EXTINF:-1 tvg-id="africa-magic-urban" tvg-name="Africa Magic Urban" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/AfricaMagicUrban.png" group-title="Nollywood & African TV",Africa Magic Urban
+https://example.com/streams/dstv/africamagic_urban.m3u8
+
+#EXTINF:-1 tvg-id="supersport-grandstand" tvg-name="SuperSport Grandstand" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportGrandstand.png" group-title="Sports & Racing",SuperSport Grandstand
 https://example.com/streams/dstv/ss_grandstand.m3u8
 
-#EXTINF:-1 tvg-id="supersport-premier-league" tvg-name="SuperSport Premier League" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportPremierLeague.png" group-title="DStv Sports",SuperSport Premier League [Sample/Template]
+#EXTINF:-1 tvg-id="supersport-premier-league" tvg-name="SuperSport Premier League" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/SuperSportPremierLeague.png" group-title="Sports & Racing",SuperSport Premier League
 https://example.com/streams/dstv/ss_pl.m3u8
+
+#EXTINF:-1 tvg-id="m-net" tvg-name="M-Net 101" tvg-logo="https://raw.githubusercontent.com/iptv-org/epg/master/logos/za/MNet.png" group-title="Entertainment",M-Net 101
+https://example.com/streams/dstv/mnet.m3u8
