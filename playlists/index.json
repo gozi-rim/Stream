@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "generated_at": "2026-08-26 22:46:14Z",
-=======
-  "generated_at": "2026-08-27 06:09:09Z",
->>>>>>> e6d3074 (Sort popular_favorites alphabetically A-Z while preserving Nigerian news and Roku Power Rangers feeds)
+  "generated_at": "2026-08-27 06:44:46Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -160,11 +156,7 @@
         "Music & Audio": 7,
         "Reality & Game Shows": 3,
         "Drama & Series": 3,
-<<<<<<< HEAD
-        "Entertainment": 147
-=======
         "Entertainment": 146
->>>>>>> e6d3074 (Sort popular_favorites alphabetically A-Z while preserving Nigerian news and Roku Power Rangers feeds)
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
