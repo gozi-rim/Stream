@@ -700,10 +700,10 @@ def generate_all():
         "status": "active" if len(nolly_channels) > 0 else "empty"
     })
 
-    # --- CURATED POPULAR FAVORITES PLAYLIST ---
+    # --- CURATED POPULAR FAVORITES PLAYLIST (Alphabetical A-Z) ---
     popular_raw = [ch for ch in master_deduped if is_popular_channel(ch[1]) or ch[0] == "Nollywood & African TV"]
     popular_deduped = deduplicate_channel_items(popular_raw)
-    popular_deduped.sort(key=lambda x: (CATEGORY_PRIORITY.get(x[0], 99), x[1].lower()))
+    popular_deduped.sort(key=lambda x: x[1].lower())
 
     popular_header = f'#EXTM3U url-tvg="{combined_epg_str}" x-tvg-url="{combined_epg_str}"'
     popular_output_lines = [popular_header, ""]
