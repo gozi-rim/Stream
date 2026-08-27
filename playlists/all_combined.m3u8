@@ -706,6 +706,11 @@ https://jmp2.uk/stvp-USBD420002446
 #EXTINF:-1 channel-id="US2600007WJ-us" tvg-id="US2600007WJ" tvg-chno="2310" tvg-name="NFL Channel" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2600007WJ_20260421T143233SQUARE.png" group-title="Sports & Racing",NFL Channel
 https://jmp2.uk/stvp-US2600007WJ
 
+#EXTINF:-1 channel-id="mjh-misc511-fast" tvg-id="mjh-misc511-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc511-fast-cd864f.png" group-title="Sports & Racing" , NFL Flag Championships: Legends Match
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc511-fast.m3u8
+
 #EXTINF:-1 channel-id="647f8d22a2fc3fadb4721685-6a10994ab05301ef36a6a8e2" tvg-id="647f8d22a2fc3fadb4721685-6a10994ab05301ef36a6a8e2" tvg-chno="" tvg-name="NFL Super Bowl Champions" tvg-logo="https://provider-static.plex.tv/epg/cms/production/ecd94149-87df-46a3-8864-545c91f2d9d1/NFLSuperBowlChampions_Logo_White_1500x1000_-_Harry_Marshall.png" group-title="Sports & Racing",NFL Super Bowl Champions
 https://epg.provider.plex.tv/library/parts/647f8d22a2fc3fadb4721685-6a10994ab05301ef36a6a8e2/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn
 
@@ -856,6 +861,11 @@ https://jmp2.uk/stvp-CABA3700006IC
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-606605549dbfca002d2ae873" tvg-id="6a1610bebdf296985fd95603-606605549dbfca002d2ae873" tvg-chno="" tvg-name="TNA Wrestling Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5d4f68c3-82af-45e7-b2c4-39aff69f3ce0/TNAWrestling_Plex_LogoforDarkBG_1500x1000_-_Alex_TushinghamRDX.png" group-title="Sports & Racing",TNA Wrestling Channel
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-606605549dbfca002d2ae873/?X-Plex-Token=r3Da2qU6gBCMWwoguVEn
+
+#EXTINF:-1 channel-id="mjh-misc501-fast" tvg-id="mjh-misc501-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc501-fast-f90888.png" group-title="Sports & Racing" , Top End T20 Cricket MISC501
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc501-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-misc503-fast" tvg-id="mjh-misc503-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc503-fast-f90888.png" group-title="Sports & Racing" , Top End T20 Cricket MISC503
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56

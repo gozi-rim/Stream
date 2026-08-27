@@ -80,6 +80,11 @@ https://i.mjh.nz/.r/sbs-sysdata_s_p_a_fifa_6.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/livgolfreplays-fast.m3u8
 
+#EXTINF:-1 channel-id="mjh-misc511-fast" tvg-id="mjh-misc511-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc511-fast-cd864f.png" group-title="Sports & Racing" , NFL Flag Championships: Legends Match
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc511-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-racingwa-fast" tvg-id="mjh-racingwa-fast" tvg-logo="https://i.mjh.nz/.images/auto-racingwa-fast-128220.png" group-title="Sports & Racing" , Racing WA
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -104,6 +109,11 @@ https://i.mjh.nz/.r/sky-racing-2.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sky-racing-thoroughbred.m3u8
+
+#EXTINF:-1 channel-id="mjh-misc501-fast" tvg-id="mjh-misc501-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc501-fast-f90888.png" group-title="Sports & Racing" , Top End T20 Cricket MISC501
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc501-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-misc503-fast" tvg-id="mjh-misc503-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc503-fast-f90888.png" group-title="Sports & Racing" , Top End T20 Cricket MISC503
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
