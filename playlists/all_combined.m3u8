@@ -852,6 +852,11 @@ https://jmp2.uk/stvp-CABA3700006IC
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-606605549dbfca002d2ae873" tvg-id="6a1610bebdf296985fd95603-606605549dbfca002d2ae873" tvg-chno="" tvg-name="TNA Wrestling Channel" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5d4f68c3-82af-45e7-b2c4-39aff69f3ce0/TNAWrestling_Plex_LogoforDarkBG_1500x1000_-_Alex_TushinghamRDX.png" group-title="Sports & Racing",TNA Wrestling Channel
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-606605549dbfca002d2ae873/?X-Plex-Token=FArirQyQ1JGwTpL1Bwqt
 
+#EXTINF:-1 channel-id="mjh-misc501-fast" tvg-id="mjh-misc501-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc501-fast-f90888.png" group-title="Sports & Racing" , Top End T20 Cricket MISC501
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc501-fast.m3u8
+
 #EXTINF:-1 channel-id="IN8000085E-in" tvg-id="IN8000085E" tvg-chno="1924" tvg-name="TRACE Sport Stars" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN8000085E_20260623T015705SQUARE.png" group-title="Sports & Racing",TRACE Sport Stars
 https://jmp2.uk/stvp-IN8000085E
 
@@ -6638,6 +6643,11 @@ https://jmp2.uk/stvp-GB3400003A9
 
 #EXTINF:-1 channel-id="65cba7573ba51e00084d76e1-no" tvg-id="65cba7573ba51e00084d76e1" tvg-chno="918" tvg-name="Key & Peele" tvg-logo="https://images.pluto.tv/channels/65cba7573ba51e00084d76e1/colorLogoPNG.png" group-title="Entertainment",Key & Peele
 https://jmp2.uk/plu-65cba7573ba51e00084d76e1.m3u8
+
+#EXTINF:-1 channel-id="mjh-misc514-fast" tvg-id="mjh-misc514-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc514-fast-fed857.png" group-title="Entertainment" , KFC T20 Max MISC514
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc514-fast.m3u8
 
 #EXTINF:-1 channel-id="IN4600008T4-in" tvg-id="IN4600008T4" tvg-chno="1820" tvg-name="KidDo MATIX" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4600008T4_20260623T015209SQUARE.png" group-title="Entertainment",KidDo MATIX
 https://jmp2.uk/stvp-IN4600008T4
