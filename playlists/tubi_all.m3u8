@@ -12,6 +12,9 @@ https://live-manifest.production-public.tubi.io/live/083318f5-9f96-4a49-a024-591
 #EXTINF:-1 tvg-id="555130" tvg-logo="https://canvas-lb.tubitv.com/opts/YMZxvZaVEX0HtA==/4de90f79-d72c-4016-a740-93916a615dc2/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",CBC News
 https://live-manifest.production-public.tubi.io/live/08b1a540-5618-46ce-b6e2-c0dfd1e8786f/playlist.m3u8
 
+#EXTINF:-1 tvg-id="689473" tvg-logo="https://canvas-lb.tubitv.com/opts/7u12jTpbUtjcYA==/572073ab-5145-412f-b9d0-6711c73ab661/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",CBS 6 Richmond WTVR
+https://live-manifest.production-public.tubi.io/live/41feddbe-795f-4294-bb8c-32fcb26a7d54/playlist.m3u8
+
 #EXTINF:-1 tvg-id="555126" tvg-logo="https://canvas-lb.tubitv.com/opts/4Rv4zVMsE02xuA==/4975eac2-9902-4ac5-8036-f28a6d9979a0/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Cheddar
 https://live-manifest.production-public.tubi.io/live/2d43684f-75a3-452c-85e2-b88f36654606/playlist.m3u8
 
@@ -54,14 +57,23 @@ https://live-manifest.production-public.tubi.io/live/872ed469-a2cf-41d6-a35c-726
 #EXTINF:-1 tvg-id="597678" tvg-logo="https://canvas-lb.tubitv.com/opts/evVIud42yl9aiQ==/bf04720c-d113-4728-a69a-a0ebc800e7b3/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Today All Day
 https://live-manifest.production-public.tubi.io/live/d51de949-6ef0-4e1e-a370-4602eaf9f466/playlist.m3u8
 
-#EXTINF:-1 tvg-id="618765" tvg-logo="https://canvas-lb.tubitv.com/opts/X5Rc0LSutUJ6GA==/dec6f7c5-0a9a-4299-8fb7-9a634a4598f5/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WFMY Greensboro 2
-https://live-manifest.production-public.tubi.io/live/463137aa-545b-4f06-b2e6-108decd9ebb3/playlist.m3u8
+#EXTINF:-1 tvg-id="610463" tvg-logo="https://canvas-lb.tubitv.com/opts/hdPtjnljSskY1Q==/8da5a668-c2a6-4e29-aebd-e1e0e02e06b6/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Very Boston WCVB
+https://live-manifest.production-public.tubi.io/live/d133d4a2-5013-4630-addf-b67c393d35ba/playlist.m3u8
 
-#EXTINF:-1 tvg-id="650252" tvg-logo="https://canvas-lb.tubitv.com/opts/qNO4KNBFwJh4rg==/9c9c952e-6a73-4104-bf70-6026cb323ab3/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WSOC Charlotte
-https://live-manifest.production-public.tubi.io/live/6908219d-0b27-435f-bf80-51168a281c4a/playlist.m3u8
+#EXTINF:-1 tvg-id="603906" tvg-logo="https://canvas-lb.tubitv.com/opts/-siY3OmlqWT_qw==/774c9b9e-6011-422f-b77b-8715b998c56d/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WBAL Very Baltimore 11
+https://live-manifest.production-public.tubi.io/live/86ece219-b5d8-478c-861a-76f58b9824da/playlist.m3u8
 
-#EXTINF:-1 tvg-id="610465" tvg-logo="https://canvas-lb.tubitv.com/opts/SyEQhYwg_M3CPw==/533b0e82-7e1f-4213-8447-867d8a4ce393/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WXII Very Carolina 12
-https://live-manifest.production-public.tubi.io/live/7024f527-09ef-4afa-af9c-a8e518fdc7f9/playlist.m3u8
+#EXTINF:-1 tvg-id="603917" tvg-logo="https://canvas-lb.tubitv.com/opts/vFRSpdoQ4vZkWA==/04771d5a-5adf-4e6d-bbdc-d0815e36b5a3/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WGAL Very Lancaster 8
+https://live-manifest.production-public.tubi.io/live/983a4bbf-3ed1-49ff-a577-cf2039c72f4c/playlist.m3u8
+
+#EXTINF:-1 tvg-id="692074" tvg-logo="https://canvas-lb.tubitv.com/opts/xXOCG4vzUl16Pg==/1ca1f944-34e3-4735-bf58-27af61762549/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WMAR 2 Baltimore
+https://live-manifest.production-public.tubi.io/live/e6d38135-8231-40dc-8941-35df2190dfc4/playlist.m3u8
+
+#EXTINF:-1 tvg-id="578082" tvg-logo="https://canvas-lb.tubitv.com/opts/y_E66XeOMH3a8Q==/08428b49-8dd0-446e-9b7b-c7aa1c824400/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WMUR Very New Hampshire 9
+https://live-manifest.production-public.tubi.io/live/8852afd3-e359-4e34-a7b0-528fa09d057a/playlist.m3u8
+
+#EXTINF:-1 tvg-id="610471" tvg-logo="https://canvas-lb.tubitv.com/opts/vKDPYT9kMVQoOg==/16ed6354-f9fc-4b18-9f64-8c7ce0b786f8/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WUSA DC/MD/VA 9
+https://live-manifest.production-public.tubi.io/live/ab1704f0-7075-4fe7-9263-b25af145e503/playlist.m3u8
 
 #EXTINF:-1 tvg-id="400000012" tvg-logo="https://canvas-lb.tubitv.com/opts/kRrxv36KIg9bPw==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjlAAQ==" group-title="Sports & Racing",ACCDN
 https://live-manifest.production-public.tubi.io/live/f1e8b38c-7c04-4630-9d0d-7636d492c6d6/playlist.m3u8

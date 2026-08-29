@@ -333,9 +333,6 @@ https://jmp2.uk/rok-c5c6a54fbd0328b108453e2537b7eee1.m3u8
 #EXTINF:-1 channel-id="1a87fea1434bc2936cc9726525047aec" tvg-id="1a87fea1434bc2936cc9726525047aec" tvg-chno="580" tvg-name="Danny Duncan" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1a87fea1434bc2936cc9726525047aec/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1783457743477_danny_duncan_logo_hud.png" group-title="Comedy & Stand-up",Danny Duncan
 https://jmp2.uk/rok-1a87fea1434bc2936cc9726525047aec.m3u8
 
-#EXTINF:-1 channel-id="d89b6124edce5dc0a4dfe42a8026353a" tvg-id="d89b6124edce5dc0a4dfe42a8026353a" tvg-chno="350" tvg-name="Degrassi" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d89b6124edce5dc0a4dfe42a8026353a/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1775748889190_DEGRASSI_HUD_logo_center_260x147.png.png" group-title="Comedy & Stand-up",Degrassi
-https://jmp2.uk/rok-d89b6124edce5dc0a4dfe42a8026353a.m3u8
-
 #EXTINF:-1 channel-id="d0c6ac240cb8529992ee3340e5b7f102" tvg-id="d0c6ac240cb8529992ee3340e5b7f102" tvg-chno="378" tvg-name="Ebony" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d0c6ac240cb8529992ee3340e5b7f102/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1774038479615_EbonyTV_HUDLogo_260x147_HexEFEFEF.png" group-title="Comedy & Stand-up",Ebony
 https://jmp2.uk/rok-d0c6ac240cb8529992ee3340e5b7f102.m3u8
 
@@ -402,6 +399,9 @@ https://jmp2.uk/rok-b3ad0323cd466f4bb0c04ef9bee54543.m3u8
 #EXTINF:-1 channel-id="f2bbfc9566f9519aad982aea41b95f83" tvg-id="f2bbfc9566f9519aad982aea41b95f83" tvg-chno="1051" tvg-name="Misterios sin resolver" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/f2bbfc9566f9519aad982aea41b95f83/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1673454073290_FilmRise_Misterios_SinResolver_HUDlogo_260x147.png" group-title="Crime & Mystery",Misterios sin resolver
 https://jmp2.uk/rok-f2bbfc9566f9519aad982aea41b95f83.m3u8
 
+#EXTINF:-1 channel-id="ce8a61a75e94b71f52ad51ed92b1ec65" tvg-id="ce8a61a75e94b71f52ad51ed92b1ec65" tvg-chno="635" tvg-name="Paternity Court" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ce8a61a75e94b71f52ad51ed92b1ec65/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1749753178405_PaternityCourt_HUDLogo_Centered_260x147.png" group-title="Crime & Mystery",Paternity Court
+https://jmp2.uk/rok-ce8a61a75e94b71f52ad51ed92b1ec65.m3u8
+
 #EXTINF:-1 channel-id="cc72c25b76295e07862192d21bbff05b" tvg-id="cc72c25b76295e07862192d21bbff05b" tvg-chno="515" tvg-name="Real Crime" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/cc72c25b76295e07862192d21bbff05b/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1669079132437_RealCrime_White_260x147_Horizontal.png" group-title="Crime & Mystery",Real Crime
 https://jmp2.uk/rok-cc72c25b76295e07862192d21bbff05b.m3u8
 
@@ -440,6 +440,9 @@ https://jmp2.uk/rok-b8c4f2efe56a512890042011e5cc0884.m3u8
 
 #EXTINF:-1 channel-id="0b8a86b44ef0780c3b3226a63be07e0f" tvg-id="0b8a86b44ef0780c3b3226a63be07e0f" tvg-chno="626" tvg-name="Highway Thru Hell" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/0b8a86b44ef0780c3b3226a63be07e0f/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1755914093970_HighwayThruHell_HUD_logo_260x147.png" group-title="Lifestyle, Food & Travel",Highway Thru Hell
 https://jmp2.uk/rok-0b8a86b44ef0780c3b3226a63be07e0f.m3u8
+
+#EXTINF:-1 channel-id="5dd7bdd7b320a81dd501cfac172db9c1" tvg-id="5dd7bdd7b320a81dd501cfac172db9c1" tvg-chno="952" tvg-name="Homeful en Español" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/5dd7bdd7b320a81dd501cfac172db9c1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1762753422169_Homeful_Roku_ChannelAssets_Espanol_InfoHudLogo_260x147.png" group-title="Lifestyle, Food & Travel",Homeful en Español
+https://jmp2.uk/rok-5dd7bdd7b320a81dd501cfac172db9c1.m3u8
 
 #EXTINF:-1 channel-id="a361d429db9e46665be277da42af89a4" tvg-id="a361d429db9e46665be277da42af89a4" tvg-chno="229" tvg-name="Monster Jam" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/a361d429db9e46665be277da42af89a4/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1738945799309_MonsterJam_White_Horizontal_Logo_260x147_HUD.png" group-title="Lifestyle, Food & Travel",Monster Jam
 https://jmp2.uk/rok-a361d429db9e46665be277da42af89a4.m3u8
@@ -531,8 +534,11 @@ https://jmp2.uk/rok-3580b15015379c4256440b0e119d46ed.m3u8
 #EXTINF:-1 channel-id="0213939bd8264ea1d75d5aaa54b5995e" tvg-id="0213939bd8264ea1d75d5aaa54b5995e" tvg-chno="577" tvg-name="AMP" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/0213939bd8264ea1d75d5aaa54b5995e/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1783457841921_amp_logo_hud.png" group-title="Reality & Game Shows",AMP
 https://jmp2.uk/rok-0213939bd8264ea1d75d5aaa54b5995e.m3u8
 
-#EXTINF:-1 channel-id="856fca464da0544784204ba8f6161dac" tvg-id="856fca464da0544784204ba8f6161dac" tvg-chno="720" tvg-name="PBS Antiques Roadshow" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/856fca464da0544784204ba8f6161dac/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1772722216448_260x147_CenterAligned.png" group-title="Reality & Game Shows",PBS Antiques Roadshow
-https://jmp2.uk/rok-856fca464da0544784204ba8f6161dac.m3u8
+#EXTINF:-1 channel-id="562baf35c5da56cc91cdea41537b43f9" tvg-id="562baf35c5da56cc91cdea41537b43f9" tvg-chno="631" tvg-name="BUZZR" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/562baf35c5da56cc91cdea41537b43f9/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1654733081445_BUZZR_ROKU_HUD-MONO_260X147-2021RB.png" group-title="Reality & Game Shows",BUZZR
+https://jmp2.uk/rok-562baf35c5da56cc91cdea41537b43f9.m3u8
+
+#EXTINF:-1 channel-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-chno="634" tvg-name="Let's Make a Deal" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ffe5d9e0480d1c5e1dcead3abd966ac7/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1741793674388_LMAD_HUDLogoCenterAligned_260x147.png" group-title="Reality & Game Shows",Let's Make a Deal
+https://jmp2.uk/rok-ffe5d9e0480d1c5e1dcead3abd966ac7.m3u8
 
 #EXTINF:-1 channel-id="091bf303c7fd2bc2ec6683b1dbbadae1" tvg-id="091bf303c7fd2bc2ec6683b1dbbadae1" tvg-chno="694" tvg-name="Storage Wars by A&E" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/091bf303c7fd2bc2ec6683b1dbbadae1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746034081194_Storage_Wars_HUD_logo_260x147_center_aligned.png" group-title="Reality & Game Shows",Storage Wars by A&E
 https://jmp2.uk/rok-091bf303c7fd2bc2ec6683b1dbbadae1.m3u8
