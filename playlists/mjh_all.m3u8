@@ -440,6 +440,11 @@ https://i.mjh.nz/.r/9mysteryparanormal-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/rush-nsw.m3u8
 
+#EXTINF:-1 channel-id="mjh-acountrypractice-fast" tvg-id="mjh-acountrypractice-fast" tvg-logo="https://i.mjh.nz/.images/auto-acountrypractice-fast-3f02ad.png" group-title="Entertainment" , A Country Practice
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/acountrypractice-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-abc-90-seconds-business" tvg-id="mjh-abc-90-seconds-business" tvg-logo="https://live-production.wcms.abc-cdn.net.au/ae76d32898cca0be596b7f23c1bd41f2?impolicy=wcms_crop_resize&cropH=630&cropW=1119&xPos=10&yPos=0&width=862&height=485" group-title="Entertainment" , ABC Business in 90 Seconds
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
