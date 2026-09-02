@@ -90,11 +90,6 @@ https://i.mjh.nz/.r/racingwa-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/racing-fast.m3u8
 
-#EXTINF:-1 channel-id="mjh-rugby-league-new-south-wales-school-boys-and-girls-finals-2026-fast" tvg-id="mjh-rugby-league-new-south-wales-school-boys-and-girls-finals-2026-fast" tvg-logo="https://imageresizer.static9.net.au/Z3QLq3h-0EH1pgE-TOEhn4maXCg=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F792720%2Fnhlsquircle-1.png" group-title="Sports & Racing" , Rugby League: New South Wales School Boys and Girls Finals 2026
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/rugby-league-new-south-wales-school-boys-and-girls-finals-2026-fast.m3u8
-
 #EXTINF:-1 channel-id="mjh-rugby-league-queensland-school-boys-and-girls-finals-fast" tvg-id="mjh-rugby-league-queensland-school-boys-and-girls-finals-fast" tvg-logo="https://imageresizer.static9.net.au/biMML_emaXXmNUWaXNCK_ARz0WI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F792721%2Fnhlsquircle.png" group-title="Sports & Racing" , Rugby League: Queensland School Boys and Girls Finals
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -710,11 +705,6 @@ https://i.mjh.nz/.r/10-medical-emergency.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/mood-1288.m3u8
 
-#EXTINF:-1 channel-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-logo="https://imageresizer.static9.net.au/iOqY2TUo5cfNPI6z_h2RJgbyKCY=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F790784%2Fnhlsquircle.png" group-title="Entertainment" , Men's National Basketball NBL Blitz
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/mens-national-basketball-nbl-blitz-fast.m3u8
-
 #EXTINF:-1 channel-id="mjh-mightymachines-fast" tvg-id="mjh-mightymachines-fast" tvg-logo="https://i.mjh.nz/.images/auto-mightymachines-fast-0fa14e.png" group-title="Entertainment" , Mighty Machines
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -729,6 +719,11 @@ https://i.mjh.nz/.r/cas40-fast.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sky-ptmb.m3u8
+
+#EXTINF:-1 channel-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-logo="https://imageresizer.static9.net.au/iOqY2TUo5cfNPI6z_h2RJgbyKCY=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F790784%2Fnhlsquircle.png" group-title="Entertainment" , NBL Blitz
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/mens-national-basketball-nbl-blitz-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-ncis-fast" tvg-id="mjh-ncis-fast" tvg-logo="https://i.mjh.nz/.images/auto-ncis-fast-6f82bd.png" group-title="Entertainment" , NCIS
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
@@ -1079,11 +1074,6 @@ https://i.mjh.nz/.r/10-wildest.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/winnersnlosers-fast.m3u8
-
-#EXTINF:-1 channel-id="mjh-misc515-fast" tvg-id="mjh-misc515-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc515-fast-35f6c5.png" group-title="Entertainment" , WSL Championship Tour
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/misc515-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-10-youtv" tvg-id="mjh-10-youtv" tvg-logo="https://10.com.au/ip/s3/2024/07/10/33f7c16e8ba1628d52844cb45b8eac4f-1326074.png?image-profile=logo" tvg-chno="16" group-title="Entertainment" , YouTV
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
