@@ -1620,6 +1620,11 @@ https://jmp2.uk/stvp-IN38000072R
 #EXTINF:-1 channel-id="IN40000100Y-in" tvg-id="IN40000100Y" tvg-chno="1109" tvg-name="The Movie Club+2" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260812T011014SQUARE.png" group-title="Movies & Cinema",The Movie Club+2
 https://jmp2.uk/stvp-IN40000100Y
 
+#EXTINF:-1 channel-id="mjh-10-seasonalmovies" tvg-id="mjh-10-seasonalmovies" tvg-logo="https://10.com.au/ip/s3/2024/04/01/86e45216ee9df7d873e393dccb379d94-1306209.png?image-profile=logo" group-title="Movies & Cinema" , Thriller Movies
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-seasonalmovies.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-644c446d7472b186783f359e" tvg-id="6a1610bebdf296985fd95603-644c446d7472b186783f359e" tvg-chno="" tvg-name="Todo Cine" tvg-logo="https://provider-static.plex.tv/epg/cms/production/afe5cd54-0d6d-4b60-a4df-91a8d7ac7960/TodoCine_-_White_Fernando_Fraderdx.png" group-title="Movies & Cinema",Todo Cine
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-644c446d7472b186783f359e/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
 
@@ -1661,6 +1666,11 @@ https://jmp2.uk/stvp-IN21000014R
 
 #EXTINF:-1 channel-id="IN2100004C4-in" tvg-id="IN2100004C4" tvg-chno="1212" tvg-name="Zee Horror Nights" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100004C4_20260623T013340SQUARE.png" group-title="Movies & Cinema",Zee Horror Nights
 https://jmp2.uk/stvp-IN2100004C4
+
+#EXTINF:-1 channel-id="mjh-10-adultanimation" tvg-id="mjh-10-adultanimation" tvg-logo="https://10.com.au/ip/s3/2024/03/21/fb3a87d8a0126b81727106f43c2a2aef-1304705.png?image-profile=logo" group-title="Animation & Anime" , Adult Animation
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-adultanimation.m3u8
 
 #EXTINF:-1 channel-id="69690c6ea1b03f531587d2c2-de" tvg-id="69690c6ea1b03f531587d2c2" tvg-chno="374" tvg-name="Akiba Anime" tvg-logo="https://images.pluto.tv/channels/69690c6ea1b03f531587d2c2/colorLogoPNG_1784549597168.png" group-title="Animation & Anime",Akiba Anime
 https://jmp2.uk/plu-69690c6ea1b03f531587d2c2.m3u8
@@ -2185,6 +2195,11 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-68c98e746058
 
 #EXTINF:-1 tvg-id="400000095" tvg-logo="https://canvas-lb.tubitv.com/opts/BdCf_2WU9Nzvbw==/12e83781-4ab1-491a-826e-8b968c78ec32/CHgQeDoFMS4xLjlAAQ==" group-title="Crime & Mystery",Crime Cults Killers
 https://live-manifest.production-public.tubi.io/live/95965f3d-67fb-47de-90ae-cb8851479963/playlist.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-crime-hunters" tvg-id="mjh-10-crime-hunters" tvg-logo="https://10.com.au/ip/s3/2024/03/06/cb69de15e7b8989a218ad25b7f6547ef-1301820.png?image-profile=logo" group-title="Crime & Mystery" , Crime Hunters
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-crime-hunters.m3u8
 
 #EXTINF:-1 channel-id="GBBD4100010H1-gb" tvg-id="GBBD4100010H1" tvg-chno="4291" tvg-name="Crime Network" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD4100010H1_20260804T051827SQUARE.png" group-title="Crime & Mystery",Crime Network
 https://jmp2.uk/stvp-GBBD4100010H1
@@ -3061,6 +3076,11 @@ https://jmp2.uk/plu-5d14fdb8ca91eedee1633117.m3u8
 #EXTINF:-1 channel-id="ATAJ7000105F-at" tvg-id="ATAJ7000105F" tvg-chno="4075" tvg-name="MTV Teen Mom" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATAJ7000105F_20250107T021734SQUARE.png" group-title="Music & Audio",MTV Teen Mom
 https://jmp2.uk/stvp-ATAJ7000105F
 
+#EXTINF:-1 channel-id="mjh-10-mtv-the-shores" tvg-id="mjh-10-mtv-the-shores" tvg-logo="https://10.com.au/ip/s3/2023/07/11/3901f5c4522a0c36cfed8630ab781a5e-1248401.png?image-profile=logo" group-title="Music & Audio" , MTV The Shores
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-mtv-the-shores.m3u8
+
 #EXTINF:-1 channel-id="63eb9495a8b227000841bf64-es" tvg-id="63eb9495a8b227000841bf64" tvg-chno="201" tvg-name="MTV Vergüenza ajena" tvg-logo="https://images.pluto.tv/channels/63eb9495a8b227000841bf64/colorLogoPNG.png" group-title="Music & Audio",MTV Vergüenza ajena
 https://jmp2.uk/plu-63eb9495a8b227000841bf64.m3u8
 
@@ -3499,6 +3519,11 @@ https://jmp2.uk/plu-5f7791b8372da90007fd45e6.m3u8
 
 #EXTINF:-1 channel-id="66abefe5d2d50d00082c7d12-us" tvg-id="66abefe5d2d50d00082c7d12" tvg-chno="1675" tvg-name="VH1 Queens of Reality" tvg-logo="https://images.pluto.tv/channels/66abefe5d2d50d00082c7d12/colorLogoPNG.png" group-title="Reality & Game Shows",VH1 Queens of Reality
 https://jmp2.uk/plu-66abefe5d2d50d00082c7d12.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-world-of-survivor" tvg-id="mjh-10-world-of-survivor" tvg-logo="https://10.com.au/ip/s3/2024/09/24/6a7955dee63fad795d40332b9cfbf8ce-1340644.png?image-profile=logo" group-title="Reality & Game Shows" , World Of Survivor
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-world-of-survivor.m3u8
 
 #EXTINF:-1 channel-id="CABB26000082J-ca" tvg-id="CABB26000082J" tvg-chno="1600" tvg-name="21 Jump Street" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABB26000082J_20250826T234604SQUARE.png" group-title="Classic TV & Sitcoms",21 Jump Street
 https://jmp2.uk/stvp-CABB26000082J
@@ -5623,6 +5648,11 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6434540bf43c
 #EXTINF:-1 channel-id="ITBD4100001MG-it" tvg-id="ITBD4100001MG" tvg-chno="4237" tvg-name="Elisa di Rivombrosa" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD4100001MG_20251125T102440SQUARE.png" group-title="Entertainment",Elisa di Rivombrosa
 https://jmp2.uk/stvp-ITBD4100001MG
 
+#EXTINF:-1 channel-id="mjh-10-embarrassing-bodies" tvg-id="mjh-10-embarrassing-bodies" tvg-logo="https://10.com.au/ip/s3/2024/10/21/f315a8cda9494cc30e29fdba87430ff8-1345391.png?image-profile=logo" group-title="Entertainment" , Embarrassing Bodies
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-embarrassing-bodies.m3u8
+
 #EXTINF:-1 channel-id="657868a7a620e30008fdbfeb-es" tvg-id="657868a7a620e30008fdbfeb" tvg-chno="62" tvg-name="Embrujadas" tvg-logo="https://images.pluto.tv/channels/657868a7a620e30008fdbfeb/colorLogoPNG_1770028317031.png" group-title="Entertainment",Embrujadas
 https://jmp2.uk/plu-657868a7a620e30008fdbfeb.m3u8
 
@@ -5972,6 +6002,11 @@ https://jmp2.uk/plu-60faf9ddfcc1f200070a5932.m3u8
 #EXTINF:-1 channel-id="69c5100c3d2597380f0f6422-es" tvg-id="69c5100c3d2597380f0f6422" tvg-chno="70" tvg-name="Gata salvaje" tvg-logo="https://images.pluto.tv/channels/69c5100c3d2597380f0f6422/colorLogoPNG_1784105533317.png" group-title="Entertainment",Gata salvaje
 https://jmp2.uk/plu-69c5100c3d2597380f0f6422.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-geckotv" tvg-id="mjh-10-geckotv" tvg-logo="https://10.com.au/ip/s3/2023/02/23/b81bfc3f4737696257ef326b0e68208e-1219777.png?image-profile=logo" tvg-chno="17" group-title="Entertainment" , Gecko TV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-geckotv.m3u8
+
 #EXTINF:-1 channel-id="KR2000012AI-kr" tvg-id="KR2000012AI" tvg-chno="528" tvg-name="Genie 한가위 특집" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KR2000012AI_20260901T053837SQUARE.png" group-title="Entertainment",Genie 한가위 특집
 https://jmp2.uk/stvp-KR2000012AI
 
@@ -6166,6 +6201,11 @@ https://live-manifest.production-public.tubi.io/live/e1314865-409b-4349-87b8-550
 
 #EXTINF:-1 channel-id="622f6faf65be650007f57aab-de" tvg-id="622f6faf65be650007f57aab" tvg-chno="59" tvg-name="Hausmeister Krause" tvg-logo="https://images.pluto.tv/channels/622f6faf65be650007f57aab/colorLogoPNG.png" group-title="Entertainment",Hausmeister Krause
 https://jmp2.uk/plu-622f6faf65be650007f57aab.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-haveyoubeenpayingattention" tvg-id="mjh-10-haveyoubeenpayingattention" tvg-logo="https://10.com.au/ip/s3/2024/12/17/20963e84ceedc64212b60c21c883e5c4-1356262.png?image-profile=logo" group-title="Entertainment" , Have You Been Paying Attention?
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-haveyoubeenpayingattention.m3u8
 
 #EXTINF:-1 channel-id="68503d3bc692373f0158c43f-gb" tvg-id="68503d3bc692373f0158c43f" tvg-chno="210" tvg-name="Hawaii Five-O" tvg-logo="https://images.pluto.tv/channels/68503d3bc692373f0158c43f/colorLogoPNG_1752574984915.png" group-title="Entertainment",Hawaii Five-O
 https://jmp2.uk/plu-68503d3bc692373f0158c43f.m3u8
@@ -7122,6 +7162,11 @@ https://i.mjh.nz/.r/medicalnrescue-fast.m3u8
 #EXTINF:-1 channel-id="GB3600001XM-gb" tvg-id="GB3600001XM" tvg-chno="4304" tvg-name="Medical Detectives" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB3600001XM_20251202T002708SQUARE.png" group-title="Entertainment",Medical Detectives
 https://jmp2.uk/stvp-GB3600001XM
 
+#EXTINF:-1 channel-id="mjh-10-medical-emergency" tvg-id="mjh-10-medical-emergency" tvg-logo="https://10.com.au/ip/s3/2023/06/28/115b6796134f1e983f41c224c31cc7c9-1246084.png?image-profile=logo" group-title="Entertainment" , Medical Emergency
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-medical-emergency.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-69d940018061ebfbca58c32c" tvg-id="6a1610bebdf296985fd95603-69d940018061ebfbca58c32c" tvg-chno="" tvg-name="Medical Incredible" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d56a778a-d52e-440b-847d-a7e118b1c043/MedicalIncredible_Logo_Dark_1500x1000.png" group-title="Entertainment",Medical Incredible
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-69d940018061ebfbca58c32c/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
 
@@ -7520,6 +7565,11 @@ https://jmp2.uk/stvp-USBA300028QU
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-66bfb2e6144c201b8b61c10f" tvg-id="64305451fc3be5947773c339-66bfb2e6144c201b8b61c10f" tvg-chno="" tvg-name="NewsWorld" tvg-logo="https://provider-static.plex.tv/epg/cms/production/2e3bf0d9-3ca6-4f65-b1d4-f180ef725d96/NewsWorld_logo_dark_-_Angela_Chan.png" group-title="Entertainment",NewsWorld
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-66bfb2e6144c201b8b61c10f/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
 
+#EXTINF:-1 channel-id="mjh-10-nexttopmodel" tvg-id="mjh-10-nexttopmodel" tvg-logo="https://10.com.au/ip/s3/2026/08/04/7b46b0620b6c96c6afcd7c47bf356f79-1448048.png?image-profile=logo" group-title="Entertainment" , Next Top Model
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-nexttopmodel.m3u8
+
 #EXTINF:-1 channel-id="IN46000140Q-in" tvg-id="IN46000140Q" tvg-chno="1112" tvg-name="NH BollyFlix" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN46000140Q_20260623T015335SQUARE.png" group-title="Entertainment",NH BollyFlix
 https://jmp2.uk/stvp-IN46000140Q
 
@@ -7532,8 +7582,18 @@ https://jmp2.uk/stvp-IN400061DB
 #EXTINF:-1 channel-id="CABC2300006OP-ca" tvg-id="CABC2300006OP" tvg-chno="2540" tvg-name="NHRA TV" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABC2300006OP_20260421T140531SQUARE.png" group-title="Entertainment",NHRA TV
 https://jmp2.uk/stvp-CABC2300006OP
 
+#EXTINF:-1 channel-id="mjh-10-nickteen" tvg-id="mjh-10-nickteen" tvg-logo="https://10.com.au/ip/s3/2024/06/04/ecc540be818b29d753e036e046028a27-1318595.png?image-profile=logo" group-title="Entertainment" , NickTeen
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-nickteen.m3u8
+
 #EXTINF:-1 channel-id="654ca7f92c1d3300086b608c-ca" tvg-id="654ca7f92c1d3300086b608c" tvg-chno="1230" tvg-name="NickToons" tvg-logo="https://images.pluto.tv/channels/654ca7f92c1d3300086b608c/colorLogoPNG_1751457678592.png" group-title="Entertainment",NickToons
 https://jmp2.uk/plu-654ca7f92c1d3300086b608c.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-nicktoons-90s" tvg-id="mjh-10-nicktoons-90s" tvg-logo="https://10.com.au/ip/s3/2024/06/07/a1aaf63737e7d2076759dd850b58471a-1319376.png?image-profile=logo" group-title="Entertainment" , NickToons 90s
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-69d93b7e8061ebfbca58c324" tvg-id="6a1610bebdf296985fd95603-69d93b7e8061ebfbca58c324" tvg-chno="" tvg-name="Nikita" tvg-logo="https://provider-static.plex.tv/epg/cms/production/533feb9c-0442-43de-82c2-819ff405bb92/Nikita_Logo_WHT_1500x1000.png" group-title="Entertainment",Nikita
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-69d93b7e8061ebfbca58c324/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
@@ -8495,6 +8555,11 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-66b13a1f4893
 #EXTINF:-1 channel-id="65dded9a0d456100081417ae-es" tvg-id="65dded9a0d456100081417ae" tvg-chno="77" tvg-name="Primeval" tvg-logo="https://images.pluto.tv/channels/65dded9a0d456100081417ae/colorLogoPNG.png" group-title="Entertainment",Primeval
 https://jmp2.uk/plu-65dded9a0d456100081417ae.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-prisoner-cell-block-h" tvg-id="mjh-10-prisoner-cell-block-h" tvg-logo="https://10.com.au/ip/s3/2022/09/26/b6430b0f79d6b4c9fc5c6ea295bbae03-1182444.png?image-profile=logo" group-title="Entertainment" , Prisoner: Cell Block H
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-prisoner-cell-block-h.m3u8
+
 #EXTINF:-1 channel-id="67d984c989788ef7f058b084-de" tvg-id="67d984c989788ef7f058b084" tvg-chno="13" tvg-name="Profiling Paris" tvg-logo="https://images.pluto.tv/channels/67d984c989788ef7f058b084/colorLogoPNG.png" group-title="Entertainment",Profiling Paris
 https://jmp2.uk/plu-67d984c989788ef7f058b084.m3u8
 
@@ -8768,6 +8833,11 @@ https://jmp2.uk/stvp-GB2100005YU
 
 #EXTINF:-1 channel-id="64ff270f30ab3300084e259c-mx" tvg-id="64ff270f30ab3300084e259c" tvg-chno="127" tvg-name="Rookie Blue: Policías Novatos" tvg-logo="https://images.pluto.tv/channels/64ff270f30ab3300084e259c/colorLogoPNG.png" group-title="Entertainment",Rookie Blue: Policías Novatos
 https://jmp2.uk/plu-64ff270f30ab3300084e259c.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-rookieblue" tvg-id="mjh-10-rookieblue" tvg-logo="https://10.com.au/ip/s3/2026/02/01/b4f014a58a872ecca3409d233c38f122-1408366.png?image-profile=logo" group-title="Entertainment" , rookie-blue
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-rookieblue.m3u8
 
 #EXTINF:-1 channel-id="USBC2400024FN-us" tvg-id="USBC2400024FN" tvg-chno="3514" tvg-name="Rovr Pets" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBC2400024FN_20240520T214832SQUARE.png" group-title="Entertainment",Rovr Pets
 https://jmp2.uk/stvp-USBC2400024FN
@@ -9064,6 +9134,11 @@ https://epg.provider.plex.tv/library/parts/643054b1fc3be59477853717-6922366b50fe
 
 #EXTINF:-1 channel-id="CH2900003UZ-ch" tvg-id="CH2900003UZ" tvg-chno="4993" tvg-name="Shark TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH2900003UZ_20260901T053328SQUARE.png" group-title="Entertainment",Shark TV
 https://jmp2.uk/stvp-CH2900003UZ
+
+#EXTINF:-1 channel-id="mjh-10-documentaryshell" tvg-id="mjh-10-documentaryshell" tvg-logo="https://10.com.au/ip/s3/2025/04/27/ef0a0364c8a70872e6d5f7a4cf5d2585-1376360.png?image-profile=logo" group-title="Entertainment" , Sharks & Other Predators
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-documentaryshell.m3u8
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-62d1a58e520656fda09e609d" tvg-id="6a1610bebdf296985fd95603-62d1a58e520656fda09e609d" tvg-chno="" tvg-name="Shemaroo Bollywood" tvg-logo="https://provider-static.plex.tv/epg/cms/production/aca5fb4a-3f31-4527-82d4-80b718821f1f/ShemarooBollywood_logo_dark_-_Shemaroo_USArdx.png" group-title="Entertainment",Shemaroo Bollywood
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-62d1a58e520656fda09e609d/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
@@ -9610,6 +9685,11 @@ https://jmp2.uk/plu-6a0c25d1c3b9403659196293.m3u8
 #EXTINF:-1 channel-id="DEBC3000003IG-de" tvg-id="DEBC3000003IG" tvg-chno="4002" tvg-name="Terra X" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBC3000003IG_20260901T053611SQUARE.png" group-title="Entertainment",Terra X
 https://jmp2.uk/stvp-DEBC3000003IG
 
+#EXTINF:-1 channel-id="mjh-10-thankgodyourehere" tvg-id="mjh-10-thankgodyourehere" tvg-logo="https://10.com.au/ip/s3/2025/08/19/9cde4af8ad28a81defc2e020775ff74f-1390978.png?image-profile=logo" group-title="Entertainment" , Thank God You're Here
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-thankgodyourehere.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-68e03664c63d8255360a2cd7" tvg-id="6a1610bebdf296985fd95603-68e03664c63d8255360a2cd7" tvg-chno="" tvg-name="That Girl" tvg-logo="https://provider-static.plex.tv/epg/cms/production/6b38aaa6-5232-47c9-b139-da66586aee88/ThatGirl_Logo_ColorRDX.png" group-title="Entertainment",That Girl
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-68e03664c63d8255360a2cd7/?X-Plex-Token=uLjyR1y7VEYTW6wWcbsH
 
@@ -9674,6 +9754,11 @@ https://jmp2.uk/stvp-US3900008GK
 
 #EXTINF:-1 channel-id="USBB3500001O6-us" tvg-id="USBB3500001O6" tvg-chno="2722" tvg-name="The Challenge" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB3500001O6_20260421T143005SQUARE.png" group-title="Entertainment",The Challenge
 https://jmp2.uk/stvp-USBB3500001O6
+
+#EXTINF:-1 channel-id="mjh-10-cheapseats" tvg-id="mjh-10-cheapseats" tvg-logo="https://10.com.au/ip/s3/2025/08/08/47006754904d1d36520e76157ecbfb41-1390280.png?image-profile=logo" group-title="Entertainment" , The Cheap Seats
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-cheapseats.m3u8
 
 #EXTINF:-1 channel-id="US1900012GD-us" tvg-id="US1900012GD" tvg-chno="2651" tvg-name="The Conners" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1900012GD_20260804T045859SQUARE.png" group-title="Entertainment",The Conners
 https://jmp2.uk/stvp-US1900012GD
@@ -9805,6 +9890,11 @@ https://jmp2.uk/plu-686d01ad94a028da3aaca6b3.m3u8
 
 #EXTINF:-1 channel-id="USAJ3504547A-us" tvg-id="USAJ3504547A" tvg-chno="1868" tvg-name="The New Detectives" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAJ3504547A_20260421T133611SQUARE.png" group-title="Entertainment",The New Detectives
 https://jmp2.uk/stvp-USAJ3504547A
+
+#EXTINF:-1 channel-id="mjh-10-theonlywayisessex" tvg-id="mjh-10-theonlywayisessex" tvg-logo="https://10.com.au/ip/s3/2024/10/21/644463c986545838587c1b800be3da68-1345463.png?image-profile=logo" group-title="Entertainment" , The Only Way Is Essex
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-theonlywayisessex.m3u8
 
 #EXTINF:-1 channel-id="GB3600002EB-gb" tvg-id="GB3600002EB" tvg-chno="4068" tvg-name="The Osbournes" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB3600002EB_20260324T035052SQUARE.png" group-title="Entertainment",The Osbournes
 https://jmp2.uk/stvp-GB3600002EB
@@ -10064,6 +10154,11 @@ https://jmp2.uk/stvp-US37000036P
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/truckinghell-fast.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-true-stories" tvg-id="mjh-10-true-stories" tvg-logo="https://10.com.au/ip/s3/2022/09/22/bf31efb3f5efe008cc774909b0cef282-1181809.png?image-profile=logo" group-title="Entertainment" , True Stories
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-true-stories.m3u8
 
 #EXTINF:-1 channel-id="CA1400003R3-ca" tvg-id="CA1400003R3" tvg-chno="2341" tvg-name="TSN The Ocho" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1400003R3_20260421T140253SQUARE.png" group-title="Entertainment",TSN The Ocho
 https://jmp2.uk/stvp-CA1400003R3
@@ -10429,6 +10524,11 @@ https://jmp2.uk/stvp-US4100034UO
 #EXTINF:-1 channel-id="US3800007CR-us" tvg-id="US3800007CR" tvg-chno="3533" tvg-name="WildEarth" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US3800007CR_20260421T141712SQUARE.png" group-title="Entertainment",WildEarth
 https://jmp2.uk/stvp-US3800007CR
 
+#EXTINF:-1 channel-id="mjh-10-wildest" tvg-id="mjh-10-wildest" tvg-logo="https://10.com.au/ip/s3/2026/04/28/230f46ab9b55bdb4f98a00f616d8b0a2-1424324.png?image-profile=logo" group-title="Entertainment" , Wildest
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-wildest.m3u8
+
 #EXTINF:-1 channel-id="US1900013Z7-us" tvg-id="US1900013Z7" tvg-chno="1578" tvg-name="Wildfire" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1900013Z7_20260421T133738SQUARE.png" group-title="Entertainment",Wildfire
 https://jmp2.uk/stvp-US1900013Z7
 
@@ -10556,6 +10656,11 @@ https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-63ae3c6c6d11
 
 #EXTINF:-1 channel-id="GB340000289-gb" tvg-id="GB340000289" tvg-chno="4795" tvg-name="YAAAS!" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB340000289_20250107T031304SQUARE.png" group-title="Entertainment",YAAAS!
 https://jmp2.uk/stvp-GB340000289
+
+#EXTINF:-1 channel-id="mjh-10-youtv" tvg-id="mjh-10-youtv" tvg-logo="https://10.com.au/ip/s3/2024/07/10/33f7c16e8ba1628d52844cb45b8eac4f-1326074.png?image-profile=logo" tvg-chno="16" group-title="Entertainment" , YouTV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-youtv.m3u8
 
 #EXTINF:-1 channel-id="KRBD2400001XD-kr" tvg-id="KRBD2400001XD" tvg-chno="501" tvg-name="YTN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBD2400001XD_20260422T013918SQUARE.png" group-title="Entertainment",YTN
 https://jmp2.uk/stvp-KRBD2400001XD
