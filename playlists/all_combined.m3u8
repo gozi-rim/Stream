@@ -4340,6 +4340,11 @@ https://jmp2.uk/plu-62ac50e92c48f900071444c9.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/ausbiz-fast.m3u8
 
+#EXTINF:-1 channel-id="mjh-misc503-fast" tvg-id="mjh-misc503-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc503-fast-3c70ed.png" group-title="Entertainment" , Australian Kart Championship
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc503-fast.m3u8
+
 #EXTINF:-1 channel-id="IN400054UF-in" tvg-id="IN400054UF" tvg-chno="2039" tvg-name="Automotions" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400054UF_20260623T013639SQUARE.png" group-title="Entertainment",Automotions
 https://jmp2.uk/stvp-IN400054UF
 
@@ -10349,6 +10354,11 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-62441750cc41
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-6243f13c02c2415bd217305a" tvg-id="6a1610bebdf296985fd95603-6243f13c02c2415bd217305a" tvg-chno="" tvg-name="Very Carolina by WYFF 4" tvg-logo="https://provider-static.plex.tv/epg/cms/production/28b53b83-039b-4abf-846b-5c7e5866783a/WYFF_carolina_logo.png" group-title="Entertainment",Very Carolina by WYFF 4
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6243f13c02c2415bd217305a/?X-Plex-Token=ur4z8Cf34_KkojgTnvKo
+
+#EXTINF:-1 channel-id="mjh-tas3_event-fast" tvg-id="mjh-tas3_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-tas3_event-fast-f472ed.png" group-title="Entertainment" , VFL
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/tas3_event-fast.m3u8
 
 #EXTINF:-1 channel-id="IT12000029J-it" tvg-id="IT12000029J" tvg-chno="4517" tvg-name="Viaggi & Sapori" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT12000029J_20241105T025401SQUARE.png" group-title="Entertainment",Viaggi & Sapori
 https://jmp2.uk/stvp-IT12000029J
