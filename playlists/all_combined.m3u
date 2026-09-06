@@ -847,11 +847,6 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5f6b8e7900b0
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sky-popup1.m3u8
 
-#EXTINF:-1 channel-id="mjh-sky-popup2" tvg-id="mjh-sky-popup2" tvg-logo="https://contentful-images.digital.skyone.co.nz/v3/hf0kmuqe0d45/1jZRHmRhF6VFjZET4V2hFM/6d31709f4e877e133c3d16d28e1b58d2/Logo_Images_-_default.png" group-title="Sports & Racing" , ThreeNow Sport 2
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/sky-popup2.m3u8
-
 #EXTINF:-1 channel-id="CABA3700006IC-ca" tvg-id="CABA3700006IC" tvg-chno="2408" tvg-name="TNA Wrestling" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABA3700006IC_20260421T140140SQUARE.png" group-title="Sports & Racing",TNA Wrestling
 https://jmp2.uk/stvp-CABA3700006IC
 
