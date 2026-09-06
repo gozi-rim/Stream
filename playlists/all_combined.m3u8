@@ -4103,6 +4103,11 @@ https://jmp2.uk/stvp-GBBC900015D3
 #EXTINF:-1 channel-id="64ec5c6644fe100009d114ae-it" tvg-id="64ec5c6644fe100009d114ae" tvg-chno="420" tvg-name="Affare Fatto" tvg-logo="https://images.pluto.tv/channels/64ec5c6644fe100009d114ae/colorLogoPNG.png" group-title="Entertainment",Affare Fatto
 https://jmp2.uk/plu-64ec5c6644fe100009d114ae.m3u8
 
+#EXTINF:-1 channel-id="mjh-mel1_event-fast" tvg-id="mjh-mel1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-mel1_event-fast-c499bf.png" group-title="Entertainment" , AFLW
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/mel1_event-fast.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-chno="" tvg-name="AfroLandTV" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/AfroLandTV_logo_dark_v3.png" group-title="Entertainment",AfroLandTV
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c/?X-Plex-Token=q-2fZ5YL5VtvrX81ckKA
 
@@ -4349,6 +4354,11 @@ https://jmp2.uk/plu-62ac50e92c48f900071444c9.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/ausbiz-fast.m3u8
+
+#EXTINF:-1 channel-id="mjh-misc503-fast" tvg-id="mjh-misc503-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc503-fast-3c70ed.png" group-title="Entertainment" , Australian Kart Championship
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc503-fast.m3u8
 
 #EXTINF:-1 channel-id="IN400054UF-in" tvg-id="IN400054UF" tvg-chno="2039" tvg-name="Automotions" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400054UF_20260623T013639SQUARE.png" group-title="Entertainment",Automotions
 https://jmp2.uk/stvp-IN400054UF
@@ -8961,6 +8971,11 @@ https://jmp2.uk/stvp-KRAH2201403A
 
 #EXTINF:-1 channel-id="63eb57d6c111bc0008fe2658-it" tvg-id="63eb57d6c111bc0008fe2658" tvg-chno="360" tvg-name="Sanctuary" tvg-logo="https://images.pluto.tv/channels/63eb57d6c111bc0008fe2658/colorLogoPNG.png" group-title="Entertainment",Sanctuary
 https://jmp2.uk/plu-63eb57d6c111bc0008fe2658.m3u8
+
+#EXTINF:-1 channel-id="mjh-ade1_event-fast" tvg-id="mjh-ade1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-ade1_event-fast-e71672.png" group-title="Entertainment" , SANFL
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/ade1_event-fast.m3u8
 
 #EXTINF:-1 channel-id="INBD4700018T7-in" tvg-id="INBD4700018T7" tvg-chno="1648" tvg-name="Sangeet Bangla" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD4700018T7_20260623T015615SQUARE.png" group-title="Entertainment",Sangeet Bangla
 https://jmp2.uk/stvp-INBD4700018T7
