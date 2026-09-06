@@ -720,11 +720,6 @@ https://i.mjh.nz/.r/cas40-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sky-ptmb.m3u8
 
-#EXTINF:-1 channel-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-logo="https://imageresizer.static9.net.au/iOqY2TUo5cfNPI6z_h2RJgbyKCY=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F790784%2Fnhlsquircle.png" group-title="Entertainment" , NBL Blitz
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/mens-national-basketball-nbl-blitz-fast.m3u8
-
 #EXTINF:-1 channel-id="mjh-ncis-fast" tvg-id="mjh-ncis-fast" tvg-logo="https://i.mjh.nz/.images/auto-ncis-fast-6f82bd.png" group-title="Entertainment" , NCIS
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -799,11 +794,6 @@ https://i.mjh.nz/.r/10-rookieblue.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/rush-nz.m3u8
-
-#EXTINF:-1 channel-id="mjh-ade1_event-fast" tvg-id="mjh-ade1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-ade1_event-fast-e71672.png" group-title="Entertainment" , SANFL
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/ade1_event-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-sbs-sbst" tvg-id="mjh-sbs-sbst" tvg-logo="https://image.pr.sbsod.com/b073959a-a63e-5b6a-a05a-157d615a4b8c" tvg-chno="30" group-title="Entertainment" , SBS
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56

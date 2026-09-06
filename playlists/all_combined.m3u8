@@ -7489,11 +7489,6 @@ https://jmp2.uk/plu-5812bd9f249444e05d09cc4e.m3u8
 #EXTINF:-1 channel-id="IN2100014K1-in" tvg-id="IN2100014K1" tvg-chno="2031" tvg-name="NatureTime" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100014K1_20260623T015351SQUARE.png" group-title="Entertainment",NatureTime
 https://jmp2.uk/stvp-IN2100014K1
 
-#EXTINF:-1 channel-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-id="mjh-mens-national-basketball-nbl-blitz-fast" tvg-logo="https://imageresizer.static9.net.au/iOqY2TUo5cfNPI6z_h2RJgbyKCY=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F08%2F790784%2Fnhlsquircle.png" group-title="Entertainment" , NBL Blitz
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/mens-national-basketball-nbl-blitz-fast.m3u8
-
 #EXTINF:-1 channel-id="62f4f5de1c100100075665ef-ca" tvg-id="62f4f5de1c100100075665ef" tvg-chno="405" tvg-name="NCIS" tvg-logo="https://images.pluto.tv/channels/62f4f5de1c100100075665ef/colorLogoPNG.png" group-title="Entertainment",NCIS
 https://jmp2.uk/plu-62f4f5de1c100100075665ef.m3u8
 
@@ -8971,11 +8966,6 @@ https://jmp2.uk/stvp-KRAH2201403A
 
 #EXTINF:-1 channel-id="63eb57d6c111bc0008fe2658-it" tvg-id="63eb57d6c111bc0008fe2658" tvg-chno="360" tvg-name="Sanctuary" tvg-logo="https://images.pluto.tv/channels/63eb57d6c111bc0008fe2658/colorLogoPNG.png" group-title="Entertainment",Sanctuary
 https://jmp2.uk/plu-63eb57d6c111bc0008fe2658.m3u8
-
-#EXTINF:-1 channel-id="mjh-ade1_event-fast" tvg-id="mjh-ade1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-ade1_event-fast-e71672.png" group-title="Entertainment" , SANFL
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/ade1_event-fast.m3u8
 
 #EXTINF:-1 channel-id="INBD4700018T7-in" tvg-id="INBD4700018T7" tvg-chno="1648" tvg-name="Sangeet Bangla" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD4700018T7_20260623T015615SQUARE.png" group-title="Entertainment",Sangeet Bangla
 https://jmp2.uk/stvp-INBD4700018T7
