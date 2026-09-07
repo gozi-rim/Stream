@@ -9138,6 +9138,11 @@ https://jmp2.uk/stvp-GB2100005YU
 #EXTINF:-1 channel-id="64ff270f30ab3300084e259c-mx" tvg-id="64ff270f30ab3300084e259c" tvg-chno="127" tvg-name="Rookie Blue: Policías Novatos" tvg-logo="https://images.pluto.tv/channels/64ff270f30ab3300084e259c/colorLogoPNG.png" group-title="Entertainment",Rookie Blue: Policías Novatos
 https://jmp2.uk/plu-64ff270f30ab3300084e259c.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-rookieblue" tvg-id="mjh-10-rookieblue" tvg-logo="https://10.com.au/ip/s3/2026/02/01/b4f014a58a872ecca3409d233c38f122-1408366.png?image-profile=logo" group-title="Entertainment" , rookie-blue
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-rookieblue.m3u8
+
 #EXTINF:-1 channel-id="USBC2400024FN-us" tvg-id="USBC2400024FN" tvg-chno="3514" tvg-name="Rovr Pets" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBC2400024FN_20240520T214832SQUARE.png" group-title="Entertainment",Rovr Pets
 https://jmp2.uk/stvp-USBC2400024FN
 
@@ -10822,6 +10827,11 @@ https://jmp2.uk/stvp-US4100034UO
 
 #EXTINF:-1 channel-id="US3800007CR-us" tvg-id="US3800007CR" tvg-chno="3533" tvg-name="WildEarth" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US3800007CR_20260421T141712SQUARE.png" group-title="Entertainment",WildEarth
 https://jmp2.uk/stvp-US3800007CR
+
+#EXTINF:-1 channel-id="mjh-10-wildest" tvg-id="mjh-10-wildest" tvg-logo="https://10.com.au/ip/s3/2026/04/28/230f46ab9b55bdb4f98a00f616d8b0a2-1424324.png?image-profile=logo" group-title="Entertainment" , Wildest
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-wildest.m3u8
 
 #EXTINF:-1 channel-id="US1900013Z7-us" tvg-id="US1900013Z7" tvg-chno="1578" tvg-name="Wildfire" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1900013Z7_20260421T133738SQUARE.png" group-title="Entertainment",Wildfire
 https://jmp2.uk/stvp-US1900013Z7
