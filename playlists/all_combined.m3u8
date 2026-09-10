@@ -10454,6 +10454,11 @@ https://jmp2.uk/stvp-US700010XK
 #EXTINF:-1 channel-id="USBC3200001S5-us" tvg-id="USBC3200001S5" tvg-chno="1135" tvg-name="WN Charlotte" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBC3200001S5_20260421T144319SQUARE.png" group-title="Entertainment",WN Charlotte
 https://jmp2.uk/stvp-USBC3200001S5
 
+#EXTINF:-1 channel-id="mjh-wnbl-townsville-tip-off-2026-fast" tvg-id="mjh-wnbl-townsville-tip-off-2026-fast" tvg-logo="https://imageresizer.static9.net.au/uUKragCeqcCHDUTO6vai0SvBeHw=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F09%2F794689%2Fnhlsquircle.png" group-title="Entertainment" , WNBL Townsville Tip-off 2026
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/wnbl-townsville-tip-off-2026-fast.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-6502891e8ebe90c9ed73f7a0" tvg-id="6a1610bebdf296985fd95603-6502891e8ebe90c9ed73f7a0" tvg-chno="" tvg-name="Women Behind Bars" tvg-logo="https://provider-static.plex.tv/epg/cms/production/f73474ef-6388-4d5e-ade8-5f81f78cb5f8/WomenBehindBars_Logo_Colorrdx.png" group-title="Entertainment",Women Behind Bars
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-6502891e8ebe90c9ed73f7a0/?X-Plex-Token=Zhi8GQTJSYGgQ6-8JGEs
 
