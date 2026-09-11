@@ -745,6 +745,11 @@ https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sbs-5nsw.m3u8
 
+#EXTINF:-1 channel-id="mjh-nrl-national-schoolboy-and-schoolgirl-cups-2026-fast" tvg-id="mjh-nrl-national-schoolboy-and-schoolgirl-cups-2026-fast" tvg-logo="https://imageresizer.static9.net.au/UTppD-95prZjw9jVTyppB8myAk0=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F09%2F794922%2Fnhlsquircle.png" group-title="Entertainment" , NRL National Schoolboy and Schoolgirl Cups 2026
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/nrl-national-schoolboy-and-schoolgirl-cups-2026-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-onthecase-fast" tvg-id="mjh-onthecase-fast" tvg-logo="https://i.mjh.nz/.images/auto-onthecase-fast-6ec172.png" group-title="Entertainment" , On The Case
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
