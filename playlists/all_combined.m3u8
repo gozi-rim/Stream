@@ -854,6 +854,11 @@ https://jmp2.uk/stvp-CA36000019W
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-5f6b8e7900b0950040d0f2b2" tvg-id="6a1610bebdf296985fd95603-5f6b8e7900b0950040d0f2b2" tvg-chno="" tvg-name="The World Poker Tour" tvg-logo="https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png" group-title="Sports & Racing",The World Poker Tour
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5f6b8e7900b0950040d0f2b2/?X-Plex-Token=oxr4EchCBc8H_c8_Uiy5
 
+#EXTINF:-1 channel-id="mjh-sky-popup1" tvg-id="mjh-sky-popup1" tvg-logo="https://contentful-images.digital.skyone.co.nz/v3/hf0kmuqe0d45/x5sb9PxNV3X9NmnokapqO/b9541319e37f2803dc7eec73c779d0b0/Logo_Images_-_default.png" group-title="Sports & Racing" , ThreeNow Sport 1
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sky-popup1.m3u8
+
 #EXTINF:-1 channel-id="mjh-sky-popup2" tvg-id="mjh-sky-popup2" tvg-logo="https://contentful-images.digital.skyone.co.nz/v3/hf0kmuqe0d45/1jZRHmRhF6VFjZET4V2hFM/6d31709f4e877e133c3d16d28e1b58d2/Logo_Images_-_default.png" group-title="Sports & Racing" , ThreeNow Sport 2
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -10666,6 +10671,11 @@ https://epg.provider.plex.tv/library/parts/6430aa45fc3be5947780904e-63ae3c6c6d11
 
 #EXTINF:-1 channel-id="GB340000289-gb" tvg-id="GB340000289" tvg-chno="4795" tvg-name="YAAAS!" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB340000289_20250107T031304SQUARE.png" group-title="Entertainment",YAAAS!
 https://jmp2.uk/stvp-GB340000289
+
+#EXTINF:-1 channel-id="mjh-10-youtv" tvg-id="mjh-10-youtv" tvg-logo="https://10.com.au/ip/s3/2024/07/10/33f7c16e8ba1628d52844cb45b8eac4f-1326074.png?image-profile=logo" tvg-chno="16" group-title="Entertainment" , YouTV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-youtv.m3u8
 
 #EXTINF:-1 channel-id="KRBD2400001XD-kr" tvg-id="KRBD2400001XD" tvg-chno="501" tvg-name="YTN" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBD2400001XD_20260422T013918SQUARE.png" group-title="Entertainment",YTN
 https://jmp2.uk/stvp-KRBD2400001XD
