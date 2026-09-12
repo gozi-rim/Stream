@@ -1,10 +1,10 @@
 #EXTM3U url-tvg="https://i.mjh.nz/Roku/all.xml.gz" x-tvg-url="https://i.mjh.nz/Roku/all.xml.gz"
 
-#EXTINF:-1 channel-id="50b18dea9c5c51568c1343fcd3d88ec9" tvg-id="50b18dea9c5c51568c1343fcd3d88ec9" tvg-chno="4162" tvg-name="ABC7 Sarasota" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/50b18dea9c5c51568c1343fcd3d88ec9/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746557592232_WWSB_EPG_Hud_LogoWWSB_HUD_logo_260x147_Centered.png" group-title="News & Weather",ABC7 Sarasota
-https://jmp2.uk/rok-50b18dea9c5c51568c1343fcd3d88ec9.m3u8
-
 #EXTINF:-1 channel-id="ec2faed50af3503e934f0c342a7952fe" tvg-id="ec2faed50af3503e934f0c342a7952fe" tvg-chno="4151" tvg-name="Arizona's Family" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ec2faed50af3503e934f0c342a7952fe/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746557956357_KPHO_EPG_Hud_LogoKPHO_HUD_logo_260x147_Centered.png" group-title="News & Weather",Arizona's Family
 https://jmp2.uk/rok-ec2faed50af3503e934f0c342a7952fe.m3u8
+
+#EXTINF:-1 channel-id="1672824c4fd55e5dbfcb57f147910270" tvg-id="1672824c4fd55e5dbfcb57f147910270" tvg-chno="4131" tvg-name="Atlanta News First" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1672824c4fd55e5dbfcb57f147910270/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1684345590463_WANF_EPGHud_LogoWANF_HUD_logo_260x147.png" group-title="News & Weather",Atlanta News First
+https://jmp2.uk/rok-1672824c4fd55e5dbfcb57f147910270.m3u8
 
 #EXTINF:-1 channel-id="46eb1feb60da2bc45bee66f313b564de" tvg-id="46eb1feb60da2bc45bee66f313b564de" tvg-chno="912" tvg-name="Azteca Noticias" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/46eb1feb60da2bc45bee66f313b564de/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1773259750272_Azteca_Noticias_260x147_ef.png" group-title="News & Weather",Azteca Noticias
 https://jmp2.uk/rok-46eb1feb60da2bc45bee66f313b564de.m3u8
@@ -309,9 +309,6 @@ https://jmp2.uk/rok-86c08261fc015a58866210bea63eb8f4.m3u8
 #EXTINF:-1 channel-id="c5c6a54fbd0328b108453e2537b7eee1" tvg-id="c5c6a54fbd0328b108453e2537b7eee1" tvg-chno="979" tvg-name="Caracol Mix" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/c5c6a54fbd0328b108453e2537b7eee1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1774999084418_CMIX_Info_Hud_Log_260x147.png" group-title="Comedy & Stand-up",Caracol Mix
 https://jmp2.uk/rok-c5c6a54fbd0328b108453e2537b7eee1.m3u8
 
-#EXTINF:-1 channel-id="d89b6124edce5dc0a4dfe42a8026353a" tvg-id="d89b6124edce5dc0a4dfe42a8026353a" tvg-chno="350" tvg-name="Degrassi" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d89b6124edce5dc0a4dfe42a8026353a/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1788370744284_US_ROKU_DEGRASSI_INFOHUD_260x147.png" group-title="Comedy & Stand-up",Degrassi
-https://jmp2.uk/rok-d89b6124edce5dc0a4dfe42a8026353a.m3u8
-
 #EXTINF:-1 channel-id="d0c6ac240cb8529992ee3340e5b7f102" tvg-id="d0c6ac240cb8529992ee3340e5b7f102" tvg-chno="378" tvg-name="Ebony" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d0c6ac240cb8529992ee3340e5b7f102/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1774038479615_EbonyTV_HUDLogo_260x147_HexEFEFEF.png" group-title="Comedy & Stand-up",Ebony
 https://jmp2.uk/rok-d0c6ac240cb8529992ee3340e5b7f102.m3u8
 
@@ -480,17 +477,11 @@ https://jmp2.uk/rok-79876f8f79d0394ba8982259393e5e32.m3u8
 #EXTINF:-1 channel-id="8e04e4c0e2cd5fe49b087a6ce5fd0d91" tvg-id="8e04e4c0e2cd5fe49b087a6ce5fd0d91" tvg-chno="1120" tvg-name="TikTok Radio" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/8e04e4c0e2cd5fe49b087a6ce5fd0d91/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1719497617582_11110_SM_TikTokRadio_Logo_260x147_V02.png" group-title="Music & Audio",TikTok Radio
 https://jmp2.uk/rok-8e04e4c0e2cd5fe49b087a6ce5fd0d91.m3u8
 
-#EXTINF:-1 channel-id="3580b15015379c4256440b0e119d46ed" tvg-id="3580b15015379c4256440b0e119d46ed" tvg-chno="629" tvg-name="America's Got Talent" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/3580b15015379c4256440b0e119d46ed/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1775265472400_AGT_HUD_260x147_CenterAligned.png" group-title="Reality & Game Shows",America's Got Talent
-https://jmp2.uk/rok-3580b15015379c4256440b0e119d46ed.m3u8
-
 #EXTINF:-1 channel-id="562baf35c5da56cc91cdea41537b43f9" tvg-id="562baf35c5da56cc91cdea41537b43f9" tvg-chno="631" tvg-name="BUZZR" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/562baf35c5da56cc91cdea41537b43f9/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1654733081445_BUZZR_ROKU_HUD-MONO_260X147-2021RB.png" group-title="Reality & Game Shows",BUZZR
 https://jmp2.uk/rok-562baf35c5da56cc91cdea41537b43f9.m3u8
 
 #EXTINF:-1 channel-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-chno="634" tvg-name="Let's Make a Deal" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ffe5d9e0480d1c5e1dcead3abd966ac7/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1741793674388_LMAD_HUDLogoCenterAligned_260x147.png" group-title="Reality & Game Shows",Let's Make a Deal
 https://jmp2.uk/rok-ffe5d9e0480d1c5e1dcead3abd966ac7.m3u8
-
-#EXTINF:-1 channel-id="856fca464da0544784204ba8f6161dac" tvg-id="856fca464da0544784204ba8f6161dac" tvg-chno="720" tvg-name="PBS Antiques Roadshow" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/856fca464da0544784204ba8f6161dac/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1772722216448_260x147_CenterAligned.png" group-title="Reality & Game Shows",PBS Antiques Roadshow
-https://jmp2.uk/rok-856fca464da0544784204ba8f6161dac.m3u8
 
 #EXTINF:-1 channel-id="091bf303c7fd2bc2ec6683b1dbbadae1" tvg-id="091bf303c7fd2bc2ec6683b1dbbadae1" tvg-chno="694" tvg-name="Storage Wars by A&E" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/091bf303c7fd2bc2ec6683b1dbbadae1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746034081194_Storage_Wars_HUD_logo_260x147_center_aligned.png" group-title="Reality & Game Shows",Storage Wars by A&E
 https://jmp2.uk/rok-091bf303c7fd2bc2ec6683b1dbbadae1.m3u8
