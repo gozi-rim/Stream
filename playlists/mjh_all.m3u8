@@ -455,6 +455,11 @@ https://c.mjh.nz/abc-me.m3u8
 #EXTVLCOPT:http-referrer=
 https://c.mjh.nz/abc-nsw.m3u8
 
+#EXTINF:-1 channel-id="mjh-mel1_event-fast" tvg-id="mjh-mel1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-mel1_event-fast-c499bf.png" group-title="Entertainment" , AFLW
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/mel1_event-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-aircrashinvestigations-fast" tvg-id="mjh-aircrashinvestigations-fast" tvg-logo="https://i.mjh.nz/.images/auto-aircrashinvestigations-fast-7ff35e.png" group-title="Entertainment" , Air Crash Investigations
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=

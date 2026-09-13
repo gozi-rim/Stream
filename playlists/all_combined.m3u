@@ -4118,6 +4118,11 @@ https://jmp2.uk/stvp-GBBC900015D3
 #EXTINF:-1 channel-id="64ec5c6644fe100009d114ae-it" tvg-id="64ec5c6644fe100009d114ae" tvg-chno="420" tvg-name="Affare Fatto" tvg-logo="https://images.pluto.tv/channels/64ec5c6644fe100009d114ae/colorLogoPNG.png" group-title="Entertainment",Affare Fatto
 https://jmp2.uk/plu-64ec5c6644fe100009d114ae.m3u8
 
+#EXTINF:-1 channel-id="mjh-mel1_event-fast" tvg-id="mjh-mel1_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-mel1_event-fast-c499bf.png" group-title="Entertainment" , AFLW
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/mel1_event-fast.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-chno="" tvg-name="AfroLandTV" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/AfroLandTV_logo_dark_v3.png" group-title="Entertainment",AfroLandTV
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c/?X-Plex-Token=oxr4EchCBc8H_c8_Uiy5
 
