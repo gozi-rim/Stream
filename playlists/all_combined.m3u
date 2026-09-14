@@ -512,11 +512,6 @@ https://c.mjh.nz/sport_in_90_seconds
 #EXTINF:-1 channel-id="ITBC400005TF-it" tvg-id="ITBC400005TF" tvg-chno="4678" tvg-name="Adventure Sports TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBC400005TF_20250131T145305SQUARE.png" group-title="Sports & Racing",Adventure Sports TV
 https://jmp2.uk/stvp-ITBC400005TF
 
-#EXTINF:-1 channel-id="mjh-syd3_event-fast" tvg-id="mjh-syd3_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-syd3_event-fast-a81835.jpg" group-title="Sports & Racing" , Agenda Setters: Rugby League
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/syd3_event-fast.m3u8
-
 #EXTINF:-1 channel-id="5f760c3d41aa2d0007bfde19-de" tvg-id="5f760c3d41aa2d0007bfde19" tvg-chno="122" tvg-name="Auto Motor Sport" tvg-logo="https://images.pluto.tv/channels/5f760c3d41aa2d0007bfde19/colorLogoPNG.png" group-title="Sports & Racing",Auto Motor Sport
 https://jmp2.uk/plu-5f760c3d41aa2d0007bfde19.m3u8
 
@@ -4106,11 +4101,6 @@ https://jmp2.uk/plu-6915e15ea570568f53438feb.m3u8
 
 #EXTINF:-1 channel-id="CA4100007AK-ca" tvg-id="CA4100007AK" tvg-chno="2621" tvg-name="AFV with Alfonso Ribeiro" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA4100007AK_20260901T060221SQUARE.png" group-title="Entertainment",AFV with Alfonso Ribeiro
 https://jmp2.uk/stvp-CA4100007AK
-
-#EXTINF:-1 channel-id="mjh-mel3_event-fast" tvg-id="mjh-mel3_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-mel3_event-fast-8e1a22.png" group-title="Entertainment" , Agenda Setters
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/mel3_event-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-aircrashinvestigations-fast" tvg-id="mjh-aircrashinvestigations-fast" tvg-logo="https://i.mjh.nz/.images/auto-aircrashinvestigations-fast-7ff35e.png" group-title="Entertainment" , Air Crash Investigations
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
