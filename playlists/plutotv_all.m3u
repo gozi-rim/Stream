@@ -2214,8 +2214,8 @@ https://jmp2.uk/plu-685aa802fb6023de7cc56357.m3u8
 #EXTINF:-1 channel-id="686d004094a028da3aac8cb0-de" tvg-id="686d004094a028da3aac8cb0" tvg-chno="7" tvg-name="Don Matteo" tvg-logo="https://images.pluto.tv/channels/686d004094a028da3aac8cb0/colorLogoPNG_1759148252016.png" group-title="Entertainment",Don Matteo
 https://jmp2.uk/plu-686d004094a028da3aac8cb0.m3u8
 
-#EXTINF:-1 channel-id="62e951258a26d40007b3034c-ca" tvg-id="62e951258a26d40007b3034c" tvg-chno="1210" tvg-name="Dora TV" tvg-logo="https://images.pluto.tv/channels/62e951258a26d40007b3034c/colorLogoPNG.png" group-title="Entertainment",Dora TV
-https://jmp2.uk/plu-62e951258a26d40007b3034c.m3u8
+#EXTINF:-1 channel-id="6a70da97a4bf6cded4fdaf53-us" tvg-id="6a70da97a4bf6cded4fdaf53" tvg-chno="3721" tvg-name="Dora TV" tvg-logo="https://images.pluto.tv/channels/6a70da97a4bf6cded4fdaf53/colorLogoPNG_1786461439766.png" group-title="Entertainment",Dora TV
+https://jmp2.uk/plu-6a70da97a4bf6cded4fdaf53.m3u8
 
 #EXTINF:-1 channel-id="68b17414c23bb80b3c1d5bb5-fr" tvg-id="68b17414c23bb80b3c1d5bb5" tvg-chno="536" tvg-name="Doraemon" tvg-logo="https://images.pluto.tv/channels/68b17414c23bb80b3c1d5bb5/colorLogoPNG_1760606450398.png" group-title="Entertainment",Doraemon
 https://jmp2.uk/plu-68b17414c23bb80b3c1d5bb5.m3u8
@@ -3443,6 +3443,9 @@ https://jmp2.uk/plu-68c01b9a6bdcf3b9a64febcc.m3u8
 
 #EXTINF:-1 channel-id="64526a145a0cd50008632bfa-de" tvg-id="64526a145a0cd50008632bfa" tvg-chno="222" tvg-name="Pluto TV heiße Nächte" tvg-logo="https://images.pluto.tv/channels/64526a145a0cd50008632bfa/colorLogoPNG.png" group-title="Entertainment",Pluto TV heiße Nächte
 https://jmp2.uk/plu-64526a145a0cd50008632bfa.m3u8
+
+#EXTINF:-1 channel-id="6a7cc5a857bd65df5dadba5f-us" tvg-id="6a7cc5a857bd65df5dadba5f" tvg-chno="239" tvg-name="Pluto TV Hispanic Favorites" tvg-logo="https://images.pluto.tv/channels/6a7cc5a857bd65df5dadba5f/colorLogoPNG_1788454948703.png" group-title="Entertainment",Pluto TV Hispanic Favorites
+https://jmp2.uk/plu-6a7cc5a857bd65df5dadba5f.m3u8
 
 #EXTINF:-1 channel-id="611e771e2f5f180007002224-fr" tvg-id="611e771e2f5f180007002224" tvg-chno="900" tvg-name="Pluto TV Histoire" tvg-logo="https://images.pluto.tv/channels/611e771e2f5f180007002224/colorLogoPNG.png" group-title="Entertainment",Pluto TV Histoire
 https://jmp2.uk/plu-611e771e2f5f180007002224.m3u8
