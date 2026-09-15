@@ -65,11 +65,6 @@ https://i.mjh.nz/.r/sky-news-now.m3u8
 #EXTVLCOPT:http-referrer=
 https://c.mjh.nz/sport_in_90_seconds
 
-#EXTINF:-1 channel-id="mjh-cricketgold-fast" tvg-id="mjh-cricketgold-fast" tvg-logo="https://i.mjh.nz/.images/auto-cricketgold-fast-906f03.png" group-title="Sports & Racing" , Cricket Gold
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/cricketgold-fast.m3u8
-
 #EXTINF:-1 channel-id="mjh-sbs-sysdata_s_p_a_fifa_6" tvg-id="mjh-sbs-sysdata_s_p_a_fifa_6" tvg-logo="https://image.pr.sbsod.com/82e2f8e9-238d-599f-84e7-891a54026c9f" group-title="Sports & Racing" , FIFA+
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
