@@ -189,7 +189,7 @@ https://jmp2.uk/plu-63f7e3f9dff38e00082a57af.m3u8
 #EXTINF:-1 channel-id="5ebc8688f3697d00072f7cf8-us" tvg-id="5ebc8688f3697d00072f7cf8" tvg-chno="2870" tvg-name="Bellator MMA" tvg-logo="https://images.pluto.tv/channels/5ebc8688f3697d00072f7cf8/colorLogoPNG.png" group-title="Sports & Racing",Bellator MMA
 https://jmp2.uk/plu-5ebc8688f3697d00072f7cf8.m3u8
 
-#EXTINF:-1 channel-id="6941232c8f110ea18cd8a656-se" tvg-id="6941232c8f110ea18cd8a656" tvg-chno="5" tvg-name="Casual Golf" tvg-logo="https://images.pluto.tv/channels/6941232c8f110ea18cd8a656/colorLogoPNG_1767958736233.png" group-title="Sports & Racing",Casual Golf
+#EXTINF:-1 channel-id="6941232c8f110ea18cd8a656-se" tvg-id="6941232c8f110ea18cd8a656" tvg-chno="6" tvg-name="Casual Golf" tvg-logo="https://images.pluto.tv/channels/6941232c8f110ea18cd8a656/colorLogoPNG_1767958736233.png" group-title="Sports & Racing",Casual Golf
 https://jmp2.uk/plu-6941232c8f110ea18cd8a656.m3u8
 
 #EXTINF:-1 channel-id="5e9f2c05172a0f0007db4786-us" tvg-id="5e9f2c05172a0f0007db4786" tvg-chno="2780" tvg-name="CBS Sports HQ" tvg-logo="https://images.pluto.tv/channels/5e9f2c05172a0f0007db4786/colorLogoPNG_1731837352945.png" group-title="Sports & Racing",CBS Sports HQ
@@ -527,6 +527,9 @@ https://jmp2.uk/plu-6793eaa4bc03978b9bc63db1.m3u8
 
 #EXTINF:-1 channel-id="633dc392e0282400071b0d39-br" tvg-id="633dc392e0282400071b0d39" tvg-chno="1274" tvg-name="Beyblade" tvg-logo="https://images.pluto.tv/channels/633dc392e0282400071b0d39/colorLogoPNG.png" group-title="Animation & Anime",Beyblade
 https://jmp2.uk/plu-633dc392e0282400071b0d39.m3u8
+
+#EXTINF:-1 channel-id="6a3c5fa46276c42ac6726b27-us" tvg-id="6a3c5fa46276c42ac6726b27" tvg-chno="4032" tvg-name="Big A Anime" tvg-logo="https://images.pluto.tv/channels/6a3c5fa46276c42ac6726b27/colorLogoPNG_1785178474278.png" group-title="Animation & Anime",Big A Anime
+https://jmp2.uk/plu-6a3c5fa46276c42ac6726b27.m3u8
 
 #EXTINF:-1 channel-id="64f8a949f5b5e4000862467c-ca" tvg-id="64f8a949f5b5e4000862467c" tvg-chno="161" tvg-name="Comedy Central Animation" tvg-logo="https://images.pluto.tv/channels/64f8a949f5b5e4000862467c/colorLogoPNG.png" group-title="Animation & Anime",Comedy Central Animation
 https://jmp2.uk/plu-64f8a949f5b5e4000862467c.m3u8
@@ -2258,6 +2261,9 @@ https://jmp2.uk/plu-66f1331f9409630008077623.m3u8
 
 #EXTINF:-1 channel-id="63b578b524f0cf00072f2a52-fr" tvg-id="63b578b524f0cf00072f2a52" tvg-chno="915" tvg-name="Echappées Belles & Co" tvg-logo="https://images.pluto.tv/channels/63b578b524f0cf00072f2a52/colorLogoPNG.png" group-title="Entertainment",Echappées Belles & Co
 https://jmp2.uk/plu-63b578b524f0cf00072f2a52.m3u8
+
+#EXTINF:-1 channel-id="646ce0e2e1979c0008983939-se" tvg-id="646ce0e2e1979c0008983939" tvg-chno="2" tvg-name="Efterlyst" tvg-logo="https://images.pluto.tv/channels/646ce0e2e1979c0008983939/colorLogoPNG.png" group-title="Entertainment",Efterlyst
+https://jmp2.uk/plu-646ce0e2e1979c0008983939.m3u8
 
 #EXTINF:-1 channel-id="622f487722d9d400075f74dd-de" tvg-id="622f487722d9d400075f74dd" tvg-chno="242" tvg-name="Ein Engel auf Erden" tvg-logo="https://images.pluto.tv/channels/622f487722d9d400075f74dd/colorLogoPNG.png" group-title="Entertainment",Ein Engel auf Erden
 https://jmp2.uk/plu-622f487722d9d400075f74dd.m3u8
