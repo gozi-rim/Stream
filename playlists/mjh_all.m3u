@@ -445,6 +445,11 @@ https://c.mjh.nz/abc-me.m3u8
 #EXTVLCOPT:http-referrer=
 https://c.mjh.nz/abc-nsw.m3u8
 
+#EXTINF:-1 channel-id="mjh-aircrashinvestigations-fast" tvg-id="mjh-aircrashinvestigations-fast" tvg-logo="https://i.mjh.nz/.images/auto-aircrashinvestigations-fast-7ff35e.png" group-title="Entertainment" , Air Crash Investigations
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/aircrashinvestigations-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-allsaints-fast" tvg-id="mjh-allsaints-fast" tvg-logo="https://i.mjh.nz/.images/auto-allsaints-fast-ebad23.png" group-title="Entertainment" , All Saints
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
