@@ -75,6 +75,11 @@ https://i.mjh.nz/.r/cricketgold-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sbs-sysdata_s_p_a_fifa_6.m3u8
 
+#EXTINF:-1 channel-id="mjh-misc501-fast" tvg-id="mjh-misc501-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc501-fast-89df55.png" group-title="Sports & Racing" , NDRC (National Drag Racing Championship)
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc501-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-racingwa-fast" tvg-id="mjh-racingwa-fast" tvg-logo="https://i.mjh.nz/.images/auto-racingwa-fast-128220.png" group-title="Sports & Racing" , Racing WA
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
