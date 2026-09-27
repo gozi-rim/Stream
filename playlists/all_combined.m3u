@@ -755,6 +755,11 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-656fbbd6dbcc
 #EXTINF:-1 channel-id="683df56f5195c2a60a3f5559-us" tvg-id="683df56f5195c2a60a3f5559" tvg-chno="2905" tvg-name="Swerve Women’s Sports" tvg-logo="https://images.pluto.tv/channels/683df56f5195c2a60a3f5559/colorLogoPNG_1775667541424.png" group-title="Sports & Racing",Swerve Women’s Sports
 https://jmp2.uk/plu-683df56f5195c2a60a3f5559.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-tensport" tvg-id="mjh-10-tensport" tvg-logo="https://10.com.au/ip/s3/2025/08/20/ff0f2812b7edc667ce796f69a310dfd5-1391076.png?image-profile=logo" group-title="Sports & Racing" , Ten Sport
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-tensport.m3u8
+
 #EXTINF:-1 channel-id="GBBA33000529G-gb" tvg-id="GBBA33000529G" tvg-chno="4606" tvg-name="Tennis Channel" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBA33000529G_20260113T032555SQUARE.png" group-title="Sports & Racing",Tennis Channel
 https://jmp2.uk/stvp-GBBA33000529G
 
