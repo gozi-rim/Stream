@@ -276,9 +276,6 @@ https://jmp2.uk/plu-68c820525ec82769fdfcd104.m3u8
 #EXTINF:-1 channel-id="6000a6f4c3f8550008fc9b91-us" tvg-id="6000a6f4c3f8550008fc9b91" tvg-chno="1470" tvg-name="Xtreme Outdoor by HISTORY" tvg-logo="https://images.pluto.tv/channels/6000a6f4c3f8550008fc9b91/colorLogoPNG_1767745185882.png" group-title="Sports & Racing",Xtreme Outdoor by HISTORY
 https://jmp2.uk/plu-6000a6f4c3f8550008fc9b91.m3u8
 
-#EXTINF:-1 channel-id="6a03782f2c1c785c1161756c-us" tvg-id="6a03782f2c1c785c1161756c" tvg-chno="2778" tvg-name="Zuffa Boxing Prelims" tvg-logo="https://images.pluto.tv/channels/6a03782f2c1c785c1161756c/colorLogoPNG_1789054188922.png" group-title="Sports & Racing",Zuffa Boxing Prelims
-https://jmp2.uk/plu-6a03782f2c1c785c1161756c.m3u8
-
 #EXTINF:-1 channel-id="5f4d878d3d19b30007d2e782-us" tvg-id="5f4d878d3d19b30007d2e782" tvg-chno="190" tvg-name="70s Cinema" tvg-logo="https://images.pluto.tv/channels/5f4d878d3d19b30007d2e782/colorLogoPNG.png" group-title="Movies & Cinema",70s Cinema
 https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8
 
@@ -2493,7 +2490,7 @@ https://jmp2.uk/plu-66a8c64814a2bb00084d09d6.m3u8
 #EXTINF:-1 channel-id="69c716efeac9a2720ebcaaff-br" tvg-id="69c716efeac9a2720ebcaaff" tvg-chno="301" tvg-name="Grachi" tvg-logo="https://images.pluto.tv/channels/69c716efeac9a2720ebcaaff/colorLogoPNG_1781797595430.png" group-title="Entertainment",Grachi
 https://jmp2.uk/plu-69c716efeac9a2720ebcaaff.m3u8
 
-#EXTINF:-1 channel-id="6a749d816d05845d59c65de6-dk" tvg-id="6a749d816d05845d59c65de6" tvg-chno="7" tvg-name="Great by Choice" tvg-logo="https://images.pluto.tv/channels/6a749d816d05845d59c65de6/colorLogoPNG_1788794533551.png" group-title="Entertainment",Great by Choice
+#EXTINF:-1 channel-id="6a749d816d05845d59c65de6-dk" tvg-id="6a749d816d05845d59c65de6" tvg-chno="6" tvg-name="Great by Choice" tvg-logo="https://images.pluto.tv/channels/6a749d816d05845d59c65de6/colorLogoPNG_1788794533551.png" group-title="Entertainment",Great by Choice
 https://jmp2.uk/plu-6a749d816d05845d59c65de6.m3u8
 
 #EXTINF:-1 channel-id="69699ae5d301d54fb3dc1499-us" tvg-id="69699ae5d301d54fb3dc1499" tvg-chno="2307" tvg-name="GrowthDay Network" tvg-logo="https://images.pluto.tv/channels/69699ae5d301d54fb3dc1499/colorLogoPNG_1772167334184.png" group-title="Entertainment",GrowthDay Network
@@ -2889,7 +2886,7 @@ https://jmp2.uk/plu-62bed7cb3279cb0007735327.m3u8
 #EXTINF:-1 channel-id="695e2857026be6e9d3ad59d3-dk" tvg-id="695e2857026be6e9d3ad59d3" tvg-chno="446" tvg-name="Love Island USA" tvg-logo="https://images.pluto.tv/channels/695e2857026be6e9d3ad59d3/colorLogoPNG_1768808291831.png" group-title="Entertainment",Love Island USA
 https://jmp2.uk/plu-695e2857026be6e9d3ad59d3.m3u8
 
-#EXTINF:-1 channel-id="68ad8bececd330dcb0f050b5-dk" tvg-id="68ad8bececd330dcb0f050b5" tvg-chno="2" tvg-name="Love Island: All Stars" tvg-logo="https://images.pluto.tv/channels/68ad8bececd330dcb0f050b5/colorLogoPNG_1756794871691.png" group-title="Entertainment",Love Island: All Stars
+#EXTINF:-1 channel-id="68ad8bececd330dcb0f050b5-dk" tvg-id="68ad8bececd330dcb0f050b5" tvg-chno="8" tvg-name="Love Island: All Stars" tvg-logo="https://images.pluto.tv/channels/68ad8bececd330dcb0f050b5/colorLogoPNG_1756794871691.png" group-title="Entertainment",Love Island: All Stars
 https://jmp2.uk/plu-68ad8bececd330dcb0f050b5.m3u8
 
 #EXTINF:-1 channel-id="61c1e060197fe600073c1ffb-no" tvg-id="61c1e060197fe600073c1ffb" tvg-chno="62" tvg-name="Luksusfellen" tvg-logo="https://images.pluto.tv/channels/61c1e060197fe600073c1ffb/colorLogoPNG.png" group-title="Entertainment",Luksusfellen
