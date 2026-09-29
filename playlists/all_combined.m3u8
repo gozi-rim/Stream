@@ -5395,11 +5395,6 @@ https://jmp2.uk/stvp-USAJ3000002OC
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-64a04b8a261d597ce8b4c9ec" tvg-id="6a1610bebdf296985fd95603-64a04b8a261d597ce8b4c9ec" tvg-chno="" tvg-name="DREAD TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/eea34042-e7d4-4059-badc-bd8113e1b037/Dread-White-_-Black-1500x1000.png" group-title="Entertainment",DREAD TV
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-64a04b8a261d597ce8b4c9ec/?X-Plex-Token=zLy9PPCt9RbAW3zzaVEj
 
-#EXTINF:-1 channel-id="mjh-drive-fast" tvg-id="mjh-drive-fast" tvg-logo="https://imageresizer.static9.net.au/FbD6lTD6rHmNM35zPbmc572qOB8=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2025%2F07%2F702351%2Fdrive_squircle.png" group-title="Entertainment" , Drive
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/drive-fast.m3u8
-
 #EXTINF:-1 channel-id="FRBD3600001BQ-fr" tvg-id="FRBD3600001BQ" tvg-chno="4662" tvg-name="Drive TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBD3600001BQ_20241015T040258SQUARE.png" group-title="Entertainment",Drive TV
 https://jmp2.uk/stvp-FRBD3600001BQ
 
