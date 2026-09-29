@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29 07:56:07Z",
+  "generated_at": "2026-09-29 14:41:55Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -35,23 +35,23 @@
       "name": "Pluto TV (All Regions - Categorized)",
       "file": "plutotv_all.m3u8",
       "file_m3u": "plutotv_all.m3u",
-      "channels_count": 1536,
+      "channels_count": 1471,
       "categories": {
         "News & Weather": 60,
         "Sports & Racing": 32,
-        "Movies & Cinema": 81,
+        "Movies & Cinema": 80,
         "Animation & Anime": 14,
         "Kids & Family": 38,
-        "Comedy & Stand-up": 29,
+        "Comedy & Stand-up": 28,
         "Crime & Mystery": 57,
         "Documentary & Nature": 22,
         "Lifestyle, Food & Travel": 29,
-        "Music & Audio": 64,
-        "Reality & Game Shows": 29,
+        "Music & Audio": 65,
+        "Reality & Game Shows": 27,
         "Classic TV & Sitcoms": 14,
         "Drama & Series": 33,
         "Gaming & Tech": 1,
-        "Entertainment": 1033
+        "Entertainment": 971
       },
       "epg_url": "https://i.mjh.nz/PlutoTV/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_all.m3u",
@@ -62,10 +62,10 @@
       "name": "Plex TV (All Regions - Categorized)",
       "file": "plex_all.m3u8",
       "file_m3u": "plex_all.m3u",
-      "channels_count": 929,
+      "channels_count": 926,
       "categories": {
         "Nollywood & African TV": 1,
-        "News & Weather": 37,
+        "News & Weather": 35,
         "Sports & Racing": 48,
         "Movies & Cinema": 87,
         "Animation & Anime": 8,
@@ -79,7 +79,7 @@
         "Classic TV & Sitcoms": 9,
         "Drama & Series": 14,
         "Gaming & Tech": 4,
-        "Entertainment": 560
+        "Entertainment": 559
       },
       "epg_url": "https://i.mjh.nz/Plex/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plex_all.m3u",
@@ -90,23 +90,23 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 236,
+      "channels_count": 243,
       "categories": {
         "News & Weather": 20,
         "Sports & Racing": 45,
-        "Movies & Cinema": 20,
+        "Movies & Cinema": 21,
         "Animation & Anime": 1,
         "Kids & Family": 6,
-        "Comedy & Stand-up": 12,
-        "Crime & Mystery": 15,
+        "Comedy & Stand-up": 13,
+        "Crime & Mystery": 16,
         "Documentary & Nature": 4,
-        "Lifestyle, Food & Travel": 14,
-        "Music & Audio": 12,
-        "Reality & Game Shows": 6,
+        "Lifestyle, Food & Travel": 16,
+        "Music & Audio": 11,
+        "Reality & Game Shows": 7,
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 2,
         "Gaming & Tech": 1,
-        "Entertainment": 77
+        "Entertainment": 79
       },
       "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
@@ -195,8 +195,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3483,
-    "total_raw_scanned": 4502,
+    "total_unique_channels": 3416,
+    "total_raw_scanned": 4441,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
