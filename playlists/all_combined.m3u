@@ -4122,11 +4122,6 @@ https://jmp2.uk/stvp-FR3900002FW
 #EXTINF:-1 channel-id="62ac50e92c48f900071444c9-gb" tvg-id="62ac50e92c48f900071444c9" tvg-chno="929" tvg-name="Auction Hunters" tvg-logo="https://images.pluto.tv/channels/62ac50e92c48f900071444c9/colorLogoPNG.png" group-title="Entertainment",Auction Hunters
 https://jmp2.uk/plu-62ac50e92c48f900071444c9.m3u8
 
-#EXTINF:-1 channel-id="mjh-australian-short-course-championships-swimming-2026-fast" tvg-id="mjh-australian-short-course-championships-swimming-2026-fast" tvg-logo="https://imageresizer.static9.net.au/Gff2jG76cG2jPTfs7Sv9YcjZBkQ=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F09%2F797542%2Fsquircle_swimmingaus.png" group-title="Entertainment" , Australian Short Course Championships Swimming 2026
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/australian-short-course-championships-swimming-2026-fast.m3u8
-
 #EXTINF:-1 channel-id="IN400054UF-in" tvg-id="IN400054UF" tvg-chno="2039" tvg-name="Automotions" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400054UF_20260623T013639SQUARE.png" group-title="Entertainment",Automotions
 https://jmp2.uk/stvp-IN400054UF
 
