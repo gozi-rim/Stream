@@ -450,6 +450,11 @@ https://jmp2.uk/stvp-GB2000016YM
 #EXTINF:-1 channel-id="INBC4300010Z6-in" tvg-id="INBC4300010Z6" tvg-chno="1402" tvg-name="Zee News" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBC4300010Z6_20260915T042211SQUARE.png" group-title="News & Weather",Zee News
 https://jmp2.uk/stvp-INBC4300010Z6
 
+#EXTINF:-1 channel-id="mjh-10-tensport2" tvg-id="mjh-10-tensport2" tvg-logo="https://10.com.au/ip/s3/2025/08/20/ff0f2812b7edc667ce796f69a310dfd5-1391076.png?image-profile=logo" group-title="Sports & Racing" , 10 Sport 2
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-tensport2.m3u8
+
 #EXTINF:-1 channel-id="mjh-abc-90-seconds-sport" tvg-id="mjh-abc-90-seconds-sport" tvg-logo="https://live-production.wcms.abc-cdn.net.au/646cb8a032c847ec21c3de0de881e4cb?impolicy=wcms_crop_resize&cropH=630&cropW=1119&xPos=10&yPos=0&width=862&height=485" group-title="Sports & Racing" , ABC Sport in 90 Seconds
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
