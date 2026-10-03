@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03 17:48:49Z",
+  "generated_at": "2026-10-03 20:39:36Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -128,21 +128,21 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 209,
+      "channels_count": 167,
       "categories": {
         "News & Weather": 12,
-        "Sports & Racing": 10,
-        "Movies & Cinema": 3,
+        "Sports & Racing": 7,
+        "Movies & Cinema": 2,
         "Animation & Anime": 1,
         "Kids & Family": 4,
         "Comedy & Stand-up": 2,
-        "Crime & Mystery": 9,
+        "Crime & Mystery": 7,
         "Documentary & Nature": 2,
-        "Lifestyle, Food & Travel": 11,
+        "Lifestyle, Food & Travel": 7,
         "Music & Audio": 7,
         "Reality & Game Shows": 3,
         "Drama & Series": 2,
-        "Entertainment": 143
+        "Entertainment": 111
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -195,8 +195,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3482,
-    "total_raw_scanned": 4513,
+    "total_unique_channels": 3452,
+    "total_raw_scanned": 4471,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
