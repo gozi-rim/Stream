@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04 07:49:17Z",
+  "generated_at": "2026-10-04 13:43:38Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -90,23 +90,23 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 242,
+      "channels_count": 239,
       "categories": {
         "News & Weather": 20,
-        "Sports & Racing": 42,
+        "Sports & Racing": 46,
         "Movies & Cinema": 21,
         "Animation & Anime": 1,
-        "Kids & Family": 6,
+        "Kids & Family": 5,
         "Comedy & Stand-up": 13,
         "Crime & Mystery": 15,
         "Documentary & Nature": 4,
         "Lifestyle, Food & Travel": 16,
-        "Music & Audio": 12,
+        "Music & Audio": 7,
         "Reality & Game Shows": 8,
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 2,
         "Gaming & Tech": 1,
-        "Entertainment": 80
+        "Entertainment": 79
       },
       "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
@@ -128,7 +128,7 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 167,
+      "channels_count": 165,
       "categories": {
         "News & Weather": 12,
         "Sports & Racing": 7,
@@ -142,7 +142,7 @@
         "Music & Audio": 7,
         "Reality & Game Shows": 3,
         "Drama & Series": 2,
-        "Entertainment": 111
+        "Entertainment": 109
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -195,8 +195,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3452,
-    "total_raw_scanned": 4471,
+    "total_unique_channels": 3447,
+    "total_raw_scanned": 4466,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",

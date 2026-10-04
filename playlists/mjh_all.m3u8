@@ -565,16 +565,6 @@ https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sbs-5nsw.m3u8
 
-#EXTINF:-1 channel-id="mjh-nrl-grand-final-2026-exclusive-cams-fast" tvg-id="mjh-nrl-grand-final-2026-exclusive-cams-fast" tvg-logo="https://imageresizer.static9.net.au/lSP0xiaiecY1CTI_dEmFTVJg7Ac=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F09%2F798454%2Fmens_squircle.png" group-title="Entertainment" , NRL Grand Final 2026: Exclusive Cams
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/nrl-grand-final-2026-exclusive-cams-fast.m3u8
-
-#EXTINF:-1 channel-id="mjh-nrlw-grand-final-2026-exclusive-cams-fast" tvg-id="mjh-nrlw-grand-final-2026-exclusive-cams-fast" tvg-logo="https://imageresizer.static9.net.au/KtXqj15lb7PAwZ2h_TeUIsPeXUQ=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F09%2F798391%2Fwomens_squircle.png" group-title="Entertainment" , NRLW Grand Final 2026: Exclusive Cams
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/nrlw-grand-final-2026-exclusive-cams-fast.m3u8
-
 #EXTINF:-1 channel-id="mjh-parliament-tv" tvg-id="mjh-parliament-tv" tvg-logo="https://i.mjh.nz/.images/parliament-tv.png" tvg-chno="31" group-title="Entertainment" , Parliament TV
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
