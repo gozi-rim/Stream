@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04 17:59:23Z",
+  "generated_at": "2026-10-04 21:14:28Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -90,23 +90,23 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 239,
+      "channels_count": 242,
       "categories": {
-        "News & Weather": 20,
+        "News & Weather": 19,
         "Sports & Racing": 46,
         "Movies & Cinema": 21,
         "Animation & Anime": 1,
-        "Kids & Family": 5,
+        "Kids & Family": 6,
         "Comedy & Stand-up": 13,
         "Crime & Mystery": 15,
         "Documentary & Nature": 4,
-        "Lifestyle, Food & Travel": 16,
-        "Music & Audio": 7,
-        "Reality & Game Shows": 8,
+        "Lifestyle, Food & Travel": 14,
+        "Music & Audio": 12,
+        "Reality & Game Shows": 7,
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 2,
         "Gaming & Tech": 1,
-        "Entertainment": 79
+        "Entertainment": 80
       },
       "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
@@ -195,8 +195,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3446,
-    "total_raw_scanned": 4465,
+    "total_unique_channels": 3449,
+    "total_raw_scanned": 4468,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
