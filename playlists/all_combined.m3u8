@@ -1605,6 +1605,11 @@ https://jmp2.uk/stvp-IN38000072R
 #EXTINF:-1 channel-id="IN40000100Y-in" tvg-id="IN40000100Y" tvg-chno="1109" tvg-name="The Movie Club+2" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260812T011014SQUARE.png" group-title="Movies & Cinema",The Movie Club+2
 https://jmp2.uk/stvp-IN40000100Y
 
+#EXTINF:-1 channel-id="mjh-10-seasonalmovies" tvg-id="mjh-10-seasonalmovies" tvg-logo="https://10.com.au/ip/s3/2024/04/01/86e45216ee9df7d873e393dccb379d94-1306209.png?image-profile=logo" group-title="Movies & Cinema" , Thriller Movies
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-seasonalmovies.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-644c446d7472b186783f359e" tvg-id="6a1610bebdf296985fd95603-644c446d7472b186783f359e" tvg-chno="" tvg-name="Todo Cine" tvg-logo="https://provider-static.plex.tv/epg/cms/production/afe5cd54-0d6d-4b60-a4df-91a8d7ac7960/TodoCine_-_White_Fernando_Fraderdx.png" group-title="Movies & Cinema",Todo Cine
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-644c446d7472b186783f359e/?X-Plex-Token=tYSFtf8CLTTHggY7xTiU
 
@@ -5231,6 +5236,11 @@ https://jmp2.uk/stvp-US25000063S
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-69bda77eccad88fe7741f67c" tvg-id="6a1610bebdf296985fd95603-69bda77eccad88fe7741f67c" tvg-chno="" tvg-name="CW Presents WWE NXT" tvg-logo="https://provider-static.plex.tv/epg/cms/production/305d256e-8449-4a4d-adf9-f4bef5ad9cba/NXT-FAST-logo-Color-1500x1000.png" group-title="Entertainment",CW Presents WWE NXT
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-69bda77eccad88fe7741f67c/?X-Plex-Token=tYSFtf8CLTTHggY7xTiU
+
+#EXTINF:-1 channel-id="mjh-10-dallascheerleaders" tvg-id="mjh-10-dallascheerleaders" tvg-logo="https://10.com.au/ip/s3/2026/10/13/0908d845bb84c3146f50501d394ca2a6-1466626.png?image-profile=logo" group-title="Entertainment" , Dallas Cowboy Cheerleaders: Making The Team
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-dallascheerleaders.m3u8
 
 #EXTINF:-1 channel-id="USBA300004TE-us" tvg-id="USBA300004TE" tvg-chno="2769" tvg-name="Dallas Cowboys Cheer" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBA300004TE_20260421T142859SQUARE.png" group-title="Entertainment",Dallas Cowboys Cheer
 https://jmp2.uk/stvp-USBA300004TE
