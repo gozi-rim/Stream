@@ -715,6 +715,11 @@ https://i.mjh.nz/.r/sky-ptmb.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/ncis-fast.m3u8
 
+#EXTINF:-1 channel-id="mjh-misc515-fast" tvg-id="mjh-misc515-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc515-fast-c0557d.png" group-title="Entertainment" , New Balance University Basketball League MISC515
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/misc515-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-10-nexttopmodel" tvg-id="mjh-10-nexttopmodel" tvg-logo="https://10.com.au/ip/s3/2026/08/04/7b46b0620b6c96c6afcd7c47bf356f79-1448048.png?image-profile=logo" group-title="Entertainment" , Next Top Model
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=

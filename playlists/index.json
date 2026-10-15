@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15 03:28:07Z",
+  "generated_at": "2026-10-15 08:54:45Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -62,7 +62,7 @@
       "name": "Plex TV (All Regions - Categorized)",
       "file": "plex_all.m3u8",
       "file_m3u": "plex_all.m3u",
-      "channels_count": 928,
+      "channels_count": 929,
       "categories": {
         "Nollywood & African TV": 1,
         "News & Weather": 35,
@@ -74,7 +74,7 @@
         "Crime & Mystery": 38,
         "Documentary & Nature": 25,
         "Lifestyle, Food & Travel": 29,
-        "Music & Audio": 31,
+        "Music & Audio": 32,
         "Reality & Game Shows": 14,
         "Classic TV & Sitcoms": 9,
         "Drama & Series": 14,
@@ -90,9 +90,9 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 257,
+      "channels_count": 260,
       "categories": {
-        "News & Weather": 25,
+        "News & Weather": 28,
         "Sports & Racing": 46,
         "Movies & Cinema": 23,
         "Animation & Anime": 1,
@@ -117,9 +117,9 @@
       "name": "Tubi TV (All Regions - Categorized)",
       "file": "tubi_all.m3u8",
       "file_m3u": "tubi_all.m3u",
-      "channels_count": 182,
+      "channels_count": 177,
       "categories": {
-        "News & Weather": 26,
+        "News & Weather": 21,
         "Sports & Racing": 28,
         "Movies & Cinema": 14,
         "Kids & Family": 3,
@@ -142,7 +142,7 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 211,
+      "channels_count": 212,
       "categories": {
         "News & Weather": 12,
         "Sports & Racing": 9,
@@ -156,7 +156,7 @@
         "Music & Audio": 7,
         "Reality & Game Shows": 3,
         "Drama & Series": 2,
-        "Entertainment": 145
+        "Entertainment": 146
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -209,7 +209,7 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3544,
+    "total_unique_channels": 3541,
     "total_raw_scanned": 4735,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
