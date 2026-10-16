@@ -632,11 +632,6 @@ https://jmp2.uk/stvp-IN400057EZ
 #EXTINF:-1 channel-id="IT4200001D8-it" tvg-id="IT4200001D8" tvg-chno="4625" tvg-name="Golf Television" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT4200001D8_20250513T010712SQUARE.png" group-title="Sports & Racing",Golf Television
 https://jmp2.uk/stvp-IT4200001D8
 
-#EXTINF:-1 channel-id="mjh-misc515-fast" tvg-id="mjh-misc515-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc515-fast-a4996d.png" group-title="Sports & Racing" , Greyhound Racing MISC515
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/misc515-fast.m3u8
-
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-5fd115bdb7ef8d002dcf1820" tvg-id="6a1610bebdf296985fd95603-5fd115bdb7ef8d002dcf1820" tvg-chno="" tvg-name="Hard Knocks" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/hardknocks_logo_dark.png" group-title="Sports & Racing",Hard Knocks
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5fd115bdb7ef8d002dcf1820/?X-Plex-Token=p9xTKHEM9mnAKnyeP4wa
 
@@ -3247,11 +3242,6 @@ https://jmp2.uk/stvp-IN39000282A
 #EXTINF:-1 channel-id="IN800003JE-in" tvg-id="IN800003JE" tvg-chno="1618" tvg-name="That's ROCK" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN800003JE_20260623T013357SQUARE.png" group-title="Music & Audio",That's ROCK
 https://jmp2.uk/stvp-IN800003JE
 
-#EXTINF:-1 channel-id="mjh-sky-popup3" tvg-id="mjh-sky-popup3" tvg-logo="https://contentful-images.digital.skyone.co.nz/v3/hf0kmuqe0d45/47kgGnyP9ZvLNHm4z0M7gV/64e6997831d71159aebb9aba0adbdd48/Logo_Images_-_default.png" group-title="Music & Audio" , ThreeNow Pop Up 3
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/sky-popup3.m3u8
-
 #EXTINF:-1 channel-id="69445a9a78c0c45b6c9aa8b9-us" tvg-id="69445a9a78c0c45b6c9aa8b9" tvg-chno="4795" tvg-name="TikTok Radio" tvg-logo="https://images.pluto.tv/channels/69445a9a78c0c45b6c9aa8b9/colorLogoPNG_1771261855448.png" group-title="Music & Audio",TikTok Radio
 https://jmp2.uk/plu-69445a9a78c0c45b6c9aa8b9.m3u8
 
@@ -4102,11 +4092,6 @@ https://jmp2.uk/stvp-GBBC900015D3
 
 #EXTINF:-1 channel-id="64ec5c6644fe100009d114ae-it" tvg-id="64ec5c6644fe100009d114ae" tvg-chno="420" tvg-name="Affare Fatto" tvg-logo="https://images.pluto.tv/channels/64ec5c6644fe100009d114ae/colorLogoPNG.png" group-title="Entertainment",Affare Fatto
 https://jmp2.uk/plu-64ec5c6644fe100009d114ae.m3u8
-
-#EXTINF:-1 channel-id="mjh-mel3_event-fast" tvg-id="mjh-mel3_event-fast" tvg-logo="https://i.mjh.nz/.images/auto-mel3_event-fast-c499bf.png" group-title="Entertainment" , AFLW
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/mel3_event-fast.m3u8
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-id="6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c" tvg-chno="" tvg-name="AfroLandTV" tvg-logo="https://provider-static.plex.tv/epg/images/ott_channels/logos/AfroLandTV_logo_dark_v3.png" group-title="Entertainment",AfroLandTV
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-60e737a4ebef9d002c4d0a0c/?X-Plex-Token=p9xTKHEM9mnAKnyeP4wa
@@ -6316,11 +6301,6 @@ https://jmp2.uk/stvp-AT33000033D
 
 #EXTINF:-1 channel-id="AT48000012I-at" tvg-id="AT48000012I" tvg-chno="4003" tvg-name="Hochzeit auf den ersten Blick" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/AT48000012I_20261013T052459SQUARE.png" group-title="Entertainment",Hochzeit auf den ersten Blick
 https://jmp2.uk/stvp-AT48000012I
-
-#EXTINF:-1 channel-id="mjh-misc503-fast" tvg-id="mjh-misc503-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc503-fast-942b42.png" group-title="Entertainment" , Hockey One
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/misc503-fast.m3u8
 
 #EXTINF:-1 channel-id="68939e206727ec919bb39061-us" tvg-id="68939e206727ec919bb39061" tvg-chno="535" tvg-name="Hogan's Heroes" tvg-logo="https://images.pluto.tv/channels/68939e206727ec919bb39061/colorLogoPNG_1757523507747.png" group-title="Entertainment",Hogan's Heroes
 https://jmp2.uk/plu-68939e206727ec919bb39061.m3u8
