@@ -6,6 +6,9 @@ https://jmp2.uk/rok-50b18dea9c5c51568c1343fcd3d88ec9.m3u8
 #EXTINF:-1 channel-id="ec2faed50af3503e934f0c342a7952fe" tvg-id="ec2faed50af3503e934f0c342a7952fe" tvg-chno="9041" tvg-name="Arizona's Family" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ec2faed50af3503e934f0c342a7952fe/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746557956357_KPHO_EPG_Hud_LogoKPHO_HUD_logo_260x147_Centered.png" group-title="News & Weather",Arizona's Family
 https://jmp2.uk/rok-ec2faed50af3503e934f0c342a7952fe.m3u8
 
+#EXTINF:-1 channel-id="1672824c4fd55e5dbfcb57f147910270" tvg-id="1672824c4fd55e5dbfcb57f147910270" tvg-chno="9031" tvg-name="Atlanta News First" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1672824c4fd55e5dbfcb57f147910270/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1684345590463_WANF_EPGHud_LogoWANF_HUD_logo_260x147.png" group-title="News & Weather",Atlanta News First
+https://jmp2.uk/rok-1672824c4fd55e5dbfcb57f147910270.m3u8
+
 #EXTINF:-1 channel-id="46eb1feb60da2bc45bee66f313b564de" tvg-id="46eb1feb60da2bc45bee66f313b564de" tvg-chno="5103" tvg-name="Azteca Noticias" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/46eb1feb60da2bc45bee66f313b564de/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1773259750272_Azteca_Noticias_260x147_ef.png" group-title="News & Weather",Azteca Noticias
 https://jmp2.uk/rok-46eb1feb60da2bc45bee66f313b564de.m3u8
 
@@ -20,9 +23,6 @@ https://jmp2.uk/rok-307cbde3d30957828ff68b3b979d6958.m3u8
 
 #EXTINF:-1 channel-id="d0d9af56b7735c318b66afe21089d028" tvg-id="d0d9af56b7735c318b66afe21089d028" tvg-chno="9055" tvg-name="Cleveland 19 News Plus" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d0d9af56b7735c318b66afe21089d028/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1684345937107_WOIO_EPG%2526Hud_LogoWOIO_HUD_logo_260x147.png" group-title="News & Weather",Cleveland 19 News Plus
 https://jmp2.uk/rok-d0d9af56b7735c318b66afe21089d028.m3u8
-
-#EXTINF:-1 channel-id="0af429c36c6b517e8df2025e809b3964" tvg-id="0af429c36c6b517e8df2025e809b3964" tvg-chno="5000" tvg-name="Estrella News" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/0af429c36c6b517e8df2025e809b3964/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652921499084_RoKu_260x147_Estrella_NEWS.png" group-title="News & Weather",Estrella News
-https://jmp2.uk/rok-0af429c36c6b517e8df2025e809b3964.m3u8
 
 #EXTINF:-1 channel-id="91dff2b8a62b5fe1bdf64de721032cba" tvg-id="91dff2b8a62b5fe1bdf64de721032cba" tvg-chno="5018" tvg-name="Estrella TV" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/91dff2b8a62b5fe1bdf64de721032cba/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652921946998_RoKu_260x147_Estrella_TV.png" group-title="News & Weather",Estrella TV
 https://jmp2.uk/rok-91dff2b8a62b5fe1bdf64de721032cba.m3u8
@@ -543,9 +543,6 @@ https://jmp2.uk/rok-3ee48530e00e0abe8eb40c71fc819aa0.m3u8
 #EXTINF:-1 channel-id="5e709cfe55d955ec899903cde681a5a4" tvg-id="5e709cfe55d955ec899903cde681a5a4" tvg-chno="5019" tvg-name="Azteca Internacional" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/5e709cfe55d955ec899903cde681a5a4/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1698120582938_AI_Roku_260x147_Mono_INTERNACIONAL_CB_Oct23.png" group-title="Entertainment",Azteca Internacional
 https://jmp2.uk/rok-5e709cfe55d955ec899903cde681a5a4.m3u8
 
-#EXTINF:-1 channel-id="6d4ae9d9d0df5122a0811cff961b24b2" tvg-id="6d4ae9d9d0df5122a0811cff961b24b2" tvg-chno="4906" tvg-name="Best of Dr. Phil" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/6d4ae9d9d0df5122a0811cff961b24b2/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1788989824482_Roku_Image_HUD_1_260x147px.png" group-title="Entertainment",Best of Dr. Phil
-https://jmp2.uk/rok-6d4ae9d9d0df5122a0811cff961b24b2.m3u8
-
 #EXTINF:-1 channel-id="aefe55d5eb7e49a25b2c17513be6f1e1" tvg-id="aefe55d5eb7e49a25b2c17513be6f1e1" tvg-chno="1220" tvg-name="Bowling TV" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/aefe55d5eb7e49a25b2c17513be6f1e1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1787162238358_bowling_tv_logo_hud.png" group-title="Entertainment",Bowling TV
 https://jmp2.uk/rok-aefe55d5eb7e49a25b2c17513be6f1e1.m3u8
 
@@ -561,17 +558,11 @@ https://jmp2.uk/rok-0de9839c79b758589c580dcdd4b40a8a.m3u8
 #EXTINF:-1 channel-id="99e44ea6699928b32c444dce774b9b32" tvg-id="99e44ea6699928b32c444dce774b9b32" tvg-chno="4822" tvg-name="Chaos on Cam by A&E" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/99e44ea6699928b32c444dce774b9b32/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1751556977789_Chaos_On_Cam_by_AE_HUD_logo__efefef_center_aligned_260x147.png" group-title="Entertainment",Chaos on Cam by A&E
 https://jmp2.uk/rok-99e44ea6699928b32c444dce774b9b32.m3u8
 
-#EXTINF:-1 channel-id="363301aa078e555ebd034290488bc9cf" tvg-id="363301aa078e555ebd034290488bc9cf" tvg-chno="4908" tvg-name="Cheaters" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/363301aa078e555ebd034290488bc9cf/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1659118071445_TRC_xumoTile_FilmRiseCheaters_LogoFilesFilmRiseCheaters_HUD_logo_260x147.png" group-title="Entertainment",Cheaters
-https://jmp2.uk/rok-363301aa078e555ebd034290488bc9cf.m3u8
-
 #EXTINF:-1 channel-id="12bb30f85cfc69e4cfaa54c11d3d72ed" tvg-id="12bb30f85cfc69e4cfaa54c11d3d72ed" tvg-chno="5109" tvg-name="Cheaters en Español" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/12bb30f85cfc69e4cfaa54c11d3d72ed/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1787712362003_CheatersenEspanol_HUDlogo_centered_260x147.png" group-title="Entertainment",Cheaters en Español
 https://jmp2.uk/rok-12bb30f85cfc69e4cfaa54c11d3d72ed.m3u8
 
 #EXTINF:-1 channel-id="2a243861dea754eabb13a92e1106a4af" tvg-id="2a243861dea754eabb13a92e1106a4af" tvg-chno="3903" tvg-name="Complex TV" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/2a243861dea754eabb13a92e1106a4af/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1775050519108_ROKU_Editable_260x147_Cente.png" group-title="Entertainment",Complex TV
 https://jmp2.uk/rok-2a243861dea754eabb13a92e1106a4af.m3u8
-
-#EXTINF:-1 channel-id="390053bfbc6858999cb0d6354b57d938" tvg-id="390053bfbc6858999cb0d6354b57d938" tvg-chno="4904" tvg-name="Confess by Nosey" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/390053bfbc6858999cb0d6354b57d938/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1685734780162_Confess-by-NoseyImage-HUD-1_260x147px_1_Tayler_Petrowski.png" group-title="Entertainment",Confess by Nosey
-https://jmp2.uk/rok-390053bfbc6858999cb0d6354b57d938.m3u8
 
 #EXTINF:-1 channel-id="a61227fe8ede21ffc0e223763ccbe42f" tvg-id="a61227fe8ede21ffc0e223763ccbe42f" tvg-chno="5023" tvg-name="Cuando Los Angeles Caen" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/a61227fe8ede21ffc0e223763ccbe42f/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1760152096030_CLAC_260X147_EFEFEF.png" group-title="Entertainment",Cuando Los Angeles Caen
 https://jmp2.uk/rok-a61227fe8ede21ffc0e223763ccbe42f.m3u8
@@ -662,9 +653,6 @@ https://jmp2.uk/rok-098bce44be895630a3e437516fe70853.m3u8
 
 #EXTINF:-1 channel-id="9dd23031622757d1944e4782b2a192ef" tvg-id="9dd23031622757d1944e4782b2a192ef" tvg-chno="4122" tvg-name="Ninja Kidz TV" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/9dd23031622757d1944e4782b2a192ef/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1689296014024_NKTV_Roku_260x147_ImageHUD2_David_Preisman.png" group-title="Entertainment",Ninja Kidz TV
 https://jmp2.uk/rok-9dd23031622757d1944e4782b2a192ef.m3u8
-
-#EXTINF:-1 channel-id="d216c2141a835cfcbe34a7d1b7d2e078" tvg-id="d216c2141a835cfcbe34a7d1b7d2e078" tvg-chno="4905" tvg-name="Nosey" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/d216c2141a835cfcbe34a7d1b7d2e078/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1657584797446_Nosey_TRC_Logo_260x147.png" group-title="Entertainment",Nosey
-https://jmp2.uk/rok-d216c2141a835cfcbe34a7d1b7d2e078.m3u8
 
 #EXTINF:-1 channel-id="5d1c16bba82b53e69bf979c2fdca4ca8" tvg-id="5d1c16bba82b53e69bf979c2fdca4ca8" tvg-chno="5068" tvg-name="Novelísima" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/5d1c16bba82b53e69bf979c2fdca4ca8/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1707517468219_Novelisima_informational_HUD_centered.png" group-title="Entertainment",Novelísima
 https://jmp2.uk/rok-5d1c16bba82b53e69bf979c2fdca4ca8.m3u8
