@@ -6086,11 +6086,6 @@ https://jmp2.uk/plu-68d27437e6767bdeb23f0336.m3u8
 #EXTINF:-1 channel-id="66ba1e4446762a000855cd87-gb" tvg-id="66ba1e4446762a000855cd87" tvg-chno="304" tvg-name="Girlfriends" tvg-logo="https://images.pluto.tv/channels/66ba1e4446762a000855cd87/colorLogoPNG.png" group-title="Entertainment",Girlfriends
 https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8
 
-#EXTINF:-1 channel-id="mjh-glasgowglory-fast" tvg-id="mjh-glasgowglory-fast" tvg-logo="https://i.mjh.nz/.images/auto-glasgowglory-fast-687d7c.png" group-title="Entertainment" , Glasgow Glory
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/glasgowglory-fast.m3u8
-
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-5eea605474085f0040ddc76d" tvg-id="6a1610bebdf296985fd95603-5eea605474085f0040ddc76d" tvg-chno="" tvg-name="Glewed TV" tvg-logo="https://provider-static.plex.tv/epg/cms/production/d6025660-0b4a-4851-a805-4c61545642f9/glewed-tv.png" group-title="Entertainment",Glewed TV
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5eea605474085f0040ddc76d/?X-Plex-Token=j_vinuACQDvBZx3hW2Q-
 
@@ -9621,11 +9616,6 @@ https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-66a1acc57764
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-61f04d2bb01a6e8df3f72902" tvg-id="6a1610bebdf296985fd95603-61f04d2bb01a6e8df3f72902" tvg-chno="" tvg-name="Swerve Combat" tvg-logo="https://provider-static.plex.tv/epg/cms/production/aa449194-1789-42d6-8a03-55ef1e991c40/PLEX_1500x1000_Logo_Dark.png" group-title="Entertainment",Swerve Combat
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-61f04d2bb01a6e8df3f72902/?X-Plex-Token=j_vinuACQDvBZx3hW2Q-
-
-#EXTINF:-1 channel-id="mjh-swimmingreplays-fast" tvg-id="mjh-swimmingreplays-fast" tvg-logo="https://i.mjh.nz/.images/auto-swimmingreplays-fast-930ec0.png" group-title="Entertainment" , Swimming Replays
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/swimmingreplays-fast.m3u8
 
 #EXTINF:-1 channel-id="6578836cdfed030008ce5bdb-es" tvg-id="6578836cdfed030008ce5bdb" tvg-chno="113" tvg-name="Sí quiero ese vestido" tvg-logo="https://images.pluto.tv/channels/6578836cdfed030008ce5bdb/colorLogoPNG.png" group-title="Entertainment",Sí quiero ese vestido
 https://jmp2.uk/plu-6578836cdfed030008ce5bdb.m3u8
