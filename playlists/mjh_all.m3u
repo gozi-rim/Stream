@@ -450,6 +450,11 @@ https://c.mjh.nz/abc-nsw.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/aircrashinvestigations-fast.m3u8
 
+#EXTINF:-1 channel-id="mjh-allsaints-fast" tvg-id="mjh-allsaints-fast" tvg-logo="https://i.mjh.nz/.images/auto-allsaints-fast-ebad23.png" group-title="Entertainment" , All Saints
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/allsaints-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-anglersparadise-fast" tvg-id="mjh-anglersparadise-fast" tvg-logo="https://i.mjh.nz/.images/auto-anglersparadise-fast-970ebb.png" group-title="Entertainment" , Anglers Paradise
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -509,6 +514,11 @@ https://i.mjh.nz/.r/cas41-fast.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/cas24-fast.m3u8
+
+#EXTINF:-1 channel-id="mjh-bordersecurityaustralia-fast" tvg-id="mjh-bordersecurityaustralia-fast" tvg-logo="https://i.mjh.nz/.images/auto-bordersecurityaustralia-fast-30b210.png" group-title="Entertainment" , Border Security Australia
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/bordersecurityaustralia-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-botchedvault-fast" tvg-id="mjh-botchedvault-fast" tvg-logo="https://i.mjh.nz/.images/auto-botchedvault-fast-4c6012.png" group-title="Entertainment" , Botched VAULT
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
@@ -605,10 +615,10 @@ https://c.mjh.nz/good-dot.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/h2-fast.m3u8
 
-#EXTINF:-1 channel-id="mjh-10-hardcorepawn" tvg-id="mjh-10-hardcorepawn" tvg-logo="https://10.com.au/ip/s3/2025/03/03/1d46b70035ba5c816af46c6d4ee079cd-1366514.png?image-profile=logo" group-title="Entertainment" , Hardcore Pawn
+#EXTINF:-1 channel-id="mjh-hardcorepawn-fast" tvg-id="mjh-hardcorepawn-fast" tvg-logo="https://i.mjh.nz/.images/auto-hardcorepawn-fast-87f8ee.png" group-title="Entertainment" , Hardcore Pawn
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/10-hardcorepawn.m3u8
+https://i.mjh.nz/.r/hardcorepawn-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-10-haunt-tv" tvg-id="mjh-10-haunt-tv" tvg-logo="https://10.com.au/ip/s3/2023/07/12/8cb62aeb9de0e12611b68059325da0f3-1248632.png?image-profile=logo" group-title="Entertainment" , Haunt TV
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
@@ -724,6 +734,11 @@ https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sbs-5nsw.m3u8
+
+#EXTINF:-1 channel-id="mjh-onthecase-fast" tvg-id="mjh-onthecase-fast" tvg-logo="https://i.mjh.nz/.images/auto-onthecase-fast-6ec172.png" group-title="Entertainment" , On The Case
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/onthecase-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-outbacktruckers-fast" tvg-id="mjh-outbacktruckers-fast" tvg-logo="https://i.mjh.nz/.images/auto-outbacktruckers-fast-332b21.png" group-title="Entertainment" , Outback Truckers
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56

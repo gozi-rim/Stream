@@ -4179,6 +4179,11 @@ https://jmp2.uk/plu-6577224bb3801200084865d6.m3u8
 #EXTINF:-1 channel-id="AT1500005K6-at" tvg-id="AT1500005K6" tvg-chno="4887" tvg-name="All Romance" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/AT1500005K6_20260622T062937SQUARE.png" group-title="Entertainment",All Romance
 https://jmp2.uk/stvp-AT1500005K6
 
+#EXTINF:-1 channel-id="mjh-allsaints-fast" tvg-id="mjh-allsaints-fast" tvg-logo="https://i.mjh.nz/.images/auto-allsaints-fast-ebad23.png" group-title="Entertainment" , All Saints
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/allsaints-fast.m3u8
+
 #EXTINF:-1 channel-id="USBD1200005XR-us" tvg-id="USBD1200005XR" tvg-chno="1946" tvg-name="All Weddings We TV" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD1200005XR_20251125T030838SQUARE.png" group-title="Entertainment",All Weddings We TV
 https://jmp2.uk/stvp-USBD1200005XR
 
@@ -4663,6 +4668,11 @@ https://jmp2.uk/stvp-FRBC3900003ZH
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-5ef11487d33ab9004048a1d3" tvg-id="6a1610bebdf296985fd95603-5ef11487d33ab9004048a1d3" tvg-chno="" tvg-name="BOOT" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5e31e123-a40b-41c6-9153-67c983c6d9e6/boot_all-white_1500X1000_PNG_transparent_background.png" group-title="Entertainment",BOOT
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5ef11487d33ab9004048a1d3/?X-Plex-Token=G-2PMR9xLoNhDTNrwas2
+
+#EXTINF:-1 channel-id="mjh-bordersecurityaustralia-fast" tvg-id="mjh-bordersecurityaustralia-fast" tvg-logo="https://i.mjh.nz/.images/auto-bordersecurityaustralia-fast-30b210.png" group-title="Entertainment" , Border Security Australia
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/bordersecurityaustralia-fast.m3u8
 
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-69a20544bccf10670e5e498e" tvg-id="64305451fc3be5947773c339-69a20544bccf10670e5e498e" tvg-chno="" tvg-name="Born To Kill?" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5333f1c1-a0bd-4b39-858b-7bc5c24f8008/BornToKill_Logo_Colour_1500X1000.png" group-title="Entertainment",Born To Kill?
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-69a20544bccf10670e5e498e/?X-Plex-Token=G-2PMR9xLoNhDTNrwas2
