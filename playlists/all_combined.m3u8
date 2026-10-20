@@ -7547,11 +7547,6 @@ https://jmp2.uk/stvp-US300062TG
 #EXTINF:-1 channel-id="ATAJ0500422A-at" tvg-id="ATAJ0500422A" tvg-chno="4881" tvg-name="Netzkino" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATAJ0500422A_20250107T021804SQUARE.png" group-title="Entertainment",Netzkino
 https://jmp2.uk/stvp-ATAJ0500422A
 
-#EXTINF:-1 channel-id="mjh-misc515-fast" tvg-id="mjh-misc515-fast" tvg-logo="https://i.mjh.nz/.images/auto-misc515-fast-c0557d.png" group-title="Entertainment" , New Balance University Basketball League MISC515
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/misc515-fast.m3u8
-
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-68b9f5a3d60e5dd29263c7ac" tvg-id="6a1610bebdf296985fd95603-68b9f5a3d60e5dd29263c7ac" tvg-chno="" tvg-name="NEW KFOOD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/6aedfb80-69ab-4b5d-a34b-8e720a753673/NEW_KFOOD_Color_Logo-Dark_Background.png" group-title="Entertainment",NEW KFOOD
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-68b9f5a3d60e5dd29263c7ac/?X-Plex-Token=D1tYcQZoQpW-itnqQeYS
 
