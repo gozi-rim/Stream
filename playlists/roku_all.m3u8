@@ -6,9 +6,6 @@ https://jmp2.uk/rok-50b18dea9c5c51568c1343fcd3d88ec9.m3u8
 #EXTINF:-1 channel-id="ec2faed50af3503e934f0c342a7952fe" tvg-id="ec2faed50af3503e934f0c342a7952fe" tvg-chno="9041" tvg-name="Arizona's Family" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ec2faed50af3503e934f0c342a7952fe/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1746557956357_KPHO_EPG_Hud_LogoKPHO_HUD_logo_260x147_Centered.png" group-title="News & Weather",Arizona's Family
 https://jmp2.uk/rok-ec2faed50af3503e934f0c342a7952fe.m3u8
 
-#EXTINF:-1 channel-id="1672824c4fd55e5dbfcb57f147910270" tvg-id="1672824c4fd55e5dbfcb57f147910270" tvg-chno="9031" tvg-name="Atlanta News First" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1672824c4fd55e5dbfcb57f147910270/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1684345590463_WANF_EPGHud_LogoWANF_HUD_logo_260x147.png" group-title="News & Weather",Atlanta News First
-https://jmp2.uk/rok-1672824c4fd55e5dbfcb57f147910270.m3u8
-
 #EXTINF:-1 channel-id="46eb1feb60da2bc45bee66f313b564de" tvg-id="46eb1feb60da2bc45bee66f313b564de" tvg-chno="5103" tvg-name="Azteca Noticias" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/46eb1feb60da2bc45bee66f313b564de/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1773259750272_Azteca_Noticias_260x147_ef.png" group-title="News & Weather",Azteca Noticias
 https://jmp2.uk/rok-46eb1feb60da2bc45bee66f313b564de.m3u8
 
@@ -447,6 +444,9 @@ https://jmp2.uk/rok-5a1dec25daac971f191b10e808ec0c5d.m3u8
 #EXTINF:-1 channel-id="1a2266aeb6892914c687ebb3b58c2324" tvg-id="1a2266aeb6892914c687ebb3b58c2324" tvg-chno="509" tvg-name="The Doctors" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/1a2266aeb6892914c687ebb3b58c2324/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1731689588052_xDoctors_Roku_Image_HUD.png" group-title="Lifestyle, Food & Travel",The Doctors
 https://jmp2.uk/rok-1a2266aeb6892914c687ebb3b58c2324.m3u8
 
+#EXTINF:-1 channel-id="7e9fe2b4c7ba5869af6d60adbf4b7c86" tvg-id="7e9fe2b4c7ba5869af6d60adbf4b7c86" tvg-chno="3006" tvg-name="This Old House" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/7e9fe2b4c7ba5869af6d60adbf4b7c86/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1657673284299_THIS_OLD_HOUSE_260x147.png" group-title="Lifestyle, Food & Travel",This Old House
+https://jmp2.uk/rok-7e9fe2b4c7ba5869af6d60adbf4b7c86.m3u8
+
 #EXTINF:-1 channel-id="c7825e03df4a5bf4bdc87d65b7e3cdbb" tvg-id="c7825e03df4a5bf4bdc87d65b7e3cdbb" tvg-chno="3007" tvg-name="This Old House Classic" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/c7825e03df4a5bf4bdc87d65b7e3cdbb/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652917233272_TOHC_HudChannelID_rev.png" group-title="Lifestyle, Food & Travel",This Old House Classic
 https://jmp2.uk/rok-c7825e03df4a5bf4bdc87d65b7e3cdbb.m3u8
 
@@ -497,6 +497,9 @@ https://jmp2.uk/rok-3580b15015379c4256440b0e119d46ed.m3u8
 
 #EXTINF:-1 channel-id="562baf35c5da56cc91cdea41537b43f9" tvg-id="562baf35c5da56cc91cdea41537b43f9" tvg-chno="4300" tvg-name="BUZZR" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/562baf35c5da56cc91cdea41537b43f9/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1654733081445_BUZZR_ROKU_HUD-MONO_260X147-2021RB.png" group-title="Reality & Game Shows",BUZZR
 https://jmp2.uk/rok-562baf35c5da56cc91cdea41537b43f9.m3u8
+
+#EXTINF:-1 channel-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-id="ffe5d9e0480d1c5e1dcead3abd966ac7" tvg-chno="4305" tvg-name="Let's Make a Deal" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ffe5d9e0480d1c5e1dcead3abd966ac7/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1741793674388_LMAD_HUDLogoCenterAligned_260x147.png" group-title="Reality & Game Shows",Let's Make a Deal
+https://jmp2.uk/rok-ffe5d9e0480d1c5e1dcead3abd966ac7.m3u8
 
 #EXTINF:-1 channel-id="856fca464da0544784204ba8f6161dac" tvg-id="856fca464da0544784204ba8f6161dac" tvg-chno="3022" tvg-name="PBS Antiques Roadshow" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/856fca464da0544784204ba8f6161dac/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1772722216448_260x147_CenterAligned.png" group-title="Reality & Game Shows",PBS Antiques Roadshow
 https://jmp2.uk/rok-856fca464da0544784204ba8f6161dac.m3u8
