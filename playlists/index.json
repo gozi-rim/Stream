@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25 07:19:03Z",
+  "generated_at": "2026-10-25 12:58:58Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -90,9 +90,9 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 259,
+      "channels_count": 260,
       "categories": {
-        "News & Weather": 28,
+        "News & Weather": 29,
         "Sports & Racing": 46,
         "Movies & Cinema": 23,
         "Animation & Anime": 1,
@@ -117,9 +117,9 @@
       "name": "Tubi TV (All Regions - Categorized)",
       "file": "tubi_all.m3u8",
       "file_m3u": "tubi_all.m3u",
-      "channels_count": 182,
+      "channels_count": 181,
       "categories": {
-        "News & Weather": 26,
+        "News & Weather": 25,
         "Sports & Racing": 28,
         "Movies & Cinema": 14,
         "Kids & Family": 3,
@@ -142,10 +142,10 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 212,
+      "channels_count": 210,
       "categories": {
         "News & Weather": 12,
-        "Sports & Racing": 12,
+        "Sports & Racing": 11,
         "Movies & Cinema": 4,
         "Animation & Anime": 1,
         "Kids & Family": 4,
@@ -156,7 +156,7 @@
         "Music & Audio": 7,
         "Reality & Game Shows": 3,
         "Drama & Series": 2,
-        "Entertainment": 143
+        "Entertainment": 142
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -209,8 +209,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3557,
-    "total_raw_scanned": 4764,
+    "total_unique_channels": 3554,
+    "total_raw_scanned": 4762,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
