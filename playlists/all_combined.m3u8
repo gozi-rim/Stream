@@ -9602,11 +9602,6 @@ https://jmp2.uk/stvp-GBBD5100001HL
 #EXTINF:-1 channel-id="USBB10000058A-us" tvg-id="USBB10000058A" tvg-chno="2480" tvg-name="SURFER TV" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB10000058A_20250826T234505SQUARE.png" group-title="Entertainment",SURFER TV
 https://jmp2.uk/stvp-USBB10000058A
 
-#EXTINF:-1 channel-id="mjh-surveillancecentral-fast" tvg-id="mjh-surveillancecentral-fast" tvg-logo="https://i.mjh.nz/.images/auto-surveillancecentral-fast-4eeefa.png" group-title="Entertainment" , Surveillance Central
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/surveillancecentral-fast.m3u8
-
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-69d938388061ebfbca58c322" tvg-id="6a1610bebdf296985fd95603-69d938388061ebfbca58c322" tvg-chno="" tvg-name="Survive or Die" tvg-logo="https://provider-static.plex.tv/epg/cms/production/56a65f88-7aa4-4dcd-86ca-f9dfdca4d0be/SurviveOrDie_Logo_Dark_1500x1000.png" group-title="Entertainment",Survive or Die
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-69d938388061ebfbca58c322/?X-Plex-Token=JnTuLf2Ym8SeKXpi-cXc
 
