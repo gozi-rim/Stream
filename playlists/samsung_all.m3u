@@ -3957,11 +3957,8 @@ https://jmp2.uk/stvp-KR4500008DI
 #EXTINF:-1 channel-id="KRBB420000769-kr" tvg-id="KRBB420000769" tvg-chno="681" tvg-name="SBS TV 동물농장" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBB420000769_20260422T013756SQUARE.png" group-title="Entertainment",SBS TV 동물농장
 https://jmp2.uk/stvp-KRBB420000769
 
-#EXTINF:-1 channel-id="KRBB4200016TZ-kr" tvg-id="KRBB4200016TZ" tvg-chno="685" tvg-name="SBS 궁금한 이야기 Y" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBB4200016TZ_20260422T013800SQUARE.png" group-title="Entertainment",SBS 궁금한 이야기 Y
-https://jmp2.uk/stvp-KRBB4200016TZ
-
-#EXTINF:-1 channel-id="KRBB4200017HA-kr" tvg-id="KRBB4200017HA" tvg-chno="686" tvg-name="SBS 그것이 알고싶다" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBB4200017HA_20260422T013804SQUARE.png" group-title="Entertainment",SBS 그것이 알고싶다
-https://jmp2.uk/stvp-KRBB4200017HA
+#EXTINF:-1 channel-id="KRBB4200002MM-kr" tvg-id="KRBB4200002MM" tvg-chno="542" tvg-name="SBS 런닝맨" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBB4200002MM_20260422T013232SQUARE.png" group-title="Entertainment",SBS 런닝맨
+https://jmp2.uk/stvp-KRBB4200002MM
 
 #EXTINF:-1 channel-id="CA31000029Z-ca" tvg-id="CA31000029Z" tvg-chno="1959" tvg-name="Scare Tactics" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA31000029Z_20261023T223901SQUARE.png" group-title="Entertainment",Scare Tactics
 https://jmp2.uk/stvp-CA31000029Z
@@ -4712,9 +4709,6 @@ https://jmp2.uk/stvp-KR2000004DJ
 
 #EXTINF:-1 channel-id="KRBD3100006X4-kr" tvg-id="KRBD3100006X4" tvg-chno="795" tvg-name="글로벌 뉴스 by LeadStory" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBD3100006X4_20260422T014004SQUARE.png" group-title="Entertainment",글로벌 뉴스 by LeadStory
 https://jmp2.uk/stvp-KRBD3100006X4
-
-#EXTINF:-1 channel-id="KRBB4200009C3-kr" tvg-id="KRBB4200009C3" tvg-chno="569" tvg-name="나는 솔로" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBB4200009C3_20260422T014008SQUARE.png" group-title="Entertainment",나는 솔로
-https://jmp2.uk/stvp-KRBB4200009C3
 
 #EXTINF:-1 channel-id="KR2000010K7-kr" tvg-id="KR2000010K7" tvg-chno="634" tvg-name="나의 해리에게" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KR2000010K7_20260623T003332SQUARE.png" group-title="Entertainment",나의 해리에게
 https://jmp2.uk/stvp-KR2000010K7

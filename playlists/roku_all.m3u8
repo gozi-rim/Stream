@@ -171,9 +171,6 @@ https://jmp2.uk/rok-e46ac8cd0299b4c5f1403d999a432561.m3u8
 #EXTINF:-1 channel-id="9ec48964d9b9502396f19fcb3a527074" tvg-id="9ec48964d9b9502396f19fcb3a527074" tvg-chno="809" tvg-name="PHLY Sports" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/9ec48964d9b9502396f19fcb3a527074/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1720539914940_Roku_HUD_PHLY.png" group-title="Sports & Racing",PHLY Sports
 https://jmp2.uk/rok-9ec48964d9b9502396f19fcb3a527074.m3u8
 
-#EXTINF:-1 channel-id="a208207740dabd5e846e107b84db9123" tvg-id="a208207740dabd5e846e107b84db9123" tvg-chno="5100" tvg-name="PopCorn Central" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/a208207740dabd5e846e107b84db9123/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1778891092269_Info-HUD-channel-Identifier_260x147.png" group-title="Sports & Racing",PopCorn Central
-https://jmp2.uk/rok-a208207740dabd5e846e107b84db9123.m3u8
-
 #EXTINF:-1 channel-id="c5e8a74546771de365652cd053f73351" tvg-id="c5e8a74546771de365652cd053f73351" tvg-chno="1205" tvg-name="Red Bull TV" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/c5e8a74546771de365652cd053f73351/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1747061731258_260x147_hud_rbtv_logo.png" group-title="Sports & Racing",Red Bull TV
 https://jmp2.uk/rok-c5e8a74546771de365652cd053f73351.m3u8
 
@@ -383,9 +380,6 @@ https://jmp2.uk/rok-ce8a61a75e94b71f52ad51ed92b1ec65.m3u8
 
 #EXTINF:-1 channel-id="cc72c25b76295e07862192d21bbff05b" tvg-id="cc72c25b76295e07862192d21bbff05b" tvg-chno="2664" tvg-name="Real Crime" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/cc72c25b76295e07862192d21bbff05b/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1669079132437_RealCrime_White_260x147_Horizontal.png" group-title="Crime & Mystery",Real Crime
 https://jmp2.uk/rok-cc72c25b76295e07862192d21bbff05b.m3u8
-
-#EXTINF:-1 channel-id="c39d021ed8c95682a82ce6077ac0ab47" tvg-id="c39d021ed8c95682a82ce6077ac0ab47" tvg-chno="5088" tvg-name="Runtime Sangre Fría" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/c39d021ed8c95682a82ce6077ac0ab47/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1748485001772_Sangre_Fria_HUD_260x147.png" group-title="Crime & Mystery",Runtime Sangre Fría
-https://jmp2.uk/rok-c39d021ed8c95682a82ce6077ac0ab47.m3u8
 
 #EXTINF:-1 channel-id="aee4056540505e84a2196b4d2263b745" tvg-id="aee4056540505e84a2196b4d2263b745" tvg-chno="2666" tvg-name="TruBlu Crime Channel" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/aee4056540505e84a2196b4d2263b745/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1695170771746_Image_HUD_1_Misael_Caraballo.png" group-title="Crime & Mystery",TruBlu Crime Channel
 https://jmp2.uk/rok-aee4056540505e84a2196b4d2263b745.m3u8
@@ -677,6 +671,9 @@ https://jmp2.uk/rok-89388f7d7bf2910da37d47fa897096bd.m3u8
 
 #EXTINF:-1 channel-id="9cb058af15a0fdacf5aa87b78b2e3d33" tvg-id="9cb058af15a0fdacf5aa87b78b2e3d33" tvg-chno="3027" tvg-name="QVC2" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/9cb058af15a0fdacf5aa87b78b2e3d33/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1747160713948_Hud_Logo_QVC2-1.png" group-title="Entertainment",QVC2
 https://jmp2.uk/rok-9cb058af15a0fdacf5aa87b78b2e3d33.m3u8
+
+#EXTINF:-1 channel-id="02aa7b1a311bf3dde1883ea9b1fc9ee5" tvg-id="02aa7b1a311bf3dde1883ea9b1fc9ee5" tvg-chno="5093" tvg-name="Real America's Voice en Español" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/02aa7b1a311bf3dde1883ea9b1fc9ee5/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1783652270212_Info_Hud_260x147_efefef.png" group-title="Entertainment",Real America's Voice en Español
+https://jmp2.uk/rok-02aa7b1a311bf3dde1883ea9b1fc9ee5.m3u8
 
 #EXTINF:-1 channel-id="8abbea29b86a5a5da299c7ef2e288cab" tvg-id="8abbea29b86a5a5da299c7ef2e288cab" tvg-chno="2671" tvg-name="Reelz Famous and Infamous" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/8abbea29b86a5a5da299c7ef2e288cab/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1733326414482_ReelzFI_260x147_v1.png" group-title="Entertainment",Reelz Famous and Infamous
 https://jmp2.uk/rok-8abbea29b86a5a5da299c7ef2e288cab.m3u8
