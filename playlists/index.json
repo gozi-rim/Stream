@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30 04:38:50Z",
+  "generated_at": "2026-10-30 12:14:40Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -35,7 +35,7 @@
       "name": "Pluto TV (All Regions - Categorized)",
       "file": "plutotv_all.m3u8",
       "file_m3u": "plutotv_all.m3u",
-      "channels_count": 1567,
+      "channels_count": 1568,
       "categories": {
         "News & Weather": 72,
         "Sports & Racing": 32,
@@ -51,7 +51,7 @@
         "Classic TV & Sitcoms": 14,
         "Drama & Series": 37,
         "Gaming & Tech": 1,
-        "Entertainment": 1051
+        "Entertainment": 1052
       },
       "epg_url": "https://i.mjh.nz/PlutoTV/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_all.m3u",
@@ -99,12 +99,12 @@
         "Kids & Family": 6,
         "Comedy & Stand-up": 12,
         "Crime & Mystery": 15,
-        "Documentary & Nature": 3,
+        "Documentary & Nature": 4,
         "Lifestyle, Food & Travel": 15,
         "Music & Audio": 11,
         "Reality & Game Shows": 8,
         "Classic TV & Sitcoms": 1,
-        "Drama & Series": 2,
+        "Drama & Series": 1,
         "Gaming & Tech": 1,
         "Entertainment": 83
       },
@@ -142,10 +142,10 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 212,
+      "channels_count": 211,
       "categories": {
         "News & Weather": 12,
-        "Sports & Racing": 11,
+        "Sports & Racing": 10,
         "Movies & Cinema": 4,
         "Animation & Anime": 1,
         "Kids & Family": 4,
@@ -209,7 +209,7 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3561,
+    "total_unique_channels": 3560,
     "total_raw_scanned": 4766,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
