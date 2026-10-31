@@ -2605,11 +2605,6 @@ https://jmp2.uk/stvp-US1300007KZ
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-66469eecdad45e1759c1c06b" tvg-id="64305451fc3be5947773c339-66469eecdad45e1759c1c06b" tvg-chno="" tvg-name="PBS Science" tvg-logo="https://provider-static.plex.tv/epg/cms/production/98120494-d8ce-4851-9567-b0a22d1135ad/PBS_Science_Logo_Horizontal_WhiteBlue_1500x1000_-_Jaszmine_RayRDX.png" group-title="Documentary & Nature",PBS Science
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-66469eecdad45e1759c1c06b/?X-Plex-Token=QViL9g3DxHhoMhf6Gu5-
 
-#EXTINF:-1 channel-id="mjh-sbs-7faa" tvg-id="mjh-sbs-7faa" tvg-logo="https://image.pr.sbsod.com/6c1ccae0-2ddb-5e67-ae24-a4e42f23b2a0" group-title="Documentary & Nature" , Planet Luke Nguyen
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/sbs-7faa.m3u8
-
 #EXTINF:-1 channel-id="5a4d35dfa5c02e717a234f86-us" tvg-id="5a4d35dfa5c02e717a234f86" tvg-chno="3090" tvg-name="Pluto TV History" tvg-logo="https://images.pluto.tv/channels/5a4d35dfa5c02e717a234f86/colorLogoPNG.png" group-title="Documentary & Nature",Pluto TV History
 https://jmp2.uk/plu-5a4d35dfa5c02e717a234f86.m3u8
 
@@ -7022,7 +7017,7 @@ https://jmp2.uk/stvp-USBA300024TN
 #EXTINF:-1 channel-id="68bb164fb3900870ec368759-us" tvg-id="68bb164fb3900870ec368759" tvg-chno="1265" tvg-name="Living With Evil" tvg-logo="https://images.pluto.tv/channels/68bb164fb3900870ec368759/colorLogoPNG_1785342013286.png" group-title="Entertainment",Living With Evil
 https://jmp2.uk/plu-68bb164fb3900870ec368759.m3u8
 
-#EXTINF:-1 channel-id="mjh-lmn-fast" tvg-id="mjh-lmn-fast" tvg-logo="https://imageresizer.static9.net.au/GfA3WNoMOfZbJOqJeq-UrX5nsdk=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F12%2F658518%2Fgroup-61484.png" group-title="Entertainment" , LMN
+#EXTINF:-1 channel-id="mjh-lmn-fast" tvg-id="mjh-lmn-fast" tvg-logo="https://imageresizer.static9.net.au/pEZzrJfH9LZQzOaS0IYXJ0TGXjA=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F10%2F804379%2Fgroup-61765.png" group-title="Entertainment" , LMN
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/lmn-fast.m3u8

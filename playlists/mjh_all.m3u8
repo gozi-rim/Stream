@@ -220,11 +220,6 @@ https://i.mjh.nz/.r/sky-fast4.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/10-historyandwarfare.m3u8
 
-#EXTINF:-1 channel-id="mjh-sbs-7faa" tvg-id="mjh-sbs-7faa" tvg-logo="https://image.pr.sbsod.com/6c1ccae0-2ddb-5e67-ae24-a4e42f23b2a0" group-title="Documentary & Nature" , Planet Luke Nguyen
-#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
-#EXTVLCOPT:http-referrer=
-https://i.mjh.nz/.r/sbs-7faa.m3u8
-
 #EXTINF:-1 channel-id="mjh-bbc-food-fast" tvg-id="mjh-bbc-food-fast" tvg-logo="https://imageresizer.static9.net.au/fsW8mo_8BA8nztvHgpodxtSmcjo=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F12%2F652517%2Fgroup-61812.png" group-title="Lifestyle, Food & Travel" , BBC Food
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -670,7 +665,7 @@ https://i.mjh.nz/.r/mood-1290.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/sbs-sb04.m3u8
 
-#EXTINF:-1 channel-id="mjh-lmn-fast" tvg-id="mjh-lmn-fast" tvg-logo="https://imageresizer.static9.net.au/GfA3WNoMOfZbJOqJeq-UrX5nsdk=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F12%2F658518%2Fgroup-61484.png" group-title="Entertainment" , LMN
+#EXTINF:-1 channel-id="mjh-lmn-fast" tvg-id="mjh-lmn-fast" tvg-logo="https://imageresizer.static9.net.au/pEZzrJfH9LZQzOaS0IYXJ0TGXjA=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F10%2F804379%2Fgroup-61765.png" group-title="Entertainment" , LMN
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/lmn-fast.m3u8
