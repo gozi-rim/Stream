@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30 23:28:45Z",
+  "generated_at": "2026-10-31 04:22:35Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -145,7 +145,7 @@
       "channels_count": 213,
       "categories": {
         "News & Weather": 12,
-        "Sports & Racing": 11,
+        "Sports & Racing": 12,
         "Movies & Cinema": 4,
         "Animation & Anime": 1,
         "Kids & Family": 4,
@@ -156,7 +156,7 @@
         "Music & Audio": 7,
         "Reality & Game Shows": 4,
         "Drama & Series": 2,
-        "Entertainment": 144
+        "Entertainment": 143
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
