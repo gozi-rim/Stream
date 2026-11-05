@@ -3624,6 +3624,11 @@ https://jmp2.uk/plu-5c5c2b9d8002db3c3e0b1c6d.m3u8
 #EXTINF:-1 channel-id="5de802659167b10009e7deba-mx" tvg-id="5de802659167b10009e7deba" tvg-chno="203" tvg-name="Pluto TV Series Retro" tvg-logo="https://images.pluto.tv/channels/5de802659167b10009e7deba/colorLogoPNG.png" group-title="Classic TV & Sitcoms",Pluto TV Series Retro
 https://jmp2.uk/plu-5de802659167b10009e7deba.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-sitcomcentral" tvg-id="mjh-10-sitcomcentral" tvg-logo="https://10.com.au/ip/s3/2026/11/03/9b6127d5c344faf363a70b45ecbe827f-1470465.png?image-profile=logo" group-title="Classic TV & Sitcoms" , Sitcom Central
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-sitcomcentral.m3u8
+
 #EXTINF:-1 channel-id="633354b63df9700007f6a1b7-us" tvg-id="633354b63df9700007f6a1b7" tvg-chno="292" tvg-name="Sitcom Legends" tvg-logo="https://images.pluto.tv/channels/633354b63df9700007f6a1b7/colorLogoPNG.png" group-title="Classic TV & Sitcoms",Sitcom Legends
 https://jmp2.uk/plu-633354b63df9700007f6a1b7.m3u8
 
