@@ -1,8 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml" x-tvg-url="https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml"
 
-#EXTINF:-1 tvg-id="687450" tvg-logo="https://canvas-lb.tubitv.com/opts/nFlppDwdl5Z3Zg==/336146fe-7a27-4e45-ac1c-b4d57c74ca6c/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",25 News KXXV / KRHD
-https://live-manifest.production-public.tubi.io/live/0db2988e-37ba-47a8-9db9-067b4ec49c5f/playlist.m3u8
-
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/UE7AlcHTNh1JbA==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",ABC News Live
 https://live-manifest.production-public.tubi.io/live/14e4f5f2-9787-4c49-8554-f2ad109764a7/playlist.m3u8
 
@@ -24,9 +21,6 @@ https://live-manifest.production-public.tubi.io/live/1c67c086-8938-4961-9b14-254
 #EXTINF:-1 tvg-id="559144" tvg-logo="https://canvas-lb.tubitv.com/opts/9sem5esRDztU_g==/bac08913-5ae4-4e98-8a24-18f143bd6e25/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Euronews
 https://live-manifest.production-public.tubi.io/live/c841471d-dc14-43fb-9ba5-c266e7edcce4/playlist.m3u8
 
-#EXTINF:-1 tvg-id="555112" tvg-logo="https://canvas-lb.tubitv.com/opts/RBbXDyt9gs3T7g==/17b79a3b-2fce-4809-b64b-1904a5cc2efc/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL Austin
-https://live-manifest.production-public.tubi.io/live/e287b7a8-9e3e-4ab8-b960-2b904de366a2/playlist.m3u8
-
 #EXTINF:-1 tvg-id="555113" tvg-logo="https://canvas-lb.tubitv.com/opts/A8fiH4ZchoqiTQ==/370368b1-2dcd-4cf7-bc77-703d814e3f5a/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL Los Angeles
 https://live-manifest.production-public.tubi.io/live/b54c2aa5-e243-480f-9384-bbf7bcbddaf1/playlist.m3u8
 
@@ -39,8 +33,11 @@ https://live-manifest.production-public.tubi.io/live/8243cded-cf4c-489a-a5f1-6a2
 #EXTINF:-1 tvg-id="628893" tvg-logo="https://canvas-lb.tubitv.com/opts/GnNXSUczAo3hrg==/ac3a8a9b-0068-488b-a5c6-380f373cc446/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX Weather
 https://live-manifest.production-public.tubi.io/live/f1fd1442-62f5-4663-9049-c08c27f6d980/playlist.m3u8
 
-#EXTINF:-1 tvg-id="688740" tvg-logo="https://canvas-lb.tubitv.com/opts/jJR7JxhfTrDveg==/6f832c92-e8da-4e41-aae6-354a4c6fd750/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KRIS6 Corpus Christi
-https://live-manifest.production-public.tubi.io/live/399b01e5-7b96-48c1-b1e1-cd6d88083963/playlist.m3u8
+#EXTINF:-1 tvg-id="603907" tvg-logo="https://canvas-lb.tubitv.com/opts/riE9GYh_sl5TWg==/14d79fa8-04ea-4a04-9c57-22dca8e2851c/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KCCI Very Iowa Des Moines 8
+https://live-manifest.production-public.tubi.io/live/03361ae2-95b5-411f-b0cc-2721486cb734/playlist.m3u8
+
+#EXTINF:-1 tvg-id="687448" tvg-logo="https://canvas-lb.tubitv.com/opts/CNGMUuU8KsqP8g==/b4f8a8e0-d44c-480c-b6e6-2781bc0f2f69/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KMTV 3 News Omaha
+https://live-manifest.production-public.tubi.io/live/4955ee1f-cb35-4678-a5ee-28a3fa3c8e86/playlist.m3u8
 
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas-lb.tubitv.com/opts/EOd2smJ7jr5xNw==/ab276377-f883-4858-a607-45a3ceaeac04/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/8127bb63-a43e-4859-8681-7c1ad6192796/playlist.m3u8
