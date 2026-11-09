@@ -87,9 +87,6 @@ https://jmp2.uk/rok-d53b1fb8c41f574387cde82d084515ea.m3u8
 #EXTINF:-1 channel-id="04be54c79d1f55d0909e684f64f9fb57" tvg-id="04be54c79d1f55d0909e684f64f9fb57" tvg-chno="5046" tvg-name="Azteca Deportes Network LITE 3" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/04be54c79d1f55d0909e684f64f9fb57/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1718994621239_AI_Roku_260x147_Mono_DEPORTES_TB_Oct23.png" group-title="Sports & Racing",Azteca Deportes Network LITE 3
 https://jmp2.uk/rok-04be54c79d1f55d0909e684f64f9fb57.m3u8
 
-#EXTINF:-1 channel-id="9210a8fbeab66e9d1ce20c187804ee7d" tvg-id="9210a8fbeab66e9d1ce20c187804ee7d" tvg-chno="1209" tvg-name="Bassmaster" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/9210a8fbeab66e9d1ce20c187804ee7d/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1749678868866_BassmasterChannel_InfoHUDChannelIdentifier_260x147.png" group-title="Sports & Racing",Bassmaster
-https://jmp2.uk/rok-9210a8fbeab66e9d1ce20c187804ee7d.m3u8
-
 #EXTINF:-1 channel-id="ab47c5037be851e6a929a4d09daafeac" tvg-id="ab47c5037be851e6a929a4d09daafeac" tvg-chno="1720" tvg-name="Baywatch" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/ab47c5037be851e6a929a4d09daafeac/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1669077442140_Baywatch-HUDLOGO-CENTER-260x147-ROKU.png" group-title="Sports & Racing",Baywatch
 https://jmp2.uk/rok-ab47c5037be851e6a929a4d09daafeac.m3u8
 
@@ -401,6 +398,9 @@ https://jmp2.uk/rok-479fe0d11f3f5132a3f36b617547da3b.m3u8
 
 #EXTINF:-1 channel-id="b182852fa5860ed0017de42c7b9ce05a" tvg-id="b182852fa5860ed0017de42c7b9ce05a" tvg-chno="6203" tvg-name="Nature Moments" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/b182852fa5860ed0017de42c7b9ce05a/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1735672320363_NatureMoments_Roku_HUD_260x147_centeraligned.png" group-title="Documentary & Nature",Nature Moments
 https://jmp2.uk/rok-b182852fa5860ed0017de42c7b9ce05a.m3u8
+
+#EXTINF:-1 channel-id="4d62b7d4fc91fbc2b528eb10857d7ab8" tvg-id="4d62b7d4fc91fbc2b528eb10857d7ab8" tvg-chno="6210" tvg-name="Space Live" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/4d62b7d4fc91fbc2b528eb10857d7ab8/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1787161821038_space_live_logo_hud.png" group-title="Documentary & Nature",Space Live
+https://jmp2.uk/rok-4d62b7d4fc91fbc2b528eb10857d7ab8.m3u8
 
 #EXTINF:-1 channel-id="58e6bfd1c4819af32ead547dbc82e1f8" tvg-id="58e6bfd1c4819af32ead547dbc82e1f8" tvg-chno="1002" tvg-name="FloRacing 24/7" tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/58e6bfd1c4819af32ead547dbc82e1f8/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1771353198884_FloRacing_HUDLogo.png" group-title="Lifestyle, Food & Travel",FloRacing 24/7
 https://jmp2.uk/rok-58e6bfd1c4819af32ead547dbc82e1f8.m3u8
