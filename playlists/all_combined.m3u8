@@ -3621,6 +3621,11 @@ https://jmp2.uk/plu-5c5c2b9d8002db3c3e0b1c6d.m3u8
 #EXTINF:-1 channel-id="5de802659167b10009e7deba-mx" tvg-id="5de802659167b10009e7deba" tvg-chno="203" tvg-name="Pluto TV Series Retro" tvg-logo="https://images.pluto.tv/channels/5de802659167b10009e7deba/colorLogoPNG.png" group-title="Classic TV & Sitcoms",Pluto TV Series Retro
 https://jmp2.uk/plu-5de802659167b10009e7deba.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-sitcomcentral" tvg-id="mjh-10-sitcomcentral" tvg-logo="https://10.com.au/ip/s3/2026/11/03/9b6127d5c344faf363a70b45ecbe827f-1470465.png?image-profile=logo" group-title="Classic TV & Sitcoms" , Sitcom Central
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-sitcomcentral.m3u8
+
 #EXTINF:-1 channel-id="633354b63df9700007f6a1b7-us" tvg-id="633354b63df9700007f6a1b7" tvg-chno="292" tvg-name="Sitcom Legends" tvg-logo="https://images.pluto.tv/channels/633354b63df9700007f6a1b7/colorLogoPNG.png" group-title="Classic TV & Sitcoms",Sitcom Legends
 https://jmp2.uk/plu-633354b63df9700007f6a1b7.m3u8
 
@@ -7616,6 +7621,11 @@ https://jmp2.uk/plu-6512d40a3a0d700008db1952.m3u8
 
 #EXTINF:-1 channel-id="US1800015K5-us" tvg-id="US1800015K5" tvg-chno="2635" tvg-name="National Lampoon" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1800015K5_20260714T040825SQUARE.png" group-title="Entertainment",National Lampoon
 https://jmp2.uk/stvp-US1800015K5
+
+#EXTINF:-1 channel-id="mjh-national-pharmacies-christmas-pageant-2026-fast" tvg-id="mjh-national-pharmacies-christmas-pageant-2026-fast" tvg-logo="https://imageresizer.static9.net.au/nI-P856PeObvNNnVJ0hg0xEjnBs=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F11%2F806153%2Fpharmaciesxmassquircle-1.png" group-title="Entertainment" , National Pharmacies Christmas Pageant 2026
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/national-pharmacies-christmas-pageant-2026-fast.m3u8
 
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-666e2178d91d13cb4c8cbb75" tvg-id="6a1610bebdf296985fd95603-666e2178d91d13cb4c8cbb75" tvg-chno="" tvg-name="Naturaleza" tvg-logo="https://provider-static.plex.tv/epg/cms/production/b8f2b67e-a131-4b50-9864-dc0b13c3c6ed/channel_logo_1500x1000_light.png.png" group-title="Entertainment",Naturaleza
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-666e2178d91d13cb4c8cbb75/?X-Plex-Token=RZUsemQrSb3TtsL5wGKp
