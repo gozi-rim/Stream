@@ -979,6 +979,11 @@ https://jmp2.uk/stvp-ITBD140000119
 #EXTINF:-1 channel-id="ITBA14000093A-it" tvg-id="ITBA14000093A" tvg-chno="4871" tvg-name="CG Grandi Film" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA14000093A_20251111T011343SQUARE.png" group-title="Movies & Cinema",CG Grandi Film
 https://jmp2.uk/stvp-ITBA14000093A
 
+#EXTINF:-1 channel-id="mjh-10-christmasmovies" tvg-id="mjh-10-christmasmovies" tvg-logo="https://10.com.au/ip/s3/2025/11/24/9e410ae2839bab3195b8faa894027f1e-1401189.png?image-profile=logo" group-title="Movies & Cinema" , Christmas Movies
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-christmasmovies.m3u8
+
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a" tvg-id="64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a" tvg-chno="" tvg-name="Christmas Movies by Lifetime" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29e28c9c-081d-42fd-af2a-6f6f3fe8f041/INT_CMBL_logo_Fin_RedRDX.png" group-title="Movies & Cinema",Christmas Movies by Lifetime
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a/?X-Plex-Token=eZ1z_ccsvxAvfrgs4GeP
 
