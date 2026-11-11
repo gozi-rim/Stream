@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11 04:56:14Z",
+  "generated_at": "2026-11-11 13:39:46Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -90,10 +90,10 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 252,
+      "channels_count": 254,
       "categories": {
-        "News & Weather": 28,
-        "Sports & Racing": 45,
+        "News & Weather": 27,
+        "Sports & Racing": 46,
         "Movies & Cinema": 23,
         "Animation & Anime": 1,
         "Kids & Family": 6,
@@ -106,7 +106,7 @@
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 1,
         "Gaming & Tech": 1,
-        "Entertainment": 81
+        "Entertainment": 83
       },
       "epg_url": "https://i.mjh.nz/Roku/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u",
@@ -117,18 +117,18 @@
       "name": "Tubi TV (All Regions - Categorized)",
       "file": "tubi_all.m3u8",
       "file_m3u": "tubi_all.m3u",
-      "channels_count": 176,
+      "channels_count": 277,
       "categories": {
-        "News & Weather": 20,
+        "News & Weather": 121,
         "Sports & Racing": 28,
-        "Movies & Cinema": 14,
+        "Movies & Cinema": 15,
         "Kids & Family": 3,
         "Comedy & Stand-up": 15,
         "Crime & Mystery": 23,
         "Documentary & Nature": 6,
         "Lifestyle, Food & Travel": 7,
         "Music & Audio": 8,
-        "Reality & Game Shows": 17,
+        "Reality & Game Shows": 16,
         "Classic TV & Sitcoms": 7,
         "Drama & Series": 1,
         "Entertainment": 27
@@ -210,8 +210,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3582,
-    "total_raw_scanned": 4792,
+    "total_unique_channels": 3682,
+    "total_raw_scanned": 4895,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
