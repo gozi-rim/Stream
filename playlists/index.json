@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15 05:04:12Z",
+  "generated_at": "2026-11-15 13:30:24Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -35,10 +35,10 @@
       "name": "Pluto TV (All Regions - Categorized)",
       "file": "plutotv_all.m3u8",
       "file_m3u": "plutotv_all.m3u",
-      "channels_count": 1597,
+      "channels_count": 1595,
       "categories": {
         "News & Weather": 72,
-        "Sports & Racing": 36,
+        "Sports & Racing": 35,
         "Movies & Cinema": 80,
         "Animation & Anime": 14,
         "Kids & Family": 36,
@@ -51,7 +51,7 @@
         "Classic TV & Sitcoms": 14,
         "Drama & Series": 37,
         "Gaming & Tech": 1,
-        "Entertainment": 1071
+        "Entertainment": 1070
       },
       "epg_url": "https://i.mjh.nz/PlutoTV/all.xml.gz",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_all.m3u",
@@ -90,9 +90,9 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 254,
+      "channels_count": 255,
       "categories": {
-        "News & Weather": 27,
+        "News & Weather": 28,
         "Sports & Racing": 46,
         "Movies & Cinema": 23,
         "Animation & Anime": 1,
@@ -142,10 +142,10 @@
       "name": "Global / All Channels (MJH)",
       "file": "mjh_all.m3u8",
       "file_m3u": "mjh_all.m3u",
-      "channels_count": 211,
+      "channels_count": 209,
       "categories": {
         "News & Weather": 12,
-        "Sports & Racing": 9,
+        "Sports & Racing": 8,
         "Movies & Cinema": 5,
         "Animation & Anime": 1,
         "Kids & Family": 4,
@@ -157,7 +157,7 @@
         "Reality & Game Shows": 4,
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 2,
-        "Entertainment": 143
+        "Entertainment": 142
       },
       "epg_url": "https://i.mjh.nz/all/epg.xml.gz",
       "upstream_url": "https://i.mjh.nz/all/raw-tv.m3u8",
@@ -210,8 +210,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3590,
-    "total_raw_scanned": 4802,
+    "total_unique_channels": 3587,
+    "total_raw_scanned": 4799,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
