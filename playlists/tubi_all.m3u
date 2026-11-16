@@ -12,9 +12,6 @@ https://live-manifest.production-public.tubi.io/live/083318f5-9f96-4a49-a024-591
 #EXTINF:-1 tvg-id="555130" tvg-logo="https://canvas-lb.tubitv.com/opts/YMZxvZaVEX0HtA==/4de90f79-d72c-4016-a740-93916a615dc2/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",CBC News
 https://live-manifest.production-public.tubi.io/live/08b1a540-5618-46ce-b6e2-c0dfd1e8786f/playlist.m3u8
 
-#EXTINF:-1 tvg-id="689473" tvg-logo="https://canvas-lb.tubitv.com/opts/7u12jTpbUtjcYA==/572073ab-5145-412f-b9d0-6711c73ab661/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",CBS 6 Richmond WTVR
-https://live-manifest.production-public.tubi.io/live/41feddbe-795f-4294-bb8c-32fcb26a7d54/playlist.m3u8
-
 #EXTINF:-1 tvg-id="555126" tvg-logo="https://canvas-lb.tubitv.com/opts/4Rv4zVMsE02xuA==/4975eac2-9902-4ac5-8036-f28a6d9979a0/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Cheddar
 https://live-manifest.production-public.tubi.io/live/2d43684f-75a3-452c-85e2-b88f36654606/playlist.m3u8
 
@@ -30,11 +27,35 @@ https://live-manifest.production-public.tubi.io/live/b54c2aa5-e243-480f-9384-bbf
 #EXTINF:-1 tvg-id="555119" tvg-logo="https://canvas-lb.tubitv.com/opts/bKxO2pZFIwBisA==/c6c25ba1-c2fd-4e78-973f-3a220337f694/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL New York
 https://live-manifest.production-public.tubi.io/live/7d346182-3c47-4c64-b8d6-cca75b5c8cd7/playlist.m3u8
 
+#EXTINF:-1 tvg-id="555111" tvg-logo="https://canvas-lb.tubitv.com/opts/TWKr26m0q-5pKw==/f1c7b2b6-a6fc-4170-b184-98eb8d595748/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL Phoenix
+https://live-manifest.production-public.tubi.io/live/550174b5-d648-4873-a079-fb603d9f7c3d/playlist.m3u8
+
+#EXTINF:-1 tvg-id="555107" tvg-logo="https://canvas-lb.tubitv.com/opts/Zr0DzK4YmPx3rw==/169ebadc-ee9a-4c7e-83a3-9f7af89477de/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL Seattle
+https://live-manifest.production-public.tubi.io/live/fdd0bcb7-3d02-4e58-ba10-27dba410ab83/playlist.m3u8
+
 #EXTINF:-1 tvg-id="555121" tvg-logo="https://canvas-lb.tubitv.com/opts/_jvGWcGqFs6DhQ==/8c560c21-a9f7-41c7-82ad-df5674fb9692/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX LOCAL Washington DC
 https://live-manifest.production-public.tubi.io/live/8243cded-cf4c-489a-a5f1-6a2d1b68c3f8/playlist.m3u8
 
 #EXTINF:-1 tvg-id="628893" tvg-logo="https://canvas-lb.tubitv.com/opts/GnNXSUczAo3hrg==/ac3a8a9b-0068-488b-a5c6-380f373cc446/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",FOX Weather
 https://live-manifest.production-public.tubi.io/live/f1fd1442-62f5-4663-9049-c08c27f6d980/playlist.m3u8
+
+#EXTINF:-1 tvg-id="603170" tvg-logo="https://canvas-lb.tubitv.com/opts/usfnfInlWAt3WA==/29a81952-02f7-4dd9-9aa9-8bb368d1b5c7/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KGTV San Diego ABC10
+https://live-manifest.production-public.tubi.io/live/8583b8e3-d4ff-4cba-8b8e-31cbd5f3d48c/playlist.m3u8
+
+#EXTINF:-1 tvg-id="689270" tvg-logo="https://canvas-lb.tubitv.com/opts/ynN2O3SllpuI0A==/d60ddc8d-83d2-4392-ab76-e8be5561fdc6/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KGUN 9 Tucson News
+https://live-manifest.production-public.tubi.io/live/2ac95634-f596-4e16-9806-c1e6388c9085/playlist.m3u8
+
+#EXTINF:-1 tvg-id="644786" tvg-logo="https://canvas-lb.tubitv.com/opts/5DMV71RDP26ObQ==/b2b6d025-79ac-4b66-a34e-486ba4694c94/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KING Seattle 5
+https://live-manifest.production-public.tubi.io/live/287ffc3b-2802-483c-b10a-0a0da4cc6800/playlist.m3u8
+
+#EXTINF:-1 tvg-id="603169" tvg-logo="https://canvas-lb.tubitv.com/opts/OFD_TwGsQ0uRMg==/6b95d864-7476-45c3-a0b7-7865dfaf97e6/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KNXV Arizona ABC15
+https://live-manifest.production-public.tubi.io/live/462595d7-4dcc-4676-b548-f85fc1b29abd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="603911" tvg-logo="https://canvas-lb.tubitv.com/opts/_HFh9DlEqVUCNQ==/204e1438-d8f9-48ab-b48f-3395f0d00574/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KOAT Very New Mexico 7
+https://live-manifest.production-public.tubi.io/live/707fbf11-8f31-471d-aa46-9c0514588e65/playlist.m3u8
+
+#EXTINF:-1 tvg-id="646485" tvg-logo="https://canvas-lb.tubitv.com/opts/AQmHlqD2DW_w9g==/b76eb6a0-df6b-4688-b5f8-de1a2a23430d/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",KPNX Phoenix 12 News
+https://live-manifest.production-public.tubi.io/live/68c66ccb-444f-46d4-bcbf-37511338b170/playlist.m3u8
 
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas-lb.tubitv.com/opts/EOd2smJ7jr5xNw==/ab276377-f883-4858-a607-45a3ceaeac04/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/8127bb63-a43e-4859-8681-7c1ad6192796/playlist.m3u8
@@ -56,24 +77,6 @@ https://live-manifest.production-public.tubi.io/live/872ed469-a2cf-41d6-a35c-726
 
 #EXTINF:-1 tvg-id="597678" tvg-logo="https://canvas-lb.tubitv.com/opts/evVIud42yl9aiQ==/bf04720c-d113-4728-a69a-a0ebc800e7b3/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Today All Day
 https://live-manifest.production-public.tubi.io/live/d51de949-6ef0-4e1e-a370-4602eaf9f466/playlist.m3u8
-
-#EXTINF:-1 tvg-id="610463" tvg-logo="https://canvas-lb.tubitv.com/opts/hdPtjnljSskY1Q==/8da5a668-c2a6-4e29-aebd-e1e0e02e06b6/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",Very Boston WCVB
-https://live-manifest.production-public.tubi.io/live/d133d4a2-5013-4630-addf-b67c393d35ba/playlist.m3u8
-
-#EXTINF:-1 tvg-id="603906" tvg-logo="https://canvas-lb.tubitv.com/opts/-siY3OmlqWT_qw==/774c9b9e-6011-422f-b77b-8715b998c56d/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WBAL Very Baltimore 11
-https://live-manifest.production-public.tubi.io/live/86ece219-b5d8-478c-861a-76f58b9824da/playlist.m3u8
-
-#EXTINF:-1 tvg-id="603917" tvg-logo="https://canvas-lb.tubitv.com/opts/vFRSpdoQ4vZkWA==/04771d5a-5adf-4e6d-bbdc-d0815e36b5a3/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WGAL Very Lancaster 8
-https://live-manifest.production-public.tubi.io/live/983a4bbf-3ed1-49ff-a577-cf2039c72f4c/playlist.m3u8
-
-#EXTINF:-1 tvg-id="692074" tvg-logo="https://canvas-lb.tubitv.com/opts/xXOCG4vzUl16Pg==/1ca1f944-34e3-4735-bf58-27af61762549/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WMAR 2 Baltimore
-https://live-manifest.production-public.tubi.io/live/e6d38135-8231-40dc-8941-35df2190dfc4/playlist.m3u8
-
-#EXTINF:-1 tvg-id="578082" tvg-logo="https://canvas-lb.tubitv.com/opts/y_E66XeOMH3a8Q==/08428b49-8dd0-446e-9b7b-c7aa1c824400/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WMUR Very New Hampshire 9
-https://live-manifest.production-public.tubi.io/live/8852afd3-e359-4e34-a7b0-528fa09d057a/playlist.m3u8
-
-#EXTINF:-1 tvg-id="610471" tvg-logo="https://canvas-lb.tubitv.com/opts/vKDPYT9kMVQoOg==/16ed6354-f9fc-4b18-9f64-8c7ce0b786f8/CHgQeDoFMS4xLjlAAQ==" group-title="News & Weather",WUSA DC/MD/VA 9
-https://live-manifest.production-public.tubi.io/live/ab1704f0-7075-4fe7-9263-b25af145e503/playlist.m3u8
 
 #EXTINF:-1 tvg-id="400000012" tvg-logo="https://canvas-lb.tubitv.com/opts/kRrxv36KIg9bPw==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjlAAQ==" group-title="Sports & Racing",ACCDN
 https://live-manifest.production-public.tubi.io/live/f1e8b38c-7c04-4630-9d0d-7636d492c6d6/playlist.m3u8
