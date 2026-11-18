@@ -660,6 +660,11 @@ https://i.mjh.nz/.r/mood-1289.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/10-jamieoliver.m3u8
 
+#EXTINF:-1 channel-id="mjh-10-jamieoliverchristmas" tvg-id="mjh-10-jamieoliverchristmas" tvg-logo="https://10.com.au/ip/s3/2026/11/17/0ee490e0283a089053d3e89f0b207e8e-1473234.png?image-profile=logo" group-title="Entertainment" , Jamie Oliver Christmas
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-jamieoliverchristmas.m3u8
+
 #EXTINF:-1 channel-id="mjh-mood-1290" tvg-id="mjh-mood-1290" tvg-logo="https://gizmeon-vod.lg.mncdn.com/thumbnails/fastchannel/1744244355255.png" tvg-chno="38" group-title="Entertainment" , JuiceTV
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=

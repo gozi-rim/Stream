@@ -6725,6 +6725,11 @@ https://jmp2.uk/plu-62e7ba25be69bc0007b77fdc.m3u8
 #EXTINF:-1 channel-id="USBC4400016CL-us" tvg-id="USBC4400016CL" tvg-chno="2116" tvg-name="Jamie Oliver" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBC4400016CL_20250526T230404SQUARE.png" group-title="Entertainment",Jamie Oliver
 https://jmp2.uk/stvp-USBC4400016CL
 
+#EXTINF:-1 channel-id="mjh-10-jamieoliverchristmas" tvg-id="mjh-10-jamieoliverchristmas" tvg-logo="https://10.com.au/ip/s3/2026/11/17/0ee490e0283a089053d3e89f0b207e8e-1473234.png?image-profile=logo" group-title="Entertainment" , Jamie Oliver Christmas
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-jamieoliverchristmas.m3u8
+
 #EXTINF:-1 channel-id="6a4bf0a89ad0c6d75edc026b-us" tvg-id="6a4bf0a89ad0c6d75edc026b" tvg-chno="1140" tvg-name="Jane the Virgin" tvg-logo="https://images.pluto.tv/channels/6a4bf0a89ad0c6d75edc026b/colorLogoPNG_1785174433318.png" group-title="Entertainment",Jane the Virgin
 https://jmp2.uk/plu-6a4bf0a89ad0c6d75edc026b.m3u8
 
