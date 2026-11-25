@@ -447,7 +447,7 @@ https://jmp2.uk/plu-5f1ac947dcd00d0007937c08.m3u8
 #EXTINF:-1 channel-id="5f1ac1f1b66c76000790ef27-es" tvg-id="5f1ac1f1b66c76000790ef27" tvg-chno="235" tvg-name="Pluto TV Cine Estelar" tvg-logo="https://images.pluto.tv/channels/5f1ac1f1b66c76000790ef27/colorLogoPNG.png" group-title="Movies & Cinema",Pluto TV Cine Estelar
 https://jmp2.uk/plu-5f1ac1f1b66c76000790ef27.m3u8
 
-#EXTINF:-1 channel-id="5dd6ddb30a1d8a000908ed4c-mx" tvg-id="5dd6ddb30a1d8a000908ed4c" tvg-chno="90" tvg-name="Pluto TV Cine Familia" tvg-logo="https://images.pluto.tv/channels/5dd6ddb30a1d8a000908ed4c/colorLogoPNG_1785959252371.png" group-title="Movies & Cinema",Pluto TV Cine Familia
+#EXTINF:-1 channel-id="5dd6ddb30a1d8a000908ed4c-mx" tvg-id="5dd6ddb30a1d8a000908ed4c" tvg-chno="90" tvg-name="Pluto TV Cine Familia" tvg-logo="https://images.pluto.tv/channels/5dd6ddb30a1d8a000908ed4c/colorLogoPNG_1795537730894.png" group-title="Movies & Cinema",Pluto TV Cine Familia
 https://jmp2.uk/plu-5dd6ddb30a1d8a000908ed4c.m3u8
 
 #EXTINF:-1 channel-id="5f171f032cd22e0007f17f3d-br" tvg-id="5f171f032cd22e0007f17f3d" tvg-chno="71" tvg-name="Pluto TV Cine Família" tvg-logo="https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1788969213886.png" group-title="Movies & Cinema",Pluto TV Cine Família
@@ -2171,9 +2171,6 @@ https://jmp2.uk/plu-667d664815f35c00089489bf.m3u8
 
 #EXTINF:-1 channel-id="5bf48085851dd5632e2f7b4d-us" tvg-id="5bf48085851dd5632e2f7b4d" tvg-chno="4628" tvg-name="Crackling Fireplace" tvg-logo="https://images.pluto.tv/channels/5bf48085851dd5632e2f7b4d/colorLogoPNG.png" group-title="Entertainment",Crackling Fireplace
 https://jmp2.uk/plu-5bf48085851dd5632e2f7b4d.m3u8
-
-#EXTINF:-1 channel-id="693ae58fc2d0f38be38df821-no" tvg-id="693ae58fc2d0f38be38df821" tvg-chno="911" tvg-name="Crazy Ex-Girlfriend" tvg-logo="https://images.pluto.tv/channels/693ae58fc2d0f38be38df821/colorLogoPNG_1770039301216.png" group-title="Entertainment",Crazy Ex-Girlfriend
-https://jmp2.uk/plu-693ae58fc2d0f38be38df821.m3u8
 
 #EXTINF:-1 channel-id="6732499ce40c4a0008bb9894-us" tvg-id="6732499ce40c4a0008bb9894" tvg-chno="4459" tvg-name="Crimen" tvg-logo="https://images.pluto.tv/channels/6732499ce40c4a0008bb9894/colorLogoPNG.png" group-title="Entertainment",Crimen
 https://jmp2.uk/plu-6732499ce40c4a0008bb9894.m3u8
