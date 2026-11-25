@@ -958,6 +958,11 @@ https://jmp2.uk/stvp-ITBD140000119
 #EXTINF:-1 channel-id="ITBA14000093A-it" tvg-id="ITBA14000093A" tvg-chno="4871" tvg-name="CG Grandi Film" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA14000093A_20251111T011343SQUARE.png" group-title="Movies & Cinema",CG Grandi Film
 https://jmp2.uk/stvp-ITBA14000093A
 
+#EXTINF:-1 channel-id="mjh-10-christmasmovies" tvg-id="mjh-10-christmasmovies" tvg-logo="https://10.com.au/ip/s3/2025/11/24/9e410ae2839bab3195b8faa894027f1e-1401189.png?image-profile=logo" group-title="Movies & Cinema" , Christmas Movies
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-christmasmovies.m3u8
+
 #EXTINF:-1 channel-id="64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a" tvg-id="64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a" tvg-chno="" tvg-name="Christmas Movies by Lifetime" tvg-logo="https://provider-static.plex.tv/epg/cms/production/29e28c9c-081d-42fd-af2a-6f6f3fe8f041/INT_CMBL_logo_Fin_RedRDX.png" group-title="Movies & Cinema",Christmas Movies by Lifetime
 https://epg.provider.plex.tv/library/parts/64305451fc3be5947773c339-69bad1dfc68ea9badd9faf5a/?X-Plex-Token=TsYc7XR4xs3z6zNzEHpT
 
@@ -3591,6 +3596,11 @@ https://jmp2.uk/plu-5de802659167b10009e7deba.m3u8
 
 #EXTINF:-1 tvg-id="400000302" tvg-logo="https://canvas-lb.tubitv.com/opts/TXZQJUmsz0ofdA==/7b0b4956-a26b-4d66-9bce-a640c3f54a3f/CHgQeDoFMS4xLjlAAQ==" group-title="Classic TV & Sitcoms",Retro Black Laughs
 https://live-manifest.production-public.tubi.io/live/9715a9aa-9a90-41e9-8d4f-02d96ea2fbd9/playlist.m3u8
+
+#EXTINF:-1 channel-id="mjh-10-sitcomcentral" tvg-id="mjh-10-sitcomcentral" tvg-logo="https://10.com.au/ip/s3/2026/11/03/9b6127d5c344faf363a70b45ecbe827f-1470465.png?image-profile=logo" group-title="Classic TV & Sitcoms" , Sitcom Central
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-sitcomcentral.m3u8
 
 #EXTINF:-1 channel-id="633354b63df9700007f6a1b7-us" tvg-id="633354b63df9700007f6a1b7" tvg-chno="292" tvg-name="Sitcom Legends" tvg-logo="https://images.pluto.tv/channels/633354b63df9700007f6a1b7/colorLogoPNG.png" group-title="Classic TV & Sitcoms",Sitcom Legends
 https://jmp2.uk/plu-633354b63df9700007f6a1b7.m3u8
