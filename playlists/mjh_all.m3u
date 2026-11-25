@@ -230,6 +230,11 @@ https://i.mjh.nz/.r/bbc-home-garden-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/bbc-top-gear-247-fast.m3u8
 
+#EXTINF:-1 channel-id="mjh-heki-fast" tvg-id="mjh-heki-fast" tvg-logo="https://i.mjh.nz/.images/auto-heki-fast-6f7c4d.png" group-title="Lifestyle, Food & Travel" , Hells Kitchen
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/heki-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-sky-hgtv" tvg-id="mjh-sky-hgtv" tvg-logo="https://contentful-images.digital.skyone.co.nz/v3/hf0kmuqe0d45/7ln9bxKLUYx7i79iVBSREP/3728559763d31ce1a9484fb68db96ddc/Logo_Images_-_default.png" tvg-chno="19" group-title="Lifestyle, Food & Travel" , HGTV
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
@@ -574,6 +579,11 @@ https://i.mjh.nz/.r/10-deadlywomen.m3u8
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/eden.m3u8
+
+#EXTINF:-1 channel-id="mjh-election-2026-victoria-decides-fast" tvg-id="mjh-election-2026-victoria-decides-fast" tvg-logo="https://imageresizer.static9.net.au/7CjbHde7irXhDcYc3Z65nNf3uH8=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F11%2F809104%2Fnews_sq.png" group-title="Entertainment" , Election 2026: Victoria Decides
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/election-2026-victoria-decides-fast.m3u8
 
 #EXTINF:-1 channel-id="mjh-10-embarrassing-bodies" tvg-id="mjh-10-embarrassing-bodies" tvg-logo="https://10.com.au/ip/s3/2024/10/21/f315a8cda9494cc30e29fdba87430ff8-1345391.png?image-profile=logo" group-title="Entertainment" , Embarrassing Bodies
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56

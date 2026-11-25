@@ -5775,6 +5775,11 @@ https://jmp2.uk/plu-691d1200c2185a44642f5e7c.m3u8
 #EXTINF:-1 channel-id="US1800002UQ-us" tvg-id="US1800002UQ" tvg-chno="3855" tvg-name="El Señor de los Cielos" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1800002UQ_20260721T032643SQUARE.png" group-title="Entertainment",El Señor de los Cielos
 https://jmp2.uk/stvp-US1800002UQ
 
+#EXTINF:-1 channel-id="mjh-election-2026-victoria-decides-fast" tvg-id="mjh-election-2026-victoria-decides-fast" tvg-logo="https://imageresizer.static9.net.au/7CjbHde7irXhDcYc3Z65nNf3uH8=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F11%2F809104%2Fnews_sq.png" group-title="Entertainment" , Election 2026: Victoria Decides
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/election-2026-victoria-decides-fast.m3u8
+
 #EXTINF:-1 channel-id="6a1610bebdf296985fd95603-5f170d61b898490041b49360" tvg-id="6a1610bebdf296985fd95603-5f170d61b898490041b49360" tvg-chno="" tvg-name="Electric Now" tvg-logo="https://provider-static.plex.tv/epg/cms/production/7685b801-1ef6-4098-947a-4ccada912e33/Electric_Now_Logo_For_Dark_Background_EN.png" group-title="Entertainment",Electric Now
 https://epg.provider.plex.tv/library/parts/6a1610bebdf296985fd95603-5f170d61b898490041b49360/?X-Plex-Token=TsYc7XR4xs3z6zNzEHpT
 
