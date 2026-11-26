@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26 03:57:55Z",
+  "generated_at": "2026-11-26 13:43:30Z",
   "edition": "All-Region Global FAST (Deduplicated & High-Quality Edition)",
   "playlists": [
     {
@@ -35,7 +35,7 @@
       "name": "Pluto TV (All Regions - Categorized)",
       "file": "plutotv_all.m3u8",
       "file_m3u": "plutotv_all.m3u",
-      "channels_count": 1624,
+      "channels_count": 1625,
       "categories": {
         "News & Weather": 72,
         "Sports & Racing": 35,
@@ -47,7 +47,7 @@
         "Documentary & Nature": 25,
         "Lifestyle, Food & Travel": 33,
         "Music & Audio": 66,
-        "Reality & Game Shows": 24,
+        "Reality & Game Shows": 25,
         "Classic TV & Sitcoms": 14,
         "Drama & Series": 38,
         "Gaming & Tech": 1,
@@ -90,7 +90,7 @@
       "name": "Roku TV (All Regions - Categorized)",
       "file": "roku_all.m3u8",
       "file_m3u": "roku_all.m3u",
-      "channels_count": 257,
+      "channels_count": 259,
       "categories": {
         "News & Weather": 28,
         "Sports & Racing": 46,
@@ -98,10 +98,10 @@
         "Animation & Anime": 1,
         "Kids & Family": 6,
         "Comedy & Stand-up": 13,
-        "Crime & Mystery": 14,
+        "Crime & Mystery": 15,
         "Documentary & Nature": 4,
         "Lifestyle, Food & Travel": 14,
-        "Music & Audio": 11,
+        "Music & Audio": 12,
         "Reality & Game Shows": 8,
         "Classic TV & Sitcoms": 1,
         "Drama & Series": 1,
@@ -117,9 +117,9 @@
       "name": "Tubi TV (All Regions - Categorized)",
       "file": "tubi_all.m3u8",
       "file_m3u": "tubi_all.m3u",
-      "channels_count": 176,
+      "channels_count": 177,
       "categories": {
-        "News & Weather": 12,
+        "News & Weather": 11,
         "Sports & Racing": 17,
         "Movies & Cinema": 15,
         "Kids & Family": 3,
@@ -131,7 +131,7 @@
         "Reality & Game Shows": 4,
         "Classic TV & Sitcoms": 5,
         "Drama & Series": 2,
-        "Entertainment": 86
+        "Entertainment": 88
       },
       "epg_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_epg.xml",
       "upstream_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_all.m3u",
@@ -210,8 +210,8 @@
   "master_playlist": {
     "file": "all_combined.m3u8",
     "file_m3u": "all_combined.m3u",
-    "total_unique_channels": 3628,
-    "total_raw_scanned": 4842,
+    "total_unique_channels": 3630,
+    "total_raw_scanned": 4846,
     "epg_urls": [
       "https://i.mjh.nz/SamsungTVPlus/all.xml.gz",
       "https://i.mjh.nz/PlutoTV/all.xml.gz",
