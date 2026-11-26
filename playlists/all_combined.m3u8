@@ -10038,6 +10038,11 @@ https://jmp2.uk/stvp-GB2800010MI
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/10-cheapseats.m3u8
 
+#EXTINF:-1 channel-id="mjh-thechristmascollection-fast" tvg-id="mjh-thechristmascollection-fast" tvg-logo="https://i.mjh.nz/.images/auto-thechristmascollection-fast-e02a91.png" group-title="Entertainment" , The Christmas Collection
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/thechristmascollection-fast.m3u8
+
 #EXTINF:-1 channel-id="US1900012GD-us" tvg-id="US1900012GD" tvg-chno="2651" tvg-name="The Conners" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1900012GD_20260804T045859SQUARE.png" group-title="Entertainment",The Conners
 https://jmp2.uk/stvp-US1900012GD
 

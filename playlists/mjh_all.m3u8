@@ -930,6 +930,11 @@ https://i.mjh.nz/.r/the-block-247-fast.m3u8
 #EXTVLCOPT:http-referrer=
 https://i.mjh.nz/.r/10-cheapseats.m3u8
 
+#EXTINF:-1 channel-id="mjh-thechristmascollection-fast" tvg-id="mjh-thechristmascollection-fast" tvg-logo="https://i.mjh.nz/.images/auto-thechristmascollection-fast-e02a91.png" group-title="Entertainment" , The Christmas Collection
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/thechristmascollection-fast.m3u8
+
 #EXTINF:-1 channel-id="mjh-10-grahamnorton" tvg-id="mjh-10-grahamnorton" tvg-logo="https://10.com.au/ip/s3/2023/07/12/bcb38e1591564d24894210f4abd02423-1248623.png?image-profile=logo" group-title="Entertainment" , The Graham Norton Show
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 #EXTVLCOPT:http-referrer=
